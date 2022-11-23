@@ -8,21 +8,21 @@ import random
 def get_options():
 	description = "Randomly fragments fasta file."
 	parser = argparse.ArgumentParser(description=description,
-                                     prog='python fragment_fasta.py')
+									 prog='python fragment_fasta.py')
 
 	IO = parser.add_argument_group('Input/options.out')
 	IO.add_argument('--ref_dir',
-                     help='Directory of fasta files to get empirical lengths from')
+					help='Directory of fasta files to get empirical lengths from')
 	IO.add_argument('--sample_dir',
-                     help='Directory of fasta files to fragment in place')
+					help='Directory of fasta files to fragment in place')
 	IO.add_argument('--min_length',
-                     type=int,
-                     help='Minimum length of sequence allowed')
+					type=int,
+					help='Minimum length of sequence allowed')
 	IO.add_argument('--frag_file',
-       	             help='File to generate fragments from (FASTA format)')
+					help='File to generate fragments from (FASTA format)')
 	IO.add_argument('--frag_size',
-                    type=int,
-		    help='Mean size of fragment')
+					type=int,
+					help='Mean size of fragment')
 	IO.add_argument('--std_dev', 
 			type=int,
 			help='Std deviation of fragment size')
