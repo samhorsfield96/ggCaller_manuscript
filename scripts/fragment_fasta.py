@@ -6,7 +6,7 @@ import math
 import random
 
 def get_options():
-	description = "Randomly fragements fasta file."
+	description = "Randomly fragments fasta file."
 	parser = argparse.ArgumentParser(description=description,
                                      prog='python fragment_fasta.py')
 
