@@ -1,0 +1,513 @@
+---
+title: "Compare Simulated gene pa"
+author: "Samuel Horsfield"
+date: "2022-11-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+##Load libraries
+library(ggplot2)
+library(data.table)
+library(purrr)
+library(parallel)
+library(clue)
+library(plyr)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(stringi)
+library(ape)
+```
+## Extract information from prokka GFF files for annotation mapping
+
+```{r extract_gff}
+
+ 
+### input ###
+# major directory containing subdirectories of gff files
+gffdir = "./"
+outpref <- "./"
+### input ###
+
+
+gff_subdirs <- Sys.glob(paste(gffdir,"*", sep = ""))
+
+
+for (prefix in gff_subdirs)
+{
+  file_dir <- paste(prefix, "/*.gff", sep="")
+  
+  prokka_files <- Sys.glob(file_dir)
+  prokka_gff <- map(prokka_files, ~ read.gff(.x))
+  
+  prokka_gff <- map(prokka_gff, ~ separate(.x, attributes, c("ID", "inference", "locus_tag", "note", "product"), ";"))
+  # drop unused columns
+  prokka_gff <- lapply(prokka_gff, function(x) x[(names(x) %in% c("ID", "inference"))])
+  
+  prokka_gff <- lapply(prokka_gff, function(x){
+    ID <- gsub("ID=", "", x$ID)
+    x$inference[!str_detect(x$inference, "similar to")] <- NA
+    inference <- gsub("^.*:", "", x$inference)
+    new_df <- data.frame(ID, inference)
+  })
+  
+  prokka_gff <- bind_rows(prokka_gff)
+  
+  csv_name <- paste(outpref, "prok_", basename(prefix), ".csv", sep="")
+  
+  write.csv(prokka_gff, file = csv_name, row.names = FALSE)
+}
+
+```
+
+
+```{r count_error, include=FALSE}
+#set up function for calculating the errors
+count_errors <- function(m1, m2, missing, paralogs, cutoff){
+  
+  stopifnot(ncol(m1)==ncol(m2))
+  
+  missing <- unique(unlist(missing))
+  for (i in 1:ncol(m1)){
+    m1[m1[,i] %in% missing, i] <- NA
+    m2[m2[,i] %in% missing, i] <- NA
+  }
+  
+  m1 <- m1[rowSums(m1!="", na.rm = TRUE)>0,]
+  m2 <- m2[rowSums(m2!="", na.rm = TRUE)>0,]
+  
+  m1 <- m1[order(-rowSums(m1!="", na.rm = TRUE)),]
+  
+  temp_m1 <- m1
+  temp_m2 <- m2
+  r <- matrix(NA, nrow = nrow(m1), ncol = 2)
+  score_total <- 0
+  temp_m1[temp_m1==""] <- "x"
+  temp_m2[temp_m2==""] <- "x"
+  temp_m1[is.na(temp_m1)] <- "y"
+  temp_m2[is.na(temp_m2)] <- "y"
+  for (i in 1:nrow(m1)){
+    gene_name <- unique(temp_m1[i,])
+    gene_name <- gene_name[!gene_name %in% c('x', 'y')][1]
+    rs <- rowSums(t(t(temp_m2) == temp_m1[i,]), na.rm = TRUE)
+    m <- which.max(rs)
+    if (rs[[m]]>0){
+      row_total <- sum(temp_m1[i,]!=temp_m2[m,], na.rm = TRUE)
+      score_total <- score_total + ifelse(row_total > cutoff, 1, 0)
+      r[i,] <- c(gene_name, row_total)
+    } else {
+      r[i,] <- c(gene_name, NA)
+      score_total <- score_total + 1
+    }
+  }
+  
+  return(list(total_error=score_total, error_list=r))
+}
+```
+
+## Load data
+
+```{r pa_comp}
+### input ###
+indir = "./all_pa/"
+ground_truth_pref = "sim_"
+ggc_pref = "ggc_moderate"
+panaroo_pref = "pan_moderate"
+roary_pref = "roa"
+peppan_pref = "pep"
+prokka_mapping_pref = "prok"
+outfile = "test_results"
+
+# specify ONLY if ggCaller file names are identical
+reorder <- FALSE
+### input ###
+
+sim_pa_files <- Sys.glob(paste(indir,"*",ground_truth_pref,"*", sep = ""))
+ggc_inferred_pa_files <- Sys.glob(paste(indir,"*",ggc_pref,"*", sep = ""))
+panaroo_inferred_pa_files <- Sys.glob(paste(indir,"*",panaroo_pref,"*", sep = ""))
+roary_inferred_pa_files <- Sys.glob(paste(indir,"*",roary_pref,"*", sep = ""))
+peppan_inferred_pa_files <- Sys.glob(paste(indir,"*",peppan_pref,"*", sep = ""))
+gene_annotations_files <- Sys.glob(paste(indir,"*",prokka_mapping_pref,"*", sep = ""))
+
+panaroo_inferred_pa <- map(panaroo_inferred_pa_files, ~ fread(.x, data.table = FALSE))
+roary_inferred_pa <- map(roary_inferred_pa_files, ~ fread(.x, data.table = FALSE))
+peppan_inferred_pa <- map(peppan_inferred_pa_files, ~ fread(.x, data.table = FALSE))
+gene_annotations <- map(gene_annotations_files, ~ fread(.x, data.table = FALSE))
+ggc_inferred_pa <- map(ggc_inferred_pa_files, ~ fread(.x, data.table = FALSE))
+sim_pa <- map(sim_pa_files, ~ fread(.x, data.table = FALSE))
+```
+
+## Map prokka annotations to pa matrices
+
+```{r map_anno}
+roary_anno <- map2(roary_inferred_pa, gene_annotations, function(pa, anno_tbl){
+  temp <- pa[,15:ncol(pa)]
+  temp_lookup <- anno_tbl$inference
+  names(temp_lookup) <- anno_tbl$ID
+  temp_anno <- do.call(cbind, map(1:ncol(temp), function(i){
+    temp_lookup[temp[,i]]
+  }))
+  
+  temp_anno <- do.call(rbind, map(1:nrow(temp_anno), function(i){
+    paste(na.omit(unique(temp_anno[i,])), collapse = "~~~")
+  }))
+  temp_anno[temp_anno==""] <- "unannotated"
+  
+  return(temp_anno)
+})
+
+panaroo_anno <- map2(panaroo_inferred_pa, gene_annotations, function(pa, anno_tbl){
+  temp <- pa[,4:ncol(pa)]
+  temp_lookup <- anno_tbl$inference
+  names(temp_lookup) <- anno_tbl$ID
+  temp_anno <- do.call(cbind, map(1:ncol(temp), function(i){
+    temp_lookup[temp[,i]]
+  }))
+  
+  temp_anno <- do.call(rbind, map(1:nrow(temp_anno), function(i){
+    paste(na.omit(unique(temp_anno[i,])), collapse = "~~~")
+  }))
+  temp_anno[temp_anno==""] <- "unannotated"
+  
+  return(temp_anno)
+})
+
+peppan_anno <- map2(peppan_inferred_pa, gene_annotations, function(pa, anno_tbl){
+  # remove notation after '/'
+  pa[,1] <- gsub("\\/.*","",pa[,1])
+  
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[!temp==0] <- r[[1]]
+    temp[temp==0] <- ""
+    return(temp)
+  }))
+  temp <- pa[,2:ncol(pa)]
+  temp_lookup <- anno_tbl$inference
+  names(temp_lookup) <- anno_tbl$ID
+  temp_anno <- do.call(cbind, map(1:ncol(temp), function(i){
+    temp_lookup[temp[,i]]
+  }))
+  
+  temp_anno <- do.call(rbind, map(1:nrow(temp_anno), function(i){
+    paste(na.omit(unique(temp_anno[i,])), collapse = "~~~")
+  }))
+  temp_anno[temp_anno==""] <- "unannotated"
+  
+  return(temp_anno)
+})
+```
+
+## Generate universal output pa matrices
+
+```{r pa_mut}
+
+sim_pa <- lapply(sim_pa, function(pa){
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[temp==1] <- r[[1]]
+    temp[temp==0] <- ""
+    return(temp)
+  }))
+  pa <- pa[,order(as.numeric(gsub(".*iso", "", colnames(pa))))]
+  return(pa)
+})
+
+# get expected number of columns, as sometimes Roary has bug where entire isolates are missed
+column_total <- 0
+column_total <- length(colnames(sim_pa[[1]])) - 1
+
+# remove unused columns
+roary_pa <- lapply(roary_inferred_pa, function(x) x[, -c(2:14)])
+
+roary_pa <- map2(roary_pa, roary_anno, function(pa, anno_tbl){
+  
+  pa$Gene <- anno_tbl
+  # pull out rows that have merged IDs
+  temp_pa <- pa[grep("~~~", pa[,1]),]
+  if (length(temp_pa[,1]) != 0)
+  {
+    pa <- pa[-grep("~~~", pa[,1]),]
+    for (i in 1:length(temp_pa[,1]))
+    {
+      str <- str_split(temp_pa[i,1], "~~~")[[1]]
+      for (entry in str)
+      {
+        if (entry != '')
+        {
+          new_row <- c(entry, temp_pa[i, 2:ncol(temp_pa)])
+          new_row <- as.data.frame(new_row)
+          colnames(new_row) <- colnames(pa)
+          pa <- rbind(pa, new_row)
+        }
+      }
+    }
+  }
+  # reformat panaroo_pa to have gene names in cells
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[!temp==''] <- r[[1]]
+    temp[temp==''] <- ""
+    return(temp)
+  }))
+  pa[is.na(pa)] <- ""
+  pa[pa=="unannotated"] <- NA
+  # add missing columns
+  pa_colnames <- gsub(".*iso", "", gsub(".*iso_", "", colnames(pa)))
+  missing_columns <- as.numeric(gsub(".*iso", "", gsub(".*iso_", "",pa_colnames)))
+  missing_columns <- setdiff(seq(0, column_total), missing_columns)
+  if (length(missing_columns) != 0)
+  {
+    missing_columns <- paste("iso_", missing_columns, sep="")
+    pa <- as.data.frame(pa)
+    pa[missing_columns] <- ""
+    pa <- as.matrix(pa)
+  }
+  # order columns
+  pa <- pa[,order(as.numeric(gsub(".*iso", "", gsub(".*iso_", "", colnames(pa)))))]
+  #rename columns to match sim_pa
+  new_names <- vector(length = length(colnames(pa)))
+  for (i in 1:length(colnames(pa)))
+  {
+    new_names[i] <- paste("iso", toString(i), sep = "")
+  }
+  colnames(pa) <- new_names
+  return(pa)
+})
+
+peppan_pa <- map2(peppan_inferred_pa, peppan_anno, function(pa, anno_tbl){
+  pa$Gene <- anno_tbl
+  # pull out rows that have merged IDs
+  temp_pa <- pa[grep("~~~", pa[,1]),]
+  if (length(temp_pa[,1]) != 0)
+  {
+    pa <- pa[-grep("~~~", pa[,1]),]
+    for (i in 1:length(temp_pa[,1]))
+    {
+      str <- str_split(temp_pa[i,1], "~~~")[[1]]
+      for (entry in str)
+      {
+        if (entry != '')
+        {
+          new_row <- c(entry, temp_pa[i, 2:ncol(temp_pa)])
+          new_row <- as.data.frame(new_row)
+          colnames(new_row) <- colnames(pa)
+          pa <- rbind(pa, new_row)
+        }
+      }
+    }
+  }
+  # reformat panaroo_pa to have gene names in cells
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[!temp==0] <- r[[1]]
+    temp[temp==0] <- ""
+    return(temp)
+  }))
+  pa[is.na(pa)] <- ""
+  pa[pa=="unannotated"] <- NA
+  pa <- pa[,order(as.numeric(gsub(".*iso", "", gsub(".*iso_", "", colnames(pa)))))]
+  #rename columns to match sim_pa
+  new_names <- vector(length = length(colnames(pa)))
+  for (i in 1:length(colnames(pa)))
+  {
+    new_names[i] <- paste("iso", toString(i), sep = "")
+  }
+  colnames(pa) <- new_names
+  return(pa)
+})
+
+panaroo_pa <- lapply(panaroo_inferred_pa, function(x) x[!(names(x) %in% c("Non-unique Gene name", "Annotation"))])
+
+panaroo_pa <- map2(panaroo_pa, panaroo_anno, function(pa, anno_tbl){
+  pa$Gene <- anno_tbl
+  # pull out rows that have merged IDs
+  temp_pa <- pa[grep("~~~", pa[,1]),]
+  if (length(temp_pa[,1]) != 0)
+  {
+    pa <- pa[-grep("~~~", pa[,1]),]
+    for (i in 1:length(temp_pa[,1]))
+    {
+      str <- str_split(temp_pa[i,1], "~~~")[[1]]
+      for (entry in str)
+      {
+        if (entry != '')
+        {
+          new_row <- c(entry, temp_pa[i, 2:ncol(temp_pa)])
+          new_row <- as.data.frame(new_row)
+          colnames(new_row) <- colnames(pa)
+          pa <- rbind(pa, new_row)
+        }
+      }
+    }
+  }
+  # reformat panaroo_pa to have gene names in cells
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[!temp==''] <- r[[1]]
+    temp[temp==''] <- ""
+    return(temp)
+  }))
+  pa[is.na(pa)] <- ""
+  pa[pa=="unannotated"] <- NA
+  pa <- pa[,order(as.numeric(gsub(".*iso", "", gsub(".*iso_", "", colnames(pa)))))]
+  #rename columns to match sim_pa
+  new_names <- vector(length = length(colnames(pa)))
+  for (i in 1:length(colnames(pa)))
+  {
+    new_names[i] <- paste("iso", toString(i), sep = "")
+  }
+  colnames(pa) <- new_names
+  return(pa)
+})
+
+# drop unused columns
+ggc_pa <- lapply(ggc_inferred_pa, function(x) x[!(names(x) %in% c("Gene", "Annotation"))])
+
+#reorder ggCaller calls
+new_order <- c(1, 12, 23, 34, 45, 56, 67, 78, 89, 100, seq(2, 11), seq(13, 22), seq(24, 33), seq(35, 44), seq(46, 55), seq(57, 66), seq(68, 77), seq(79, 88), seq(90, 99))
+       
+ggc_pa <- lapply(ggc_pa, function(pa){
+  # pull out rows that have merged IDs
+  temp_pa <- pa[grep(";", pa[,1]),]
+  pa <- pa[-grep(";", pa[,1]),]
+  for (i in 1:length(temp_pa[,1]))
+  {
+    str <- str_split(temp_pa[i,1], ";")[[1]]
+    for (entry in str)
+    {
+      if (entry != '')
+      {
+        new_row <- c(entry, temp_pa[i, 2:ncol(temp_pa)])
+        new_row <- as.data.frame(new_row)
+        colnames(new_row) <- colnames(pa)
+        pa <- rbind(pa, new_row)
+      }
+    }
+  }
+  # reformat ggc_pa to have gene names in cells
+  pa <- t(apply(pa, 1, function(r){
+    temp <- r[2:ncol(pa)]
+    temp[!temp==''] <- r[[1]]
+    temp[temp==''] <- ""
+    temp[temp==''] <- ""
+    return(temp)
+  }))
+  if (reorder)
+  {
+    pa <- pa[,new_order]
+  }
+  # rename columns to match sim_pa
+  new_names <- vector(length = length(colnames(pa)))
+  for (i in 1:length(colnames(pa)))
+  {
+    new_names[i] <- paste("iso", toString(i), sep = "")
+  }
+  colnames(pa) <- new_names
+  pa[is.na(pa)] <- ""
+  pa[str_detect(pa, "hypothetical")] <- NA
+  pa[str_detect(pa, "group_")] <- NA
+  pa <- pa[,order(as.numeric(gsub(".*iso", "", colnames(pa))))]
+  return(pa)
+})
+```
+
+## Identify likely paralogs
+
+```{r paralogs}
+#Identify likely paralogs
+paralogs_ggc <- unique(unlist(map(ggc_pa, ~ apply(.x, 2, function(pa){
+  unique(pa[duplicated(pa)])
+}))))
+paralogs_ggc <- paralogs_ggc[(!is.na(paralogs_ggc)) & (paralogs_ggc!="")]
+
+paralogs_roary <- unique(unlist(map(roary_pa, ~ apply(.x, 2, function(pa){
+  unique(pa[duplicated(pa)])
+}))))
+paralogs_roary <- paralogs_ggc[(!is.na(paralogs_roary)) & (paralogs_roary!="")]
+
+paralogs_panaroo <- unique(unlist(map(panaroo_pa, ~ apply(.x, 2, function(pa){
+  unique(pa[duplicated(pa)])
+}))))
+paralogs_panaroo <- paralogs_panaroo[(!is.na(paralogs_panaroo)) & (paralogs_panaroo!="")]
+
+paralogs_peppan <- unique(unlist(map(peppan_pa, ~ apply(.x, 2, function(pa){
+  unique(pa[duplicated(pa)])
+}))))
+paralogs_peppan <- paralogs_peppan[(!is.na(paralogs_peppan)) & (paralogs_peppan!="")]
+
+
+paralogs_sim <- unique(unlist(map(sim_pa, ~ apply(.x, 2, function(pa){
+  unique(pa[duplicated(pa)])
+}))))
+
+paralogs_sim <- paralogs_sim[(!is.na(paralogs_sim)) & (paralogs_sim!="")]
+
+```
+
+
+## Get results
+
+```{r results}
+# get results
+results_df <- map_dfr(1:length(sim_pa), function(i){
+  print(i)
+  missing <- stri_remove_empty_na(unique(as.vector(as.matrix(sim_pa[[i]]))))
+  missing_panaroo <- missing[!(missing %in% stri_remove_empty_na(unique(as.vector(as.matrix(panaroo_pa[[i]])))))]
+  missing_ggc <- missing[!(missing %in% stri_remove_empty_na(unique(as.vector(as.matrix(ggc_pa[[i]])))))]
+  missing_roary <- missing[!(missing %in% stri_remove_empty_na(unique(as.vector(as.matrix(roary_pa[[i]])))))]
+  missing_peppan <- missing[!(missing %in% stri_remove_empty_na(unique(as.vector(as.matrix(peppan_pa[[i]])))))]
+  
+  missing_all <- union(missing_panaroo, missing_ggc)
+  missing_all <- union(missing_all, missing_roary)
+  missing_all <- union(missing_all, missing_peppan)
+  
+  # calculate errors per dataset, ignoring all missing clusters and paralogs
+  panaroo_error_0 <- count_errors(sim_pa[[i]], panaroo_pa[[i]], missing = missing_all, paralogs = paralogs_panaroo, cutoff=0)
+  ggc_error_0 <- count_errors(sim_pa[[i]], ggc_pa[[i]], missing = missing_all, paralogs = paralogs_ggc, cutoff=0)
+  roary_error_0 <- count_errors(sim_pa[[i]], roary_pa[[i]], missing = missing_all, paralogs = paralogs_roary, cutoff=0)
+  peppan_error_0 <- count_errors(sim_pa[[i]], peppan_pa[[i]], missing = missing_all, paralogs = paralogs_peppan, cutoff=0)
+  panaroo_error_5 <- count_errors(sim_pa[[i]], panaroo_pa[[i]], missing = missing_all, paralogs = paralogs_panaroo, cutoff=5)
+  ggc_error_5 <- count_errors(sim_pa[[i]], ggc_pa[[i]], missing = missing_all, paralogs = paralogs_ggc, cutoff=5)
+  roary_error_5 <- count_errors(sim_pa[[i]], roary_pa[[i]], missing = missing_all, paralogs = paralogs_roary, cutoff=5)
+  peppan_error_5 <- count_errors(sim_pa[[i]], peppan_pa[[i]], missing = missing_all, paralogs = paralogs_peppan, cutoff=5)
+  panaroo_error_10 <- count_errors(sim_pa[[i]], panaroo_pa[[i]], missing = missing_all, paralogs = paralogs_panaroo, cutoff=10)
+  ggc_error_10 <- count_errors(sim_pa[[i]], ggc_pa[[i]], missing = missing_all, paralogs = paralogs_ggc, cutoff=10)
+  roary_error_10 <- count_errors(sim_pa[[i]], roary_pa[[i]], missing = missing_all, paralogs = paralogs_roary, cutoff=10)
+  peppan_error_10 <- count_errors(sim_pa[[i]], peppan_pa[[i]], missing = missing_all, paralogs = paralogs_peppan, cutoff=10)
+
+  
+  df <- data.frame(params=gsub(".csv", "", gsub(".*pan_", "", sim_pa_files[[i]])),
+                   clusters_lost_in_anno_panaroo=length(missing_panaroo),
+                   clusters_lost_in_anno_ggc=length(missing_ggc),
+                   clusters_lost_in_anno_roary=length(missing_roary),
+                   clusters_lost_in_anno_peppan=length(missing_peppan),
+                   clusters_accessory_inflation_panaroo=sum(map_dbl(1:nrow(panaroo_pa[[i]]), ~ sum(!(stri_remove_empty_na(unique(panaroo_pa[[i]][.x,])) %in% sim_pa[[i]]))+ ifelse(length(stri_remove_empty_na(unique(panaroo_pa[[i]][.x,]))) == 0, 1, 0))),
+                   clusters_accessory_inflation_ggc=sum(map_dbl(1:nrow(ggc_pa[[i]]), ~ sum(!(stri_remove_empty_na(unique(ggc_pa[[i]][.x,])) %in% sim_pa[[i]])) + ifelse(length(stri_remove_empty_na(unique(ggc_pa[[i]][.x,]))) == 0, 1, 0))),
+                   clusters_accessory_inflation_roary=sum(map_dbl(1:nrow(roary_pa[[i]]), ~ sum(!(stri_remove_empty_na(unique(roary_pa[[i]][.x,])) %in% sim_pa[[i]])) + ifelse(length(stri_remove_empty_na(unique(roary_pa[[i]][.x,]))) == 0, 1, 0))),
+                   clusters_accessory_inflation_peppan=sum(map_dbl(1:nrow(peppan_pa[[i]]), ~ sum(!(stri_remove_empty_na(unique(peppan_pa[[i]][.x,])) %in% sim_pa[[i]])) + ifelse(length(stri_remove_empty_na(unique(peppan_pa[[i]][.x,]))) == 0, 1, 0))),
+                   clusters_panaroo_error_0=panaroo_error_0$total_error,
+                   clusters_ggc_error_0=ggc_error_0$total_error,
+                   clusters_roary_error_0=roary_error_0$total_error,
+                   clusters_peppan_error_0=peppan_error_0$total_error,
+                   clusters_panaroo_error_5=panaroo_error_5$total_error,
+                   clusters_ggc_error_5=ggc_error_5$total_error,
+                   clusters_roary_error_5=roary_error_5$total_error,
+                   clusters_peppan_error_5=peppan_error_5$total_error,
+                   clusters_panaroo_error_10=panaroo_error_10$total_error,
+                   clusters_ggc_error_10=ggc_error_10$total_error,
+                   clusters_roary_error_10=roary_error_10$total_error,
+                   clusters_peppan_error_10=peppan_error_10$total_error,
+                   stringsAsFactors = FALSE)
+  print(df)
+  return(df)
+})
+
+write.csv(results_df, file = outfile)
+```
+
+
+
+
