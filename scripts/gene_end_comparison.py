@@ -17,9 +17,12 @@ def get_options():
                                      prog='python gene_end_comparison.py')
     IO = parser.add_argument_group('Input/Output options')
     IO.add_argument('--indir',
-                    default=None,
+                    required=True,
                     help='Input directory containing ggCaller and panaroo alignment files. '
                          'Files to be analysised must be in format <tool>_<gene>.aln')
+    IO.add_argument('--id-file',
+                    required=True,
+                    help='File generated from mafft alignment describing percent identity of alignments.')
     IO.add_argument('--outpref',
                     default="result",
                     help='Output prefix ')
@@ -137,6 +140,7 @@ def get_aai(filename, tool, gene):
 def main():
     options = get_options()
     indir = options.indir
+    id_file = options.id_file
     outpref = options.outpref
 
     data_full, aai_full = read_files(indir, ext="aln")
@@ -149,7 +153,7 @@ def main():
 
     args = dict(x="Tool", y="Diff", data=data, hue="Tool", hue_order=['GGC', 'PAN'], order=['GGC', 'PAN'])
 
-    aai_full = pd.read_csv('mafft_perc_id.csv')
+    aai_full = pd.read_csv(id_file)
 
     plot = sns.FacetGrid(aai_full, col="Gene", row="Tool", hue="Tool", palette=sns.color_palette("Set1", 2))
 
