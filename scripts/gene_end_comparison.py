@@ -161,6 +161,58 @@ def main():
     if aai:
         aai_full.to_csv(outpref + "_aai_mat.csv", index=False)
 
+    # get median, mean and IQR of aai
+    aai_median = aai_full.groupby(["Gene", "Tool"])["perc_id"].median().to_frame()
+    aai_median["Group"] = aai_median.index
+    aai_median["Type"] = "AAI"
+    aai_median = aai_median.rename(columns={'perc_id': 'Diff'})
+    aai_lq = aai_full.groupby(["Gene", "Tool"])["perc_id"].quantile(0.25)
+    aai_uq = aai_full.groupby(["Gene", "Tool"])["perc_id"].quantile(0.55)
+    aai_mean = aai_full.groupby(["Gene", "Tool"])["perc_id"].mean().to_frame()
+    aai_mean["Group"] = aai_mean.index
+    aai_mean["Type"] = "AAI"
+    aai_mean = aai_mean.rename(columns={'perc_id': 'Diff'})
+    aai_iqr = (aai_uq - aai_lq).to_frame()
+    aai_iqr["Group"] = aai_iqr.index
+    aai_iqr["Type"] = "AAI"
+    aai_iqr = aai_iqr.rename(columns={'perc_id': 'Diff'})
+    aai_mode = aai_full.groupby(["Gene", "Tool"])["perc_id"].agg(pd.Series.mode).to_frame()
+    aai_mode["Group"] = aai_mode.index
+    aai_mode["Type"] = "AAI"
+    aai_mode = aai_mode.rename(columns={'perc_id': 'Diff'})
+
+    # get median, mean and IQR of start differences
+    diff_median = data_full.groupby(["Gene", "Tool", "Type"])["Diff"].median().to_frame()
+    diff_median["Group"] = diff_median.index
+    diff_median["Type"] = "Length"
+    diff_lq = data_full.groupby(["Gene", "Tool", "Type"])["Diff"].quantile(0.25)
+    diff_uq = data_full.groupby(["Gene", "Tool", "Type"])["Diff"].quantile(0.55)
+    diff_mean = data_full.groupby(["Gene", "Tool", "Type"])["Diff"].mean().to_frame()
+    diff_mean["Group"] = diff_mean.index
+    diff_mean["Type"] = "Length"
+    diff_iqr = (diff_uq - diff_lq).to_frame()
+    diff_iqr["Group"] = diff_iqr.index
+    diff_iqr["Type"] = "Length"
+    diff_mode = data_full.groupby(["Gene", "Tool", "Type"])["Diff"].agg(pd.Series.mode).to_frame()
+    diff_mode["Group"] = diff_mode.index
+    diff_mode["Type"] = "Length"
+
+    cat_median = pd.concat([aai_median, diff_median], ignore_index=True)
+    cat_median["Stat"] = "Median"
+    cat_mean = pd.concat([aai_mean, diff_mean], ignore_index=True)
+    cat_mean["Stat"] = "Mean"
+    cat_iqr = pd.concat([aai_iqr, diff_iqr], ignore_index=True)
+    cat_iqr["Stat"] = "IQR"
+    cat_mode = pd.concat([aai_mode, diff_mode],ignore_index=True)
+    cat_mode["Stat"] = "Mode"
+
+    # generate summary stats file
+    summary_df = pd.concat([cat_median, cat_mean, cat_iqr, cat_mode])
+    summary_df = summary_df.rename(columns={'Diff': 'Value'})
+    summary_df = summary_df.iloc[:,[1,3,2,0]]
+
+    summary_df.to_csv(outpref + "_summary_stats.csv", index=False)
+
     sns.set(font_scale=1.5)
     sns.set(style='whitegrid')
 
