@@ -154,7 +154,7 @@ def main():
     if id_file is None:
         aai = True
 
-    tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo"}
+    tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo", "REF": "Reference"}
     data_full, aai_full = read_files(indir, aai=aai, tool_dict=tool_dict, ext="aln")
 
     # save aai file
@@ -217,7 +217,7 @@ def main():
     sns.set(style='whitegrid')
 
     # set colour palette
-    colors = ["#FF0B04", "#5A5A5A"]
+    colors = ["#FF0B04", "#5A5A5A", "#000000"]
     sns.set_palette(sns.color_palette(colors))
 
     #plot average amino acid identity
@@ -239,10 +239,12 @@ def main():
     data = data_full[(data_full['Type'] == "start")]
 
     if tool_dict != None:
-        args = dict(x="Tool", y="Diff", data=data, hue="Tool", hue_order=[tool_dict["GGC"], tool_dict["PAN"]],
-                    order=[tool_dict["GGC"], tool_dict["PAN"]])
+        args = dict(x="Tool", y="Diff", data=data, hue="Tool",
+                    hue_order=[tool_dict["GGC"], tool_dict["PAN"], tool_dict["REF"]],
+                    order=[tool_dict["GGC"], tool_dict["PAN"], tool_dict["REF"]])
     else:
-        args = dict(x="Tool", y="Diff", data=data, hue="Tool", hue_order=['GGC', 'PAN'], order=['GGC', 'PAN'])
+        args = dict(x="Tool", y="Diff", data=data, hue="Tool", hue_order=['GGC', 'PAN', 'REF'],
+                    order=['GGC', 'PAN', 'REF'])
 
     plot = sns.catplot(
         data=data, x='Tool', y='Diff',
