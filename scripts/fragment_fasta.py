@@ -18,14 +18,6 @@ def get_options():
 	IO.add_argument('--min_length',
 					type=int,
 					help='Minimum length of sequence allowed')
-	IO.add_argument('--frag_file',
-					help='File to generate fragments from (FASTA format)')
-	IO.add_argument('--frag_size',
-					type=int,
-					help='Mean size of fragment')
-	IO.add_argument('--std_dev', 
-			type=int,
-			help='Std deviation of fragment size')
 	return parser.parse_args()
 
 def fragment_random(infile, frag_size, std_dev):

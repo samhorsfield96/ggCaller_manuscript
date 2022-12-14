@@ -9,20 +9,24 @@ from random import randint
 def get_options():
 	description = "Adds random fragment to fasta file."
 	parser = argparse.ArgumentParser(description=description,
-                                     prog='python insert_random_genome_fragments.py')
-
+									 prog='python insert_random_genome_fragments.py')
 	IO = parser.add_argument_group('Input/options.out')
-	IO.add_argument('--frag_file',
-       	             help='File to generate fragments from (FASTA format)')
-	IO.add_argument('--out',
-                    help='File to append to (FASTA format)')
+	IO.add_argument('--infile',
+					required=True,
+					help='File to generate fragments from (FASTA format)')
+	IO.add_argument('--outfile',
+					required=True,
+					help='File to append to (FASTA format) in place.')
 	IO.add_argument('--frag_size',
-                    type=int,
-		    help='Size of fragment to add')
+					type=int,
+					default=10000,
+					help='Size of fragment to add'
+						 'Default = 10000')
 	IO.add_argument('--seed',
-                    type=int,
-		    default=None,
-                    help='Seed for random number generation')
+					type=int,
+					default=1,
+					help='Seed for random number generation'
+						 'Default = 1')
 	return parser.parse_args()
 
 def insert_random(infile, outfile, frag_size, seed_no):
@@ -66,7 +70,7 @@ def insert_random(infile, outfile, frag_size, seed_no):
 
 def main():
 	options = get_options()
-	insert_random(options.frag_file, options.out, options.frag_size, options.seed)
+	insert_random(options.infile, options.outfile, options.frag_size, options.seed)
 	return 0
 
 if __name__ == '__main__':
