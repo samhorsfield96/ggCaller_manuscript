@@ -115,7 +115,7 @@ For a chosen dataset, run Prokka, Panaroo and ggCaller using the parameters in [
 
 For panaroo, generate a prokka mapping file out a given gene whilst in a directory containing all prokka gffs:
 
-```grep "<target> *.gff > prokkamap.txt ```
+```grep "<target>" *.gff > prokkamap.txt ```
 
 Pull out all genes of interest from ggCaller, reference or panaroo output directories:
 
