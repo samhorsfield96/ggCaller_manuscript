@@ -140,35 +140,35 @@ def main():
 	ax = sns.barplot(data=df_query, y="Gene", x="Count")
 	ax.set(xscale="log")
 	ax.set(ylabel='', xlabel='Number of unitig hits')
-	plt.savefig(out_pref + "_query.png")
+	plt.savefig(out_pref + "_query.svg")
 
 	plt.clf()
 
 	ax = sns.barplot(data=df_ORF, y="Gene", x="Count")
 	ax.set(xscale="log")
 	ax.set(ylabel='', xlabel='Number of ORFs')
-	plt.savefig(out_pref + "_ORF.png")
+	plt.savefig(out_pref + "_ORF.svg")
 
 	plt.clf()
 
 	ax = sns.barplot(data=df_ratio, y="Gene", x="Count")
 	# ax.set(xscale="log")
 	ax.set(ylabel='', xlabel='No. Mapped Queries per Gene')
-	plt.savefig(out_pref + "_count_ratio.png")
+	plt.savefig(out_pref + "_count_ratio.svg")
 
 	plt.clf()
 
 	ax = sns.barplot(data=df_size_ratio, y="Gene", x="Count")
 	# ax.set(xscale="log")
 	ax.set(ylabel='', xlabel='Mapped Query Length per Gene')
-	plt.savefig(out_pref + "_size_ratio.png")
+	plt.savefig(out_pref + "_size_ratio.svg")
 
 	plt.clf()
 
 	ax = sns.barplot(data=df_RPG, y="Gene", x="Count")
 	# ax.set(xscale="log")
 	ax.set(ylabel='', xlabel='No. mapped queries per kilo-basepair')
-	plt.savefig(out_pref + "_RPG.png")
+	plt.savefig(out_pref + "_RPG.svg")
 
 
 if __name__ == "__main__":
