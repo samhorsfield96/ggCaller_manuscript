@@ -1,0 +1,9 @@
+Gene	capsule_14_original	capsule_15a_original	capsule_15b_original	capsule_15c_original	capsule_15f_original
+group_14-group_8-group_15	0	1	1	1	0
+group_17-group_16-group_18	1	1	1	1	0
+group_16-group_18-group_20	1	1	1	1	0
+group_23-group_24-group_3	0	1	0	0	1
+group_23-group_24-group_25	1	0	1	1	0
+group_25-group_26-group_27	1	0	1	1	0
+group_3-group_26-group_27	0	1	0	0	1
+group_28-group_29-group_13	0	1	1	1	1

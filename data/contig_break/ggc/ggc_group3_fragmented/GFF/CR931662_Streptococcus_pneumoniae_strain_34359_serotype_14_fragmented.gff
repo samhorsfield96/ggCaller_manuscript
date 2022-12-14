@@ -1,0 +1,33 @@
+##gff-version 3
+##sequence-region CR931662.1_0 1 83
+##sequence-region CR931662.1_1 1 1664
+CR931662.1_1	ggCaller:1.3.0	CDS	351	712	0	-	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_71;annotation=hypothetical protein;inference=prediction
+##sequence-region CR931662.1_2 1 1144
+CR931662.1_2	ggCaller:1.3.0	CDS	237	898	437.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_84;annotation=CR931662.1_cds_CAI33317.1_1 gene-wzg locus_tag-SPC14_0004 db_xref-GOA:Q9R928 InterPro:IPR004190 InterPro:IPR004474 UniProtKB/TrEMBL:Q9R928 protein-integral membrane regulatory protein Wzg protein_id-CAI33317.1 location-1200..2645 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_3 1 783
+CR931662.1_3	ggCaller:1.3.0	CDS	135	487	241.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_0;annotation=CR931662.1_cds_CAI33318.1_1 gene-wzh locus_tag-SPC14_0005 db_xref-GOA:Q4K1S9 InterPro:IPR004013 InterPro:IPR016667 UniProtKB/TrEMBL:Q4K1S9 protein-protein-tyrosine phosphatase Wzh protein_id-CAI33318.1 location-2647..3378 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_4 1 863
+CR931662.1_4	ggCaller:1.3.0	CDS	8	405	247.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_27;annotation=CR931662.1_cds_CAI33319.1_1 gene-wzd locus_tag-SPC14_0006 db_xref-GOA:Q4K1S8 InterPro:IPR003856 InterPro:IPR005701 UniProtKB/TrEMBL:Q4K1S8 protein-capsular polysaccharide biosynthesis protein Wzd protein_id-CAI33319.1 location-3387..4079 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_5 1 1455
+CR931662.1_5	ggCaller:1.3.0	CDS	196	443	121.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_69;annotation=CR931662.1_cds_CAI33321.1_1 gene-wchA locus_tag-SPC14_0008 db_xref-GOA:P72513 InterPro:IPR003362 InterPro:IPR017475 UniProtKB/TrEMBL:P72513 protein-undecaprenylphosphate glucosephosphotransferase WchA initial sugar transferase protein_id-CAI33321.1 location-4788..6155 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_6 1 534
+##sequence-region CR931662.1_7 1 379
+##sequence-region CR931662.1_8 1 235
+##sequence-region CR931662.1_9 1 1278
+CR931662.1_9	ggCaller:1.3.0	CDS	37	1133	699.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_51;annotation=CR931662.1_cds_CAI33324.1_1 gene-wzy locus_tag-SPC14_0011 db_xref-UniProtKB/TrEMBL:P72516 protein-oligosaccharide repeat unit polymerase Wzy protein_id-CAI33324.1 location-7101..8273 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_10 1 1746
+CR931662.1_10	ggCaller:1.3.0	CDS	48	871	550.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_41;annotation=CR931662.1_cds_CAI33325.1_1 gene-wchL locus_tag-SPC14_0012 db_xref-GOA:Q4K1S2 InterPro:IPR001173 UniProtKB/TrEMBL:Q4K1S2 protein-putative glycosyl transferase protein_id-CAI33325.1 location-8270..9289 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_11 1 339
+##sequence-region CR931662.1_12 1 1086
+CR931662.1_12	ggCaller:1.3.0	CDS	56	693	440.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_28;annotation=CR931662.1_cds_CAI33327.1_1 gene-wchN locus_tag-SPC14_0014 db_xref-GOA:O07341 InterPro:IPR008441 UniProtKB/TrEMBL:O07341 protein-putative glycosyl transferase protein_id-CAI33327.1 location-10348..11196 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_13 1 1634
+CR931662.1_13	ggCaller:1.3.0	CDS	63	1063	639.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_85;annotation=CR931662.1_cds_CAI33328.1_1 gene-wzx locus_tag-SPC14_0015 db_xref-GOA:O07342 InterPro:IPR002797 UniProtKB/TrEMBL:O07342 protein-flippase Wzx protein_id-CAI33328.1 location-11189..12652 gbkey-CDS;inference=annotation
+CR931662.1_13	ggCaller:1.3.0	CDS	1268	1434	129.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_53;annotation=CR931662.1_cds_CAI33329.1_1 gene-wciY locus_tag-SPC14_0016 db_xref-GOA:O07343 InterPro:IPR007554 UniProtKB/TrEMBL:O07343 protein-putative glycerol phosphotransferase protein_id-CAI33329.1 location-12636..13715 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_14 1 4287
+CR931662.1_14	ggCaller:1.3.0	CDS	74	492	282.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_87;annotation=CR931662.1_cds_CAI33329.1_1 gene-wciY locus_tag-SPC14_0016 db_xref-GOA:O07343 InterPro:IPR007554 UniProtKB/TrEMBL:O07343 protein-putative glycerol phosphotransferase protein_id-CAI33329.1 location-12636..13715 gbkey-CDS;inference=annotation
+##sequence-region CR931662.1_15 1 2405
+CR931662.1_15	ggCaller:1.3.0	CDS	13	644	413.0	+	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_64;annotation=CR931662.1_cds_CAI33330.1_1 gene-lrp locus_tag-SPC14_0017 db_xref-GOA:Q4K1R7 InterPro:IPR001899 InterPro:IPR019931 InterPro:IPR019948 UniProtKB/TrEMBL:Q4K1R7 protein-putative surface anchored protein protein_id-CAI33330.1 location-14075..18154 gbkey-CDS;inference=annotation
+CR931662.1_15	ggCaller:1.3.0	CDS	800	1302	80.5	-	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_54;annotation=CR931662.1_cds_CAI33329.1_1 gene-wciY locus_tag-SPC14_0016 db_xref-GOA:O07343 InterPro:IPR007554 UniProtKB/TrEMBL:O07343 protein-putative glycerol phosphotransferase protein_id-CAI33329.1 location-12636..13715 gbkey-CDS;inference=annotation
+CR931662.1_15	ggCaller:1.3.0	CDS	1324	1616	0	-	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_32;annotation=hypothetical protein;inference=prediction
+CR931662.1_15	ggCaller:1.3.0	CDS	1608	2125	0	-	0	ID=CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_fragmented_63;annotation=hypothetical protein;inference=prediction
+##sequence-region CR931662.1_16 1 3
