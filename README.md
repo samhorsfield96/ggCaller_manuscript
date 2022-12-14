@@ -70,3 +70,16 @@ Gene presence/absence matrices for M. tuberculosis, S. pneumoniae and E. coli us
 Prokka, Roary, PEPPAN, Panaroo and ggcaller were run using the parameters in the previous section "Gene identification and pangenome analysis".
 
 ## Contig break analysis
+Fragment your chosen sequence
+```
+python fragment_at_gene.py --CDS data/contig_break/fasta/CDS/CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_CDS.fa --infile data/contig_break/fasta/CDS/original/CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14.fa
+```
+
+Call genes using [GeneMarkS-2](http://exon.gatech.edu/genemark/genemarks2.cgi), or using Prokka. Then use ggCaller or Panaroo as detailed in "Gene identification and pangenome analysis".
+
+Analyse gene recall using ```combined_DNA_CDS.fasta``` from Panaroo and ```gene_calls.fasta``` from ggCaller
+```
+python gene_recall.py --query data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact
+```
+
+This will print precision and recall statistics to the console, and generate ```length_proportions.txt``` which describes the proportions of real genes covered by the respective ORF call.

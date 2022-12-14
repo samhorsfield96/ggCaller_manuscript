@@ -3,9 +3,9 @@ import argparse
 import statistics
 
 def get_options():
-    description = "Determines 3' accuracy for prodigal and ggCaller gene calls."
+    description = "Determines 3' accuracy of gene calls."
     parser = argparse.ArgumentParser(description=description,
-                                     prog='python compare_fasta.py')
+                                     prog='python gene_recall.py')
 
     IO = parser.add_argument_group('Input/options.out')
     IO.add_argument('--seq',
