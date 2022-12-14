@@ -117,7 +117,7 @@ For panaroo, generate a prokka mapping file out a given gene whilst in a directo
 
 ```grep "<target>" *.gff > prokkamap.txt ```
 
-Pull out all genes of interest from ggCaller, reference or panaroo output directories:
+Pull out all genes of interest from ggCaller, reference (example [here](https://datadryad.org/stash/downloads/file_stream/67467)) or panaroo output directories:
 
 ```
 python scripts/parse_genes.py --fastafile ggCaller_out/gene_calls.faa --targets CLS02009,CLS02800,CLS00182 --outpref aggc_pspA
