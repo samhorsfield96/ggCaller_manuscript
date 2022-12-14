@@ -85,7 +85,27 @@ python scripts/gene_recall.py --query data/contig_break/ggc/ggc_group3_fragmente
 This will print precision and recall statistics to the console, and generate ```length_proportions.txt``` which describes the proportions of real genes covered by the respective ORF call.
 
 ## Gene end comparison
+Fasta, alignment and summary files from previous analysis are available in ```data/gene_end_comparison```.
+
 For a chosen dataset, run Prokka, Panaroo and ggCaller using the parameters in the previous section "Gene identification and pangenome analysis".
 
-Pick out a given gene using:
-```grep "CLS00381" ```
+For panaroo, generate a prokka mapping file out a given gene whilst in a directory containing all prokka gffs
+```grep "<target> *.gff > prokkamap.txt ```
+
+Pull out all genes of interest from ggCaller, reference or panaroo output directories
+```
+python scripts/parse_genes.py --fastafile ggCaller_out/gene_calls.faa --targets CLS02009,CLS02800,CLS00182 --outpref aggc_pspA
+python scripts/parse_genes.py --fastafile reference/proteins.faa --targets CLS02009,CLS02800,CLS00182 --outpref ref_pspA
+python scripts/parse_genes.py --prokkamap prokkamap.txt --panaroodata panaroo_out/gene_data.csv --outpref panaroo_pspA
+```
+
+Append a reference protein sequence to the start of each file. Run mafft on files to generate MSA for all genes and tools
+```
+cat pspA.faa ggc_pspA.faa > ggc_pspA_cat.faa
+mafft ggc_pspA_cat.faa > GGC_pbp1a.aln
+```
+
+Analyse alignments of gene ends. All ```.aln``` files should be in the same directory
+```
+python scripts/gene_end_comparison.py --indir all_alignments --outpref results
+```
