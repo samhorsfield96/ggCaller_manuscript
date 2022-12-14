@@ -68,3 +68,5 @@ Use ```scripts/compare_simulated_gene_pa.Rmd``` to generate prokka mapping files
 Gene presence/absence matrices for M. tuberculosis, S. pneumoniae and E. coli used in the ggCaller paper are available in ```data/real_pangenome```
 
 Prokka, Roary, PEPPAN, Panaroo and ggcaller were run using the parameters in the previous section "Gene identification and pangenome analysis".
+
+## Contig break analysis
