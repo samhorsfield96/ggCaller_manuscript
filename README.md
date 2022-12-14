@@ -1,5 +1,5 @@
 # ggCaller_manuscript
-Repository of scripts used in ggCaller manuscript.
+Repository of scripts used in [ggCaller](https://github.com/samhorsfield96/ggCaller) manuscript.
 
 ## Generating a simulated pangenome
 
@@ -31,25 +31,25 @@ python scripts/insert_random_genome_fragments.py --infile contaminant.fasta --ou
 ```
 
 ### Simulating assemblies
-Now simulate paired-end reads from your assemblies with ART:
+Now simulate paired-end reads from your assemblies with [ART](https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm):
 
 ```art_illumina -ss HS25 -sam -i sim_pangenome/genome1.fasta -p -l 150 -f 20 -m 200 -s 10 -o genome1_reads```
 
-Assemble reads with SPADES:
+Assemble reads with [SPADES](https://github.com/ablab/spades):
 
 ```spades.py --phred-offset 33 --isolate --threads 1 -1 genome1_reads1.fq -2 genome1_reads2.fq -o genome1_assembly```
 
 ### Gene identification and pangenome analysis
-Now run Prokka on SPADES assemblies, using the gene annotation from ```simulate_full_pangenome.py```:
+Now run [Prokka](https://github.com/tseemann/prokka) on SPADES assemblies, using the gene annotation from ```simulate_full_pangenome.py```:
 ```prokka --cpus 8 --proteins sim_pangenome_prokka_DB.fa --force --outdir prokka_genome1 --notrna --norrna --prefix genome1 genome1_assembly/scaffolds.fasta```
 
-Run Panaroo on Prokka gene-calls (using moderate clean-mode):
+Run [Panaroo](https://github.com/gtonkinhill/panaroo) on Prokka gene-calls (using moderate clean-mode):
 ```panaroo -i prokka_gffs/*.gff -o panaroo_moderate_out --clean-mode moderate -t 8```
 
-Run Roary on Prokka gene-calls:
+Run [Roary](https://github.com/sanger-pathogens/Roary) on Prokka gene-calls:
 ```roary -p 8 -f roary prokka_gffs/*.gff```
 
-Run PEPPAN on Prokka gene-calls (use PEPPAN_parser to generate gene presence/absence matrix):
+Run [PEPPAN](https://github.com/zheminzhou/PEPPAN) on Prokka gene-calls (use PEPPAN_parser to generate gene presence/absence matrix):
 ```
 PEPPAN -t 8 -p PEPPAN_out prokka_gffs/*.gff
 PEPPAN_parser -g PEPPAN_out.PEPPAN.gff -s PEPPAN_out
@@ -64,10 +64,17 @@ Also copy Prokka gff files for each simulation.
 
 Use ```scripts/compare_simulated_gene_pa.Rmd``` to generate prokka mapping files from gffs, and to compare different pangenome analysis tools. Data is available in ```data/simulated_pangenome```.
 
+This will summary tables detailing false positives, false negatives and correctly-called COGs containing set numbers of errors.
+
 ## Comparing real bacterial pangenomes
 Gene presence/absence matrices for M. tuberculosis, S. pneumoniae and E. coli used in the ggCaller paper are available in ```data/real_pangenome```
 
 For a chosen dataset, run Prokka, Roary, PEPPAN, Panaroo and ggcaller using the parameters in the previous section "Gene identification and pangenome analysis".
+
+Respective gene annotations were provided from:
+- [M. tuberculosis](https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3)
+- [S. pneumoniae](https://datadryad.org/stash/downloads/file_stream/67467)
+- [E. coli](https://microbiology.figshare.com/ndownloader/files/26133194)
 
 ## Contig break analysis
 Fragment your chosen sequence
@@ -109,3 +116,53 @@ Analyse alignments of gene ends. All ```.aln``` files should be in the same dire
 ```
 python scripts/gene_end_comparison.py --indir all_alignments --outpref results
 ```
+
+This will generate a series of summary graphs describing gene start position comparisons and percent identity based on MSAs.
+
+## PanGenome wide association study
+Generate a presence/absence matrix for each isolate in the study. Examples are available in ```data/PGWAS/tetracycline/tetracycline_resistance.txt```
+and ```data/PGWAS/erythromycin/erythromycin_resistance.txt```
+
+For this study, S. pneumoniae gene annotations were supplied from [here](https://datadryad.org/stash/downloads/file_stream/67467).
+
+Generate a ```.nwk``` tree using ggCaller (use strict cut-offs for graph cleaning and tree generation) and root at midpoint.
+```
+ggcaller --refs genome_list.txt --out pyseer_results --clean-mode strict --ignore-pseduogenes --alignment core --aligner def --annotation sensitive --diamonddb CDS_protein_sequences.dmnd --save --core-threshold 1
+python scripts/midpoint_root.py --infile pyseer_results/core_tree.nwk --outfile core_tree_NJ_midpoint.nwk
+```
+
+Convert the nwk tree to distance matrix using pyseer
+```
+python pyseer/phylogeny_distance.py --lmm core_tree_NJ_midpoint.nwk > phylogeny_K.tsv
+```
+
+Generate unitigs using unitig-caller
+```
+unitig-caller --call --refs refs.txt --out PGWAS_unitigs
+```
+
+Calculate unitig associations with phenotype and determine adjusted signficance cut-off threshold.
+```
+pyseer --lmm --phenotypes erythromycin_resistance.txt --kmers PGWAS_unitigs.pyseer.gz --similarity phylogeny_K.tsv --output-patterns unitigs_patterns.txt --cpu 8 > unitigs_hits.txt
+python pyseer/count_patterns.py unitigs_patterns.txt
+cat <(head -1 tet_unitigs.txt) <(awk '$4<THRESHOLD {print $0}' unitigs_hits.txt) > significant_unitigs.txt
+```
+
+Map unitigs to a single reference with phandango and annotate
+```
+phandango_mapper significant_kmers.txt ref.fa phandango.plot
+annotate_hits_pyseer significant_unitigs.txt references.txt annotated_unitigs.txt
+```
+
+Generate query in correct format, query singificant hits in ggCaller graph
+```
+awk -F '\t' 'NR>1 && NF=1' significant_unitigs.txt > significant_unitigs_query.txt
+ggcaller --graph genome_list.gfa --colours genome_list.bfg_colors --threads 16 --out pyseer_query --data pyseer_results/ggc_data --query significant_unitigs_query.txt --query-id 1.0
+```
+
+Analyse hits. Annotation files should match that used [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5708525/#SD1)
+```
+python scripts/count_annotations.py --fasta pyseer_query/matched_queries.fasta --outpref annotations --annotations annotations_file.xlsx
+```
+
+This will generate a series of graphs describing the gene annotations covered by significant unitigs.
