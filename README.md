@@ -6,7 +6,7 @@ Repository of scripts used in ggCaller manuscript.
 ### Population Simulation
 To generate a simulated population for pangenome analysis, run:
 
-```python simulate_full_pangenome.py --gff data/simulated_pangenome/SP_ATCC700669.gff3 --nisolates 100 --n_sim_genes 1000 --pop_size 10e-6 --out sim_pangenome --mutation_rate 1e-14 --gain_rate 1e-12 --loss_rate 1e-12```
+```python scripts/simulate_full_pangenome.py --gff data/simulated_pangenome/SP_ATCC700669.gff3 --nisolates 100 --n_sim_genes 1000 --pop_size 10e-6 --out sim_pangenome --mutation_rate 1e-14 --gain_rate 1e-12 --loss_rate 1e-12```
 
 This will generate a list of fasta files in the directory ```sim_pangenome```.
 
@@ -17,7 +17,7 @@ To fragment assemblies, first copy ```sim_pangenome```.
 Then choose a directory ```--ref_dir``` to get empirical read length distributions from (should contain ```.fasta``` files).
 Finally, run:
 ```
-python fragment_fasta.py --ref_dir reference_dir --sample_dir sim_pangenome_fragmented --min_length 10
+python scripts/fragment_fasta.py --ref_dir reference_dir --sample_dir sim_pangenome_fragmented --min_length 10
 ```
 
 ### Adding contaminants
@@ -27,7 +27,7 @@ To fragment assemblies, first copy ```sim_pangenome```.
 Then choose a infile ```--infile``` to generate fragments from, and --outfile to append to (this is done IN PLACE).
 Finally, run:
 ```
-python insert_random_genome_fragments.py --infile contaminant.fasta --outfile sim_pangenome_fragmented/genome1.fasta --frag_size 10000
+python scripts/insert_random_genome_fragments.py --infile contaminant.fasta --outfile sim_pangenome_fragmented/genome1.fasta --frag_size 10000
 ```
 
 ### Simulating assemblies
@@ -56,7 +56,7 @@ PEPPAN_parser -g PEPPAN_out.PEPPAN.gff -s PEPPAN_out
 ```
 
 Run ggCaller on all assemblies using the gene annotation from ```simulate_full_pangenome.py```:
-```ggcaller ggcaller --refs sim_pangenome_list.txt --threads 8 --annotation sensitive --diamonddb sim_pangenome_prokka_DB.fa --out ggCaller_out --clean-mode moderate```
+```ggcaller --refs sim_pangenome_list.txt --threads 8 --annotation sensitive --diamonddb sim_pangenome_prokka_DB.fa --out ggCaller_out --clean-mode moderate```
 
 ### Analysing simulated pangenome results
 Copy gene presence/absence matrices from respective tools (```gene_presence_absence_roary.csv``` for Roary, Panaroo and ggCaller, ```*.PEPPAN.gene_content.Rtab``` for PEPPAN).
@@ -67,7 +67,7 @@ Use ```scripts/compare_simulated_gene_pa.Rmd``` to generate prokka mapping files
 ## Comparing real bacterial pangenomes
 Gene presence/absence matrices for M. tuberculosis, S. pneumoniae and E. coli used in the ggCaller paper are available in ```data/real_pangenome```
 
-Prokka, Roary, PEPPAN, Panaroo and ggcaller were run using the parameters in the previous section "Gene identification and pangenome analysis".
+For a chosen dataset, run Prokka, Roary, PEPPAN, Panaroo and ggcaller using the parameters in the previous section "Gene identification and pangenome analysis".
 
 ## Contig break analysis
 Fragment your chosen sequence
@@ -79,7 +79,13 @@ Call genes using [GeneMarkS-2](http://exon.gatech.edu/genemark/genemarks2.cgi), 
 
 Analyse gene recall using ```combined_DNA_CDS.fasta``` from Panaroo and ```gene_calls.fasta``` from ggCaller
 ```
-python gene_recall.py --query data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact
+python scripts/gene_recall.py --query data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact
 ```
 
 This will print precision and recall statistics to the console, and generate ```length_proportions.txt``` which describes the proportions of real genes covered by the respective ORF call.
+
+## Gene end comparison
+For a chosen dataset, run Prokka, Panaroo and ggCaller using the parameters in the previous section "Gene identification and pangenome analysis".
+
+Pick out a given gene using:
+```grep "CLS00381" ```
