@@ -3,6 +3,8 @@ Repository of scripts used in [ggCaller](https://github.com/samhorsfield96/ggCal
 
 ## Generating a simulated pangenome
 
+Data is available in ```data/simulation_pangenome```.
+
 ### Population Simulation
 To generate a simulated population for pangenome analysis, run:
 
@@ -69,7 +71,7 @@ This will summary tables detailing false positives, false negatives and correctl
 ## Comparing real bacterial pangenomes
 Gene presence/absence matrices for M. tuberculosis, S. pneumoniae and E. coli used in the ggCaller paper are available in ```data/real_pangenome```
 
-For a chosen dataset, run Prokka, Roary, PEPPAN, Panaroo and ggcaller using the parameters in the previous section "Gene identification and pangenome analysis".
+For a chosen dataset, run Prokka, Roary, PEPPAN, Panaroo and ggcaller using the parameters in [Gene identification and pangenome analysis](###Gene identification and pangenome analysis).
 
 Respective gene annotations were provided from:
 - [M. tuberculosis](https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3)
@@ -82,7 +84,7 @@ Fragment your chosen sequence
 python fragment_at_gene.py --CDS data/contig_break/fasta/CDS/CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14_CDS.fa --infile data/contig_break/fasta/CDS/original/CR931662_Streptococcus_pneumoniae_strain_34359_serotype_14.fa
 ```
 
-Call genes using [GeneMarkS-2](http://exon.gatech.edu/genemark/genemarks2.cgi), or using Prokka. Then use ggCaller or Panaroo as detailed in "Gene identification and pangenome analysis".
+Call genes using [GeneMarkS-2](http://exon.gatech.edu/genemark/genemarks2.cgi), or using Prokka. Then use ggCaller or Panaroo as detailed [Gene identification and pangenome analysis](###Gene identification and pangenome analysis).
 
 Analyse gene recall using ```combined_DNA_CDS.fasta``` from Panaroo and ```gene_calls.fasta``` from ggCaller
 ```
@@ -94,7 +96,7 @@ This will print precision and recall statistics to the console, and generate ```
 ## Gene end comparison
 Fasta, alignment and summary files from previous analysis are available in ```data/gene_end_comparison```.
 
-For a chosen dataset, run Prokka, Panaroo and ggCaller using the parameters in the previous section "Gene identification and pangenome analysis".
+For a chosen dataset, run Prokka, Panaroo and ggCaller using the parameters in [Gene identification and pangenome analysis](###Gene identification and pangenome analysis).
 
 For panaroo, generate a prokka mapping file out a given gene whilst in a directory containing all prokka gffs
 ```grep "<target> *.gff > prokkamap.txt ```
@@ -166,3 +168,8 @@ python scripts/count_annotations.py --fasta pyseer_query/matched_queries.fasta -
 ```
 
 This will generate a series of graphs describing the gene annotations covered by significant unitigs.
+
+## Computational benchmarking
+Data is available in ```data/computational_benchmarking```.
+
+Tools were run as detailed in [Gene identification and pangenome analysis](###Gene identification and pangenome analysis).
