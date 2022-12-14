@@ -217,7 +217,7 @@ def main():
     sns.set(style='whitegrid')
 
     # set colour palette
-    colors = ["#FF0B04", "#5A5A5A", "#000000"]
+    colors = ["#FF0B04", "#5A5A5A", "#D3D3D3"]
     sns.set_palette(sns.color_palette(colors))
 
     #plot average amino acid identity
@@ -226,12 +226,12 @@ def main():
 
     plot = sns.FacetGrid(aai_full, col="Gene", hue="Tool", sharey=False, legend_out=True)
 
-    plot.map(sns.histplot, "perc_id", stat='probability', binwidth=0.025, binrange=(0, 1.0)).add_legend()
+    plot.map(sns.histplot, "perc_id", stat='probability', binwidth=0.025, alpha=0.6, binrange=(0, 1.0)).add_legend()
     plot._legend.set_title("Workflow")
 
     plot.set(xlabel='Average amino acid identity', ylabel='Proportion')
 
-    plt.savefig(outpref + '_aai_hist.png')
+    plt.savefig(outpref + '_aai_hist.svg')
 
     plt.clf()
 
@@ -253,7 +253,7 @@ def main():
     )
 
     plot.map(sns.stripplot, args["x"], args["y"], args["hue"], hue_order=args["hue_order"], order=args["order"],
-          palette=colors, dodge=False, alpha=0.4, ec='k', linewidth=1)
+          palette=colors, dodge=False, alpha=0.7, ec='k', linewidth=1)
 
     for ax_n in plot.axes:
         for ax in ax_n:
@@ -261,7 +261,7 @@ def main():
 
     plot.set(xlabel='Workflow', ylabel='Start difference (prop. alignment length)')
 
-    plt.savefig(outpref + '_boxcompare_start.png')
+    plt.savefig(outpref + '_boxcompare_start.svg')
 
     plt.clf()
 
@@ -275,7 +275,7 @@ def main():
     )
 
     plot.map(sns.stripplot, args["x"], args["y"], args["hue"], hue_order=args["hue_order"], order=args["order"],
-          palette=colors, dodge=False, alpha=0.4, ec='k', linewidth=1)
+          palette=colors, dodge=False, alpha=0.7, ec='k', linewidth=1)
 
     plot.set(xlabel='Workflow', ylabel='Stop difference (prop. alignment length)')
 
@@ -283,7 +283,7 @@ def main():
         for ax in ax_n:
             ax.axhline(0, linewidth=2, color='gray', linestyle="--", alpha=0.6)
 
-    plt.savefig(outpref + '_boxcompare_end.png')
+    plt.savefig(outpref + '_boxcompare_end.svg')
 
     plt.clf()
 
@@ -297,7 +297,7 @@ def main():
     )
 
     plot.map(sns.stripplot, args["x"], args["y"], args["hue"], hue_order=args["hue_order"], order=args["order"],
-          palette=colors, dodge=False, alpha=0.4, ec='k', linewidth=1)
+          palette=colors, dodge=False, alpha=0.7, ec='k', linewidth=1)
 
     for ax_n in plot.axes:
         for ax in ax_n:
@@ -305,7 +305,7 @@ def main():
 
     plot.set(xlabel='Workflow', ylabel='Difference in gaps from reference')
 
-    plt.savefig(outpref + '_boxcompare_within.png')
+    plt.savefig(outpref + '_boxcompare_within.svg')
 
 if __name__ == "__main__":
     main()
