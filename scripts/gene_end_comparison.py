@@ -8,6 +8,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from Bio import pairwise2
 from Bio import SeqIO
+from multiprocessing import Pool
+from functools import partial
 
 def get_options():
     description = 'Compares start and end positions of genes based on alignment fasta.'
@@ -21,6 +23,11 @@ def get_options():
     IO.add_argument('--id-file',
                     default=None,
                     help='Read in previously generated pairwise average amino acid identity matrix')
+    IO.add_argument('--threads',
+                    default=1,
+                    type=int,
+                    help='No. threads.'
+                         'Default=1 ')
     IO.add_argument('--outpref',
                     default="result",
                     help='Output prefix ')
@@ -91,23 +98,30 @@ def count_gaps(infile, tool_dict):
 
     return frame, tool, gene
 
-def read_files(in_dir, aai=False, tool_dict=None, prefix="", ext="txt", ext2=""):
+def map_analysis(filename, tool_dict, aai, ext2):
+    df, tool, gene = count_gaps(filename, tool_dict)
+
+    # commented out as takes long time
+    if aai:
+        filename2 = os.path.splitext(filename)[0] + "." + ext2
+        aai_df = get_aai(filename2, tool, gene)
+    else:
+        aai_df = pd.DataFrame()
+
+    return aai_df, df
+
+def read_files(in_dir, aai=False, tool_dict=None, threads=1, prefix="", ext="txt", ext2=""):
     all_files = glob.glob(os.path.join(in_dir, prefix + "*." + ext))
 
     li = []
     aai_li = []
-    for filename in all_files:
-        df, tool, gene = count_gaps(filename, tool_dict)
 
-        # commented out as takes long time
-        if aai:
-            filename2 = os.path.splitext(filename)[0] + "." + ext2
-            aai_df = get_aai(filename2, tool, gene)
-        else:
-            aai_df = pd.DataFrame()
-        aai_li.append(aai_df)
+    with Pool(processes=threads) as pool:
+        for aai_df, end_df in pool.map(partial(map_analysis, aai=aai,
+                                               tool_dict=tool_dict, ext2=ext2), all_files):
+            aai_li.append(aai_df)
 
-        li.append(df)
+            li.append(end_df)
 
     frame = pd.concat(li, axis=0, ignore_index=True)
     aai_frame = pd.concat(aai_li, axis=0, ignore_index=True)
@@ -158,7 +172,7 @@ def main():
         aai = True
 
     tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo", "REF": "Reference"}
-    data_full, aai_full = read_files(indir, aai=aai, tool_dict=tool_dict, ext="aln", ext2="faa")
+    data_full, aai_full = read_files(indir, threads=options.threads, aai=aai, tool_dict=tool_dict, ext="aln", ext2="faa")
 
     # save aai file
     if aai:
