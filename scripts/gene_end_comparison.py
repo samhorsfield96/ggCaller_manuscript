@@ -1,4 +1,3 @@
-from Bio import SeqIO
 import argparse
 import numpy as np
 from pylab import *
@@ -7,7 +6,8 @@ import glob
 import os
 import seaborn as sns
 import matplotlib.pyplot as plt
-from Bio import AlignIO
+from Bio import pairwise2
+from Bio import SeqIO
 
 def get_options():
     description = 'Compares start and end positions of genes based on alignment fasta.'
@@ -91,7 +91,7 @@ def count_gaps(infile, tool_dict):
 
     return frame, tool, gene
 
-def read_files(in_dir, aai=False, tool_dict=None, prefix="", ext="txt"):
+def read_files(in_dir, aai=False, tool_dict=None, prefix="", ext="txt", ext2=""):
     all_files = glob.glob(os.path.join(in_dir, prefix + "*." + ext))
 
     li = []
@@ -101,7 +101,8 @@ def read_files(in_dir, aai=False, tool_dict=None, prefix="", ext="txt"):
 
         # commented out as takes long time
         if aai:
-            aai_df = get_aai(filename, tool, gene)
+            filename2 = os.path.splitext(filename)[0] + "." + ext2
+            aai_df = get_aai(filename2, tool, gene)
         else:
             aai_df = pd.DataFrame()
         aai_li.append(aai_df)
@@ -115,23 +116,25 @@ def read_files(in_dir, aai=False, tool_dict=None, prefix="", ext="txt"):
     return frame, aai_frame
 
 def get_aai(filename, tool, gene):
-    align = AlignIO.read(filename, "fasta")
-    align_len = len(align)
+    fasta_sequences = []
+    for fasta in SeqIO.parse(open(filename),'fasta'):
+        fasta_sequences.append(fasta)
+
+    align_len = len(fasta_sequences)
     id_list = []
 
     col_start = 0
 
-    for i1, align1 in enumerate(align):
-        align1_arr = np.array(list(str(align1.seq)))
-        align1_arr_gaps = align1_arr == "-"
+    for i1, seq1 in enumerate(fasta_sequences):
         for i2 in range(col_start, align_len):
-            if i1 == i2:
+            if i2 <= i1:
                 continue
-            align2_arr = np.array(list(str(align[i2].seq)))
-            align2_arr_gaps = align2_arr == "-"
+            # take top alignment
+            alignment = pairwise2.align.globalxx(seq1.seq, fasta_sequences[i2].seq)[0]
+            align1_arr = np.array(list(str(alignment.seqA)))
+            align2_arr = np.array(list(str(alignment.seqB)))
             num_match = np.count_nonzero(align1_arr == align2_arr)
-            num_match_gaps = np.count_nonzero(logical_and(align1_arr_gaps, align2_arr_gaps))
-            id_list.append((num_match - num_match_gaps) / (align1_arr.size - num_match_gaps))
+            id_list.append(num_match / align1_arr.size)
         col_start += 1
 
     df = pd.DataFrame(id_list, columns=['perc_id'])
@@ -155,7 +158,7 @@ def main():
         aai = True
 
     tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo", "REF": "Reference"}
-    data_full, aai_full = read_files(indir, aai=aai, tool_dict=tool_dict, ext="aln")
+    data_full, aai_full = read_files(indir, aai=aai, tool_dict=tool_dict, ext="aln", ext2="faa")
 
     # save aai file
     if aai:
