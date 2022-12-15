@@ -150,7 +150,7 @@ cat pspA.faa ggc_pspA.faa > ggc_pspA_cat.faa
 mafft ggc_pspA_cat.faa > GGC_pbp1a.aln
 ```
 
-Analyse alignments of gene ends. All ```.aln``` files should be in the same directory
+Analyse alignments of gene ends. All ```.aln``` and ```.faa```/```.fasta``` files should be in the same directory
 
 ```
 python scripts/gene_end_comparison.py --indir all_alignments --outpref results
