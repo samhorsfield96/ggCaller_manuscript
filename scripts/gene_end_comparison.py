@@ -171,7 +171,7 @@ def main():
     if id_file is None:
         aai = True
 
-    tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo", "REF": "Reference"}
+    tool_dict = {"GGC": "ggCaller", "PAN": "Prokka + Panaroo", "REF": "COGsoft"}
     data_full, aai_full = read_files(indir, threads=options.threads, aai=aai, tool_dict=tool_dict, ext="aln", ext2="faa")
 
     # save aai file
