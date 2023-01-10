@@ -304,26 +304,6 @@ def main():
 
     plt.clf()
 
-    # plot within
-    data = data_full[(data_full['Type'] == "within")]
-
-    plot = sns.catplot(
-        data=data, x='Tool', y='Diff',
-        col='Gene', hue="Tool", kind='box',
-        sym="", dodge=False, hue_order=args["hue_order"], order=args["order"]
-    )
-
-    plot.map(sns.stripplot, args["x"], args["y"], args["hue"], hue_order=args["hue_order"], order=args["order"],
-          palette=colors, dodge=False, alpha=0.7, ec='k', linewidth=1)
-
-    for ax_n in plot.axes:
-        for ax in ax_n:
-            ax.axhline(0, linewidth=2, color='gray', linestyle="--", alpha=0.6)
-
-    plot.set(xlabel='Workflow', ylabel='Difference in gaps from reference')
-
-    plt.savefig(outpref + '_boxcompare_within.svg')
-
 if __name__ == "__main__":
     main()
 
