@@ -107,6 +107,30 @@ Respective gene annotations were provided from:
 - [S. pneumoniae](https://datadryad.org/stash/downloads/file_stream/67467)
 - [E. coli](https://microbiology.figshare.com/ndownloader/files/26133194)
 
+Gene presence/absence matrices for all tools are available in `data/real_pangenome/gene_pa`
+
+For analysing COG consistency to determine COG size and coefficient of variation (CV), two scripts are required. 
+
+When analysing ggCaller or Panaroo, run the command below with the respective .gml file. Analysis in the manuscript ignored refound/pseudogenes.
+
+```
+python parse_gml.py --infile data/COG_consistency/Spneumoniae_panaroo_str.gml --ignore_refound --outpref output
+```
+
+PEPPAN and Roary must be analysed together, as Roary does not provide gene lengths in output files. Run:
+
+```
+python parse_gff.py --peppan data/COG_consistency/Pneumo.PEPPAN.gff --roary data/COG_consistency/Spneumoniae_roary.txt --outpref output --ignore_pseudogenes
+```
+
+These commands output a number of statistics:
+- "IQR" interquartile range of genes lengths within COGs
+- "MAD" median average deviation of genes lengths within COGs
+- "STDDEV" standard deviation and coefficient of variation (CV) of genes lengths within COGs
+- "sizes" number of genes in each COG
+
+Results used in the manuscript are available in `data/real_pangenome/COG_consistency/results`
+
 ## Contig break analysis
 
 Fragment your chosen sequence:
