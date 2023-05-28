@@ -141,6 +141,8 @@ python scripts/gene_recall.py --seq data/contig_break/ggc/fasta/all_seqs.fasta -
 
 The output summary files match those from analysing single tool outputs.
 
+All results generated from prediction comparisons used in the manuscript are available in `data/contig_break/results`
+
 ## Gene end comparison
 
 Fasta, alignment and summary files from previous analysis are available in ```data/gene_end_comparison```.
@@ -229,6 +231,8 @@ python scripts/count_annotations.py --fasta pyseer_query/matched_queries.fasta -
 ```
 
 This will generate a series of graphs describing the gene annotations covered by significant unitigs.
+
+All singificant unitigs and annotated unitigs by pyseer are available in respective folders in `data/PGWAS`
 
 ## Computational benchmarking
 
