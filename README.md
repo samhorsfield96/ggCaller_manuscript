@@ -117,13 +117,29 @@ python fragment_at_gene.py --CDS data/contig_break/fasta/CDS/CR931662_Streptococ
 
 Call genes using [GeneMarkS-2](http://exon.gatech.edu/genemark/genemarks2.cgi), or using Prokka. Then use ggCaller or Panaroo as detailed [Gene identification and pangenome analysis](#gene-identification-and-pangenome-analysis).
 
-Analyse gene recall using ```combined_DNA_CDS.fasta``` from Panaroo and ```gene_calls.fasta``` from ggCaller
+Analyse gene recall using ```combined_DNA_CDS.fasta``` from Panaroo and ```gene_calls.fasta``` from ggCaller.
+
+To specificy calls from Panaroo, use `--caller pan`, for ggCaller use `--caller ggc`
 
 ```
-python scripts/gene_recall.py --query data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact
+python scripts/gene_recall.py --caller ggc --query data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact --outpref output
 ```
 
-This will print precision and recall statistics to the console, and generate ```length_proportions.txt``` which describes the proportions of real genes covered by the respective ORF call.
+This will print precision and recall statistics to the console, and generate ```len_prop.txt``` which describes the proportions of real genes covered by the respective ORF call.
+
+Additionally, FASTA and summary files will be generated, containing all errors. These will start with you chosen prefix, and end with:
+- "FN" for false negatives
+- "FP" for false positives
+- "DUP" for duplicated calls that align to the same position in the sequence
+- "ART" for artificial calls not present in any reference
+
+To compare calls from multiple tools, run the below command. This will identify shared and exclusive errors for each tool.
+
+```
+python scripts/gene_recall.py --seq data/contig_break/ggc/fasta/all_seqs.fasta --CDS data/contig_break/ggc/fasta/all_CDS.fasta --exact --caller pan --query data/contig_break/prokka/panaroo_group3_fragmented/combined_DNA_CDS.fasta --caller2 ggc --query2 data/contig_break/ggc/ggc_group3_fragmented/gene_calls.ffn --outpref output
+```
+
+The output summary files match those from analysing single tool outputs.
 
 ## Gene end comparison
 

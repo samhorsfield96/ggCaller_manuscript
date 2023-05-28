@@ -2,6 +2,7 @@ graph [
   node [
     id 0
     label "0"
+    CID 0
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_21'"
@@ -10,7 +11,7 @@ graph [
     seqIDs "['0_0_21']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([405,417,420,417,420,417,420,417,420,417,422,423,425,423,427],[(410,1588),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,74),(0,307),(0,87),(0,307),(0,154)])"
+    ORF_info "([202,203,204,203,204,203,204,203,204,203,205,206,207,206,208],[(410,1588),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,74),(0,307),(0,87),(0,307),(0,154)])"
     hash "_networkx_list_start"
     hash "14832492914792231767"
     annotation "''"
@@ -27,15 +28,16 @@ graph [
   node [
     id 1
     label "1"
+    CID 1
     size 4
     centroid "_networkx_list_start"
-    centroid "'4_0_82'"
+    centroid "'4_0_83'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['3_0_77','1_0_97','4_0_82','2_0_78']"
+    seqIDs "['4_0_83','3_0_79','1_0_97','2_0_81']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([114,491,118,119,121,123,129,139,140,492,147,494,153,497,159],[(81,136),(0,60),(0,41),(0,34),(0,60),(0,31),(0,596),(0,34),(0,117),(0,60),(0,353),(0,60),(0,121),(0,75),(0,172)])"
+    ORF_info "([335,337,338,192,339,194,340,196,341,602,343,344,345,346,347],[(81,136),(0,60),(0,41),(0,34),(0,60),(0,31),(0,596),(0,34),(0,117),(0,60),(0,353),(0,60),(0,121),(0,75),(0,172)])"
     hash "_networkx_list_start"
     hash "2652586237674114606"
     annotation "''"
@@ -46,21 +48,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'3_0_77;1_0_97;4_0_82;2_0_78'"
+    geneIDs "'4_0_83;3_0_79;1_0_97;2_0_81'"
     degrees 4
   ]
   node [
     id 2
     label "2"
+    CID 2
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_57'"
+    centroid "'0_0_58'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_57']"
+    seqIDs "['0_0_58']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([347,119,349,123,359,139,383],[(81,179),(0,34),(0,60),(0,31),(0,596),(0,34),(0,784)])"
+    ORF_info "([191,192,193,194,195,196,197],[(81,179),(0,34),(0,60),(0,31),(0,596),(0,34),(0,784)])"
     hash "_networkx_list_start"
     hash "16864870410880944008"
     annotation "''"
@@ -71,21 +74,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_57'"
+    geneIDs "'0_0_58'"
     degrees 2
   ]
   node [
     id 3
     label "3"
+    CID 3
     size 2
     centroid "_networkx_list_start"
     centroid "'1_0_46'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['4_0_95','1_0_46']"
+    seqIDs "['1_0_46','4_0_96']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([75,-609,76,77,467,82,83,86,90,92,93,95,97,98,469,368,104,106,107,108,109,371,470,373,471,117,472,473,375,474,126,128,476],[(6,60),(0,30),(0,67),(0,52),(0,60),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,45),(0,60),(0,120),(0,66),(0,34),(0,40),(0,49),(0,31),(0,60),(0,51),(0,43),(0,53)])"
+    ORF_info "([55,-609,56,57,240,60,61,62,63,64,65,66,67,68,241,242,71,72,73,74,75,243,244,245,246,79,247,248,249,250,84,85,251],[(6,60),(0,30),(0,67),(0,52),(0,60),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,45),(0,60),(0,120),(0,66),(0,34),(0,40),(0,49),(0,31),(0,60),(0,51),(0,43),(0,53)])"
     hash "_networkx_list_start"
     hash "5738994502411343692"
     annotation "''"
@@ -96,21 +100,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'4_0_95;1_0_46'"
+    geneIDs "'1_0_46;4_0_96'"
     degrees 3
   ]
   node [
     id 4
     label "4"
+    CID 4
     size 3
     centroid "_networkx_list_start"
     centroid "'0_0_17'"
     maxLenId 0
     members "[0,2,3]"
-    seqIDs "['2_0_26','3_0_25','0_0_17']"
+    seqIDs "['3_0_26','0_0_17','2_0_27']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([75,-609,76,77,79,80,82,83,86,90,92,93,95,97,98,99,101,104,106,107,108,109,111,113,115,117,120,122,124,125,126,128,130],[(6,60),(0,30),(0,67),(0,52),(0,55),(0,34),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,93),(0,60),(0,109),(0,34),(0,60),(0,40),(0,42),(0,38),(0,51),(0,43),(0,53)])"
+    ORF_info "([55,-609,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86],[(6,60),(0,30),(0,67),(0,52),(0,55),(0,34),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,93),(0,60),(0,109),(0,34),(0,60),(0,40),(0,42),(0,38),(0,51),(0,43),(0,53)])"
     hash "_networkx_list_start"
     hash "2264214235709064614"
     annotation "''"
@@ -121,21 +126,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0;2;3'"
-    geneIDs "'2_0_26;3_0_25;0_0_17'"
+    geneIDs "'3_0_26;0_0_17;2_0_27'"
     degrees 4
   ]
   node [
     id 5
     label "5"
+    CID 5
     size 2
     centroid "_networkx_list_start"
-    centroid "'4_0_116'"
+    centroid "'4_0_118'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_6','4_0_116']"
+    seqIDs "['1_0_6','4_0_118']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([414,415,416,418,419,421,426],[(260,441),(0,60),(0,290),(0,60),(0,47),(0,81),(0,822)])"
+    ORF_info "([282,593,284,594,286,595,288],[(260,441),(0,60),(0,290),(0,60),(0,47),(0,81),(0,822)])"
     hash "_networkx_list_start"
     hash "6811547773617742407"
     annotation "''"
@@ -146,21 +152,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_6;4_0_116'"
+    geneIDs "'1_0_6;4_0_118'"
     degrees 3
   ]
   node [
     id 6
     label "6"
+    CID 6
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_24'"
+    centroid "'2_0_25'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['3_0_24','2_0_24']"
+    seqIDs "['2_0_25','3_0_25']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([603,216,321,222,229,225,298,227,45,230,430,233,310,237,428,241,127,244,259,246,413,250,412],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
+    ORF_info "([485,126,486,129,487,131,488,133,489,135,490,137,491,139,492,141,493,143,494,145,495,147,496],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
     hash "_networkx_list_start"
     hash "14667726273356434230"
     annotation "''"
@@ -171,12 +178,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'3_0_24;2_0_24'"
+    geneIDs "'2_0_25;3_0_25'"
     degrees 2
   ]
   node [
     id 7
     label "7"
+    CID 7
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_94'"
@@ -185,7 +193,7 @@ graph [
     seqIDs "['0_0_94']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([213,216,218,222,224,225,226,227,228,230,232,233,235,237,238,241,243,244,245,246,247,250,252],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
+    ORF_info "([125,126,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
     hash "_networkx_list_start"
     hash "4680166035743638900"
     annotation "''"
@@ -202,15 +210,16 @@ graph [
   node [
     id 8
     label "8"
+    CID 8
     size 2
     centroid "_networkx_list_start"
     centroid "'1_0_53'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_53','4_0_36']"
+    seqIDs "['4_0_37','1_0_53']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([440,507,443,509,451,511,457,513,466,515,475],[(278,413),(0,60),(0,324),(0,60),(0,253),(0,60),(0,151),(0,60),(0,244),(0,66),(0,76)])"
+    ORF_info "([299,300,301,302,303,304,305,306,307,308,309],[(278,413),(0,60),(0,324),(0,60),(0,253),(0,60),(0,151),(0,60),(0,244),(0,66),(0,76)])"
     hash "_networkx_list_start"
     hash "11330924364041091358"
     annotation "''"
@@ -221,21 +230,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_53;4_0_36'"
+    geneIDs "'4_0_37;1_0_53'"
     degrees 2
   ]
   node [
     id 9
     label "9"
+    CID 9
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_22'"
+    centroid "'2_0_23'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['3_0_22','2_0_22']"
+    seqIDs "['2_0_23','3_0_23']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([397,280,395,294],[(314,626),(0,32),(0,829),(0,86)])"
+    ORF_info "([503,164,505,166],[(314,626),(0,32),(0,829),(0,86)])"
     hash "_networkx_list_start"
     hash "4767449302586154623"
     annotation "''"
@@ -246,12 +256,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'3_0_22;2_0_22'"
+    geneIDs "'2_0_23;3_0_23'"
     degrees 2
   ]
   node [
     id 10
     label "10"
+    CID 10
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_93'"
@@ -260,7 +271,7 @@ graph [
     seqIDs "['0_0_93']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([275,280,289,294],[(272,584),(0,32),(0,829),(0,86)])"
+    ORF_info "([162,164,165,166],[(272,584),(0,32),(0,829),(0,86)])"
     hash "_networkx_list_start"
     hash "7485037206903684149"
     annotation "''"
@@ -277,15 +288,16 @@ graph [
   node [
     id 11
     label "11"
+    CID 11
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_99'"
+    centroid "'4_0_100'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_99']"
+    seqIDs "['4_0_100']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(1857,2966)])"
+    ORF_info "([198],[(1857,2966)])"
     hash "_networkx_list_start"
     hash "17628463652286136417"
     annotation "''"
@@ -296,21 +308,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_99'"
+    geneIDs "'4_0_100'"
     degrees 2
   ]
   node [
     id 12
     label "12"
+    CID 12
     size 4
     centroid "_networkx_list_start"
-    centroid "'4_0_14'"
+    centroid "'4_0_15'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['4_0_14','3_0_67','2_0_68','1_0_27']"
+    seqIDs "['4_0_15','3_0_69','1_0_28','2_0_71']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([223,528,234,530,239,532,534,248,249,536,253,257],[(230,382),(0,60),(0,187),(0,60),(0,208),(0,50),(0,60),(0,336),(0,47),(0,60),(0,47),(0,155)])"
+    ORF_info "([382,383,384,385,386,387,170,390,542,336,544,393],[(230,382),(0,60),(0,187),(0,60),(0,208),(0,50),(0,60),(0,336),(0,47),(0,60),(0,47),(0,155)])"
     hash "_networkx_list_start"
     hash "601458250927102303"
     annotation "''"
@@ -321,21 +334,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'4_0_14;3_0_67;2_0_68;1_0_27'"
+    geneIDs "'4_0_15;3_0_69;1_0_28;2_0_71'"
     degrees 4
   ]
   node [
     id 13
     label "13"
+    CID 13
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_60'"
+    centroid "'0_0_61'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_60']"
+    seqIDs "['0_0_61']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([383,399,401,403,405],[(768,1763),(0,62),(0,61),(0,33),(0,44)])"
+    ORF_info "([197,199,200,201,202],[(768,1763),(0,62),(0,61),(0,33),(0,44)])"
     hash "_networkx_list_start"
     hash "3957486474147543016"
     annotation "''"
@@ -346,21 +360,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_60'"
+    geneIDs "'0_0_61'"
     degrees 2
   ]
   node [
     id 14
     label "14"
+    CID 14
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_70'"
+    centroid "'4_0_71'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_70']"
+    seqIDs "['4_0_71']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(2953,3981)])"
+    ORF_info "([198],[(2953,3981)])"
     hash "_networkx_list_start"
     hash "5747260871623794733"
     annotation "''"
@@ -371,21 +386,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_70'"
-    degrees 2
+    geneIDs "'4_0_71'"
+    degrees 1
   ]
   node [
     id 15
     label "15"
+    CID 15
     size 4
     centroid "_networkx_list_start"
-    centroid "'4_0_55'"
+    centroid "'4_0_56'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['4_0_55','3_0_7','2_0_7','1_0_100']"
+    seqIDs "['3_0_7','4_0_56','2_0_7','1_0_100']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([257,538,264,540,267,542,274,544,277,545,281],[(191,412),(0,60),(0,156),(0,60),(0,88),(0,60),(0,362),(0,65),(0,115),(0,84),(0,47)])"
+    ORF_info "([393,362,395,391,397,398,399,400,401,402,403],[(191,412),(0,60),(0,156),(0,60),(0,88),(0,60),(0,362),(0,65),(0,115),(0,84),(0,47)])"
     hash "_networkx_list_start"
     hash "2584158918693678247"
     annotation "''"
@@ -396,21 +412,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'4_0_55;3_0_7;2_0_7;1_0_100'"
+    geneIDs "'3_0_7;4_0_56;2_0_7;1_0_100'"
     degrees 3
   ]
   node [
     id 16
     label "16"
+    CID 16
     size 2
     centroid "_networkx_list_start"
-    centroid "'1_0_26'"
+    centroid "'1_0_27'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_26','4_0_29']"
+    seqIDs "['4_0_30','1_0_27']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([475,299,478,21,481,24,26,29,31,40],[(78,293),(0,34),(0,100),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
+    ORF_info "([309,168,310,311,312,313,171,314,173,315],[(78,293),(0,34),(0,100),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
     hash "_networkx_list_start"
     hash "4019591176854000251"
     annotation "''"
@@ -421,21 +438,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_26;4_0_29'"
+    geneIDs "'4_0_30;1_0_27'"
     degrees 2
   ]
   node [
     id 17
     label "17"
+    CID 17
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_44'"
+    centroid "'2_0_46'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['3_0_45','2_0_44']"
+    seqIDs "['3_0_46','2_0_46']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([294,7,21,23,24,26,29,31,40],[(83,217),(0,183),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
+    ORF_info "([166,507,311,508,313,171,314,173,315],[(83,217),(0,183),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
     hash "_networkx_list_start"
     hash "17084882926348420748"
     annotation "''"
@@ -446,12 +464,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'3_0_45;2_0_44'"
+    geneIDs "'3_0_46;2_0_46'"
     degrees 2
   ]
   node [
     id 18
     label "18"
+    CID 18
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_83'"
@@ -460,7 +479,7 @@ graph [
     seqIDs "['0_0_83']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([294,297,299,304,26,306,31,309],[(83,217),(0,107),(0,34),(0,549),(0,31),(0,105),(0,31),(0,231)])"
+    ORF_info "([166,167,168,169,171,172,173,174],[(83,217),(0,107),(0,34),(0,549),(0,31),(0,105),(0,31),(0,231)])"
     hash "_networkx_list_start"
     hash "11149660458259146032"
     annotation "''"
@@ -477,6 +496,7 @@ graph [
   node [
     id 19
     label "19"
+    CID 19
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_88'"
@@ -485,7 +505,7 @@ graph [
     seqIDs "['0_0_88']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([309,42,315,63,66,69,317,74,323,88],[(201,317),(0,40),(0,441),(0,102),(0,60),(0,75),(0,60),(0,40),(0,288),(0,40)])"
+    ORF_info "([174,175,176,177,178,179,180,181,182,184],[(201,317),(0,40),(0,441),(0,102),(0,60),(0,75),(0,60),(0,40),(0,288),(0,40)])"
     hash "_networkx_list_start"
     hash "7017965351568178675"
     annotation "''"
@@ -502,15 +522,16 @@ graph [
   node [
     id 20
     label "20"
+    CID 20
     size 2
     centroid "_networkx_list_start"
-    centroid "'4_0_28'"
+    centroid "'4_0_29'"
     maxLenId 0
     members "[2,4]"
-    seqIDs "['2_0_14','4_0_28']"
+    seqIDs "['2_0_15','4_0_29']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([181,183,514,187,189,191,192,516,195,518,611,202,520,207,209,211,522,215,523,219,524,526,221,223],[(64,259),(0,35),(0,60),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,96),(0,30),(0,42),(0,60),(0,35),(0,112),(0,36),(0,60),(0,103),(0,60),(0,72),(0,43),(0,46),(0,43),(0,183)])"
+    ORF_info "([365,522,183,367,524,369,526,95,528,163,611,371,506,533,374,534,425,377,378,379,380,257,538,382],[(64,259),(0,35),(0,60),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,96),(0,30),(0,42),(0,60),(0,35),(0,112),(0,36),(0,60),(0,103),(0,60),(0,72),(0,43),(0,46),(0,43),(0,183)])"
     hash "_networkx_list_start"
     hash "10443367503962757468"
     annotation "''"
@@ -521,21 +542,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;4'"
-    geneIDs "'2_0_14;4_0_28'"
+    geneIDs "'2_0_15;4_0_29'"
     degrees 2
   ]
   node [
     id 21
     label "21"
+    CID 21
     size 4
     centroid "_networkx_list_start"
-    centroid "'2_0_66'"
+    centroid "'2_0_69'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['4_0_24','1_0_2','2_0_66','3_0_15']"
+    seqIDs "['3_0_16','2_0_69','1_0_2','4_0_25']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([40,42,43,48,50,59,63,66,69,72,74,78,81,84,198,87,88],[(245,316),(0,40),(0,49),(0,87),(0,60),(0,332),(0,102),(0,60),(0,75),(0,60),(0,40),(0,166),(0,60),(0,67),(0,60),(0,51),(0,40)])"
+    ORF_info "([315,175,509,317,510,319,177,178,179,322,181,323,511,325,512,327,184],[(245,316),(0,40),(0,49),(0,87),(0,60),(0,332),(0,102),(0,60),(0,75),(0,60),(0,40),(0,166),(0,60),(0,67),(0,60),(0,51),(0,40)])"
     hash "_networkx_list_start"
     hash "3372764709443277038"
     annotation "''"
@@ -546,21 +568,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'4_0_24;1_0_2;2_0_66;3_0_15'"
+    geneIDs "'3_0_16;2_0_69;1_0_2;4_0_25'"
     degrees 3
   ]
   node [
     id 22
     label "22"
+    CID 22
     size 4
     centroid "_networkx_list_start"
-    centroid "'1_0_36'"
+    centroid "'1_0_37'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['2_0_58','1_0_36','3_0_58','4_0_37']"
+    seqIDs "['1_0_37','2_0_61','3_0_60','4_0_38']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([89,487,94,489,100,102,103,105,110,112,114],[(45,205),(0,60),(0,195),(0,60),(0,134),(0,39),(0,113),(0,49),(0,278),(0,34),(0,76)])"
+    ORF_info "([328,329,330,331,332,186,333,188,334,190,335],[(45,205),(0,60),(0,195),(0,60),(0,134),(0,39),(0,113),(0,49),(0,278),(0,34),(0,76)])"
     hash "_networkx_list_start"
     hash "2215011022332423275"
     annotation "''"
@@ -571,21 +594,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'2_0_58;1_0_36;3_0_58;4_0_37'"
+    geneIDs "'1_0_37;2_0_61;3_0_60;4_0_38'"
     degrees 2
   ]
   node [
     id 23
     label "23"
+    CID 23
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_43'"
+    centroid "'4_0_44'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_43']"
+    seqIDs "['4_0_44']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(943,1794)])"
+    ORF_info "([198],[(943,1794)])"
     hash "_networkx_list_start"
     hash "5501518978006087294"
     annotation "''"
@@ -596,21 +620,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_43'"
+    geneIDs "'4_0_44'"
     degrees 2
   ]
   node [
     id 24
     label "24"
+    CID 24
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_45'"
+    centroid "'0_0_46'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_45']"
+    seqIDs "['0_0_46']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([331,102,334,105,342,112,347],[(117,538),(0,39),(0,113),(0,49),(0,278),(0,34),(0,88)])"
+    ORF_info "([185,186,187,188,189,190,191],[(117,538),(0,39),(0,113),(0,49),(0,278),(0,34),(0,88)])"
     hash "_networkx_list_start"
     hash "17083747222346147370"
     annotation "''"
@@ -621,21 +646,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_45'"
+    geneIDs "'0_0_46'"
     degrees 2
   ]
   node [
     id 25
     label "25"
+    CID 25
     size 4
     centroid "_networkx_list_start"
     centroid "'1_0_62'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['2_0_3','1_0_62','3_0_41','4_0_72']"
+    seqIDs "['3_0_42','1_0_62','4_0_73','2_0_3']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([300,555,302,556,305,557,308],[(5,111),(0,60),(0,100),(0,60),(0,266),(0,60),(0,355)])"
+    ORF_info "([418,419,420,421,422,423,424],[(5,111),(0,60),(0,100),(0,60),(0,266),(0,60),(0,355)])"
     hash "_networkx_list_start"
     hash "10695977410515667797"
     annotation "''"
@@ -646,21 +672,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'2_0_3;1_0_62;3_0_41;4_0_72'"
-    degrees 6
+    geneIDs "'3_0_42;1_0_62;4_0_73;2_0_3'"
+    degrees 5
   ]
   node [
     id 26
     label "26"
+    CID 26
     size 2
     centroid "_networkx_list_start"
-    centroid "'4_0_12'"
+    centroid "'4_0_13'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_21','4_0_12']"
+    seqIDs "['4_0_13','1_0_22']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([132,133,377,378,136,137,379,380,381,382,384,385,387,388,389,390,391,392,393,394,396,145,146],[(21,60),(0,67),(0,35),(0,68),(0,43),(0,86),(0,53),(0,60),(0,44),(0,37),(0,31),(0,60),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,177),(0,33),(0,46)])"
+    ORF_info "([88,89,253,587,92,93,256,588,260,261,467,589,264,265,590,267,268,269,270,271,272,98,99],[(21,60),(0,67),(0,35),(0,68),(0,43),(0,86),(0,53),(0,60),(0,44),(0,37),(0,31),(0,60),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,177),(0,33),(0,46)])"
     hash "_networkx_list_start"
     hash "238852219439493858"
     annotation "''"
@@ -671,21 +698,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_21;4_0_12'"
+    geneIDs "'4_0_13;1_0_22'"
     degrees 2
   ]
   node [
     id 27
     label "27"
+    CID 27
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_49'"
+    centroid "'2_0_51'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_49','3_0_83']"
+    seqIDs "['2_0_51','3_0_85']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([132,133,377,479,585,137,379,482,586,382,384,587,588,486,387,388,488,390,589,392,590,394,591,143,592,146],[(21,60),(0,67),(0,35),(0,40),(0,71),(0,86),(0,53),(0,44),(0,60),(0,37),(0,31),(0,35),(0,52),(0,31),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,50),(0,129),(0,60),(0,46)])"
+    ORF_info "([88,89,253,254,465,93,256,258,466,261,467,468,469,263,264,265,266,267,470,269,471,271,472,96,473,99],[(21,60),(0,67),(0,35),(0,40),(0,71),(0,86),(0,53),(0,44),(0,60),(0,37),(0,31),(0,35),(0,52),(0,31),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,50),(0,129),(0,60),(0,46)])"
     hash "_networkx_list_start"
     hash "859092023335869067"
     annotation "''"
@@ -696,21 +724,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_49;3_0_83'"
+    geneIDs "'2_0_51;3_0_85'"
     degrees 2
   ]
   node [
     id 28
     label "28"
+    CID 28
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_31'"
+    centroid "'0_0_32'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_31']"
+    seqIDs "['0_0_32']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([132,133,134,135,136,137,142,143,144,145,146],[(21,60),(0,67),(0,61),(0,42),(0,43),(0,86),(0,419),(0,129),(0,56),(0,33),(0,46)])"
+    ORF_info "([88,89,90,91,92,93,94,96,97,98,99],[(21,60),(0,67),(0,61),(0,42),(0,43),(0,86),(0,419),(0,129),(0,56),(0,33),(0,46)])"
     hash "_networkx_list_start"
     hash "1144255875246885025"
     annotation "''"
@@ -721,21 +750,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_31'"
+    geneIDs "'0_0_32'"
     degrees 2
   ]
   node [
     id 29
     label "29"
+    CID 29
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_85'"
+    centroid "'2_0_88'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['3_0_86','2_0_85']"
+    seqIDs "['3_0_88','2_0_88']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([283,284,285,286,287,288,290,291,292,293,295,296],[(5,48),(0,60),(0,340),(0,37),(0,60),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
+    ORF_info "([405,549,407,408,550,411,551,413,414,415,553,554],[(5,48),(0,60),(0,340),(0,37),(0,60),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
     hash "_networkx_list_start"
     hash "7033180884873361275"
     annotation "''"
@@ -746,21 +776,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'3_0_86;2_0_85'"
+    geneIDs "'3_0_88;2_0_88'"
     degrees 2
   ]
   node [
     id 30
     label "30"
+    CID 30
     size 2
     centroid "_networkx_list_start"
-    centroid "'1_0_25'"
+    centroid "'1_0_26'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_25','4_0_21']"
+    seqIDs "['1_0_26','4_0_22']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([283,547,285,286,549,550,288,551,291,292,293,552,554],[(5,48),(0,60),(0,340),(0,37),(0,52),(0,37),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
+    ORF_info "([405,406,407,408,409,410,411,412,413,414,415,416,417],[(5,48),(0,60),(0,340),(0,37),(0,52),(0,37),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
     hash "_networkx_list_start"
     hash "2706802055575591409"
     annotation "''"
@@ -771,21 +802,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_25;4_0_21'"
+    geneIDs "'1_0_26;4_0_22'"
     degrees 2
   ]
   node [
     id 31
     label "31"
+    CID 31
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_52'"
+    centroid "'2_0_54'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_52','3_0_52']"
+    seqIDs "['2_0_54','3_0_53']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([593,402,155,594,158,404,595,167,173,596,180],[(19,102),(0,44),(0,107),(0,67),(0,39),(0,31),(0,118),(0,54),(0,226),(0,158),(0,55)])"
+    ORF_info "([474,275,104,475,106,276,476,109,110,478,112],[(19,102),(0,44),(0,107),(0,67),(0,39),(0,31),(0,118),(0,54),(0,226),(0,158),(0,55)])"
     hash "_networkx_list_start"
     hash "9505002093513791938"
     annotation "''"
@@ -796,12 +828,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_52;3_0_52'"
+    geneIDs "'2_0_54;3_0_53'"
     degrees 2
   ]
   node [
     id 32
     label "32"
+    CID 32
     size 2
     centroid "_networkx_list_start"
     centroid "'1_0_55'"
@@ -810,7 +843,7 @@ graph [
     seqIDs "['1_0_55','4_0_4']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([398,151,400,402,155,157,158,404,406,164,167,407,490,410],[(27,60),(0,38),(0,70),(0,44),(0,107),(0,67),(0,39),(0,31),(0,58),(0,89),(0,54),(0,98),(0,60),(0,281)])"
+    ORF_info "([273,102,274,275,104,105,106,276,277,108,109,278,279,280],[(27,60),(0,38),(0,70),(0,44),(0,107),(0,67),(0,39),(0,31),(0,58),(0,89),(0,54),(0,98),(0,60),(0,281)])"
     hash "_networkx_list_start"
     hash "12044409901396293309"
     annotation "''"
@@ -827,6 +860,7 @@ graph [
   node [
     id 33
     label "33"
+    CID 33
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_78'"
@@ -835,7 +869,7 @@ graph [
     seqIDs "['0_0_78']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([149,151,152,155,157,158,160,164,167,173,176,180],[(19,52),(0,38),(0,85),(0,107),(0,67),(0,39),(0,60),(0,89),(0,54),(0,226),(0,158),(0,55)])"
+    ORF_info "([101,102,103,104,105,106,107,108,109,110,111,112],[(19,52),(0,38),(0,85),(0,107),(0,67),(0,39),(0,60),(0,89),(0,54),(0,226),(0,158),(0,55)])"
     hash "_networkx_list_start"
     hash "7309904072966270884"
     annotation "''"
@@ -852,15 +886,16 @@ graph [
   node [
     id 34
     label "34"
+    CID 34
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_98'"
+    centroid "'4_0_99'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_98']"
+    seqIDs "['4_0_99']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([410,411,414],[(291,712),(0,81),(0,245)])"
+    ORF_info "([280,592,282],[(291,712),(0,81),(0,245)])"
     hash "_networkx_list_start"
     hash "9326123912594561806"
     annotation "''"
@@ -871,12 +906,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_98'"
+    geneIDs "'4_0_99'"
     degrees 2
   ]
   node [
     id 35
     label "35"
+    CID 35
     size 1
     centroid "_networkx_list_start"
     centroid "'1_0_11'"
@@ -885,7 +921,7 @@ graph [
     seqIDs "['1_0_11']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([410,493,414],[(291,712),(0,81),(0,245)])"
+    ORF_info "([280,281,282],[(291,712),(0,81),(0,245)])"
     hash "_networkx_list_start"
     hash "5620201924637747438"
     annotation "''"
@@ -902,15 +938,16 @@ graph [
   node [
     id 36
     label "36"
+    CID 36
     size 2
     centroid "_networkx_list_start"
     centroid "'2_0_0'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['3_0_0','2_0_0']"
+    seqIDs "['2_0_0','3_0_0']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([180,597,184,598,188,599,193,600,200,601,205,602],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
+    ORF_info "([112,479,114,480,116,481,118,482,120,483,122,484],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
     hash "_networkx_list_start"
     hash "10999347607512153092"
     annotation "''"
@@ -921,12 +958,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'3_0_0;2_0_0'"
+    geneIDs "'2_0_0;3_0_0'"
     degrees 2
   ]
   node [
     id 37
     label "37"
+    CID 37
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_24'"
@@ -935,7 +973,7 @@ graph [
     seqIDs "['0_0_24']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([180,182,184,186,188,190,193,196,200,203,205,208],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
+    ORF_info "([112,113,114,115,116,117,118,119,120,121,122,123],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
     hash "_networkx_list_start"
     hash "2633420874360379037"
     annotation "''"
@@ -952,15 +990,16 @@ graph [
   node [
     id 38
     label "38"
+    CID 38
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_48'"
+    centroid "'4_0_49'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_48']"
+    seqIDs "['4_0_49']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(239,877)])"
+    ORF_info "([198],[(239,877)])"
     hash "_networkx_list_start"
     hash "10980538132292930476"
     annotation "''"
@@ -971,21 +1010,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_48'"
+    geneIDs "'4_0_49'"
     degrees 2
   ]
   node [
     id 39
     label "39"
+    CID 39
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_64'"
+    centroid "'0_0_65'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_64']"
+    seqIDs "['0_0_65']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444],[(154,672)])"
+    ORF_info "([-210],[(154,672)])"
     hash "_networkx_list_start"
     hash "2762613411059242138"
     annotation "''"
@@ -996,21 +1036,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_64'"
+    geneIDs "'0_0_65'"
     degrees 1
   ]
   node [
     id 40
     label "40"
+    CID 40
     size 2
     centroid "_networkx_list_start"
-    centroid "'1_0_22'"
+    centroid "'1_0_23'"
     maxLenId 0
     members "[1,4]"
-    seqIDs "['1_0_22','4_0_25']"
+    seqIDs "['1_0_23','4_0_26']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([263,438,268,439,273,440],[(20,69),(0,60),(0,130),(0,78),(0,49),(0,285)])"
+    ORF_info "([155,297,157,298,161,299],[(20,69),(0,60),(0,130),(0,78),(0,49),(0,285)])"
     hash "_networkx_list_start"
     hash "12749337753942700312"
     annotation "''"
@@ -1021,21 +1062,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_22;4_0_25'"
+    geneIDs "'1_0_23;4_0_26'"
     degrees 2
   ]
   node [
     id 41
     label "41"
+    CID 41
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_88'"
+    centroid "'2_0_91'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_88','3_0_88']"
+    seqIDs "['3_0_90','2_0_91']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([409,271,397],[(57,245),(0,49),(0,324)])"
+    ORF_info "([502,159,503],[(57,245),(0,49),(0,324)])"
     hash "_networkx_list_start"
     hash "11159443002896694123"
     annotation "''"
@@ -1046,12 +1088,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_88;3_0_88'"
+    geneIDs "'3_0_90;2_0_91'"
     degrees 2
   ]
   node [
     id 42
     label "42"
+    CID 42
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_73'"
@@ -1060,7 +1103,7 @@ graph [
     seqIDs "['0_0_73']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([263,265,268,270,271,272,273,275],[(20,69),(0,60),(0,130),(0,36),(0,49),(0,51),(0,49),(0,282)])"
+    ORF_info "([155,156,157,158,159,160,161,162],[(20,69),(0,60),(0,130),(0,36),(0,49),(0,51),(0,49),(0,282)])"
     hash "_networkx_list_start"
     hash "12278268020066546241"
     annotation "''"
@@ -1077,15 +1120,16 @@ graph [
   node [
     id 43
     label "43"
+    CID 43
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_53'"
+    centroid "'0_0_54'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_53']"
+    seqIDs "['0_0_54']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444,-403,-432,-399,-427],[(977,1363),(0,33),(0,61),(0,62),(0,77)])"
+    ORF_info "([-210,-201,-209,-199,-208],[(977,1363),(0,33),(0,61),(0,62),(0,77)])"
     hash "_networkx_list_start"
     hash "18266310910023016443"
     annotation "''"
@@ -1096,12 +1140,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_53'"
+    geneIDs "'0_0_54'"
     degrees 2
   ]
   node [
     id 44
     label "44"
+    CID 44
     size 1
     centroid "_networkx_list_start"
     centroid "'3_0_3'"
@@ -1110,7 +1155,7 @@ graph [
     seqIDs "['3_0_3']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([209,211,212,214,215,217,219,220,221,223],[(21,112),(0,36),(0,53),(0,36),(0,103),(0,60),(0,72),(0,60),(0,43),(0,183)])"
+    ORF_info "([374,534,535,376,377,536,379,537,538,382],[(21,112),(0,36),(0,53),(0,36),(0,103),(0,60),(0,72),(0,60),(0,43),(0,183)])"
     hash "_networkx_list_start"
     hash "13816804210823983154"
     annotation "''"
@@ -1127,6 +1172,7 @@ graph [
   node [
     id 45
     label "45"
+    CID 45
     size 1
     centroid "_networkx_list_start"
     centroid "'1_0_94'"
@@ -1135,7 +1181,7 @@ graph [
     seqIDs "['1_0_94']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([209,537,214,215,523,219,524,539,223],[(21,112),(0,60),(0,36),(0,103),(0,60),(0,72),(0,43),(0,60),(0,183)])"
+    ORF_info "([374,375,376,377,378,379,380,381,382],[(21,112),(0,60),(0,36),(0,103),(0,60),(0,72),(0,43),(0,60),(0,183)])"
     hash "_networkx_list_start"
     hash "6617175128042804592"
     annotation "''"
@@ -1152,15 +1198,16 @@ graph [
   node [
     id 46
     label "46"
+    CID 46
     size 1
     centroid "_networkx_list_start"
-    centroid "'3_0_78'"
+    centroid "'3_0_80'"
     maxLenId 0
     members "[3]"
-    seqIDs "['3_0_78']"
+    seqIDs "['3_0_80']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([181,183,185,610,187,189,191,192,194,195,197,199,201,611],[(64,259),(0,35),(0,59),(0,30),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,66),(0,44),(0,46),(0,30)])"
+    ORF_info "([365,522,523,610,367,524,369,526,527,528,529,566,531,611],[(64,259),(0,35),(0,59),(0,30),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,66),(0,44),(0,46),(0,30)])"
     hash "_networkx_list_start"
     hash "8805665275594221217"
     annotation "''"
@@ -1171,21 +1218,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'3'"
-    geneIDs "'3_0_78'"
+    geneIDs "'3_0_80'"
     degrees 2
   ]
   node [
     id 47
     label "47"
+    CID 47
     size 4
     centroid "_networkx_list_start"
-    centroid "'4_0_123'"
+    centroid "'4_0_124'"
     maxLenId 0
     members "[1,2,3,4]"
-    seqIDs "['3_0_37','1_0_44','4_0_123','2_0_38']"
+    seqIDs "['4_0_124','1_0_44','2_0_40','3_0_38']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([426,431,433,434,435,436,437],[(826,927),(0,247),(0,60),(0,67),(0,56),(0,60),(0,32)])"
+    ORF_info "([288,289,290,291,292,596,296],[(826,927),(0,247),(0,60),(0,67),(0,56),(0,60),(0,32)])"
     hash "_networkx_list_start"
     hash "4168252465035560394"
     annotation "''"
@@ -1196,12 +1244,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'3_0_37;1_0_44;4_0_123;2_0_38'"
+    geneIDs "'4_0_124;1_0_44;2_0_40;3_0_38'"
     degrees 4
   ]
   node [
     id 48
     label "48"
+    CID 48
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_19'"
@@ -1210,7 +1259,7 @@ graph [
     seqIDs "['0_0_19']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([254,255,256,258,260,262],[(0,31),(0,60),(0,37),(0,366),(0,37),(0,63)])"
+    ORF_info "([149,150,151,152,153,154],[(0,31),(0,60),(0,37),(0,366),(0,37),(0,63)])"
     hash "_networkx_list_start"
     hash "7928260616065006055"
     annotation "''"
@@ -1227,15 +1276,16 @@ graph [
   node [
     id 49
     label "49"
+    CID 49
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_57'"
+    centroid "'2_0_60'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_57','3_0_57']"
+    seqIDs "['2_0_60','3_0_59']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-324,-322,-320,-319,-318,-316,-314,-313,-312],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
+    ORF_info "([-561,-434,-560,-432,-559,-430,-558,-428,-557],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
     hash "_networkx_list_start"
     hash "18032104215479760017"
     annotation "''"
@@ -1246,21 +1296,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_57;3_0_57'"
+    geneIDs "'2_0_60;3_0_59'"
     degrees 1
   ]
   node [
     id 50
     label "50"
+    CID 50
     size 1
     centroid "_networkx_list_start"
-    centroid "'1_0_28'"
+    centroid "'1_0_29'"
     maxLenId 0
     members "[1]"
-    seqIDs "['1_0_28']"
+    seqIDs "['1_0_29']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-562,-322,-561,-319,-560,-316,-559,-313,-558],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
+    ORF_info "([-435,-434,-433,-432,-431,-430,-429,-428,-427],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
     hash "_networkx_list_start"
     hash "9749580224683268013"
     annotation "''"
@@ -1271,12 +1322,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1'"
-    geneIDs "'1_0_28'"
+    geneIDs "'1_0_29'"
     degrees 1
   ]
   node [
     id 51
     label "51"
+    CID 51
     size 1
     centroid "_networkx_list_start"
     centroid "'4_0_0'"
@@ -1285,7 +1337,7 @@ graph [
     seqIDs "['4_0_0']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-354,-353,-352,-39,-351,-350,-37,-36,-35,-34,-348,-32,-30,-28,-346,605,-345,-344,-343],[(14,78),(0,43),(0,34),(0,41),(0,44),(0,45),(0,44),(0,48),(0,41),(0,39),(0,65),(0,32),(0,58),(0,45),(0,65),(0,30),(0,49),(0,47),(0,50)])"
+    ORF_info "([-575,-231,-450,-32,-574,-229,-30,-29,-28,-27,-573,-25,-24,-23,-572,605,-571,-226,-570],[(14,78),(0,43),(0,34),(0,41),(0,44),(0,45),(0,44),(0,48),(0,41),(0,39),(0,65),(0,32),(0,58),(0,45),(0,65),(0,30),(0,49),(0,47),(0,50)])"
     hash "_networkx_list_start"
     hash "8201068356544968841"
     annotation "''"
@@ -1302,6 +1354,7 @@ graph [
   node [
     id 52
     label "52"
+    CID 52
     size 1
     centroid "_networkx_list_start"
     centroid "'1_0_101'"
@@ -1310,7 +1363,7 @@ graph [
     seqIDs "['1_0_101']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-44,-463,-353,-462,-350,-37,-36,-460,-30,-28,-27,-458,-344,-456],[(14,66),(0,41),(0,43),(0,61),(0,45),(0,44),(0,48),(0,91),(0,58),(0,45),(0,54),(0,60),(0,47),(0,50)])"
+    ORF_info "([-34,-232,-231,-230,-229,-30,-29,-228,-24,-23,-22,-227,-226,-225],[(14,66),(0,41),(0,43),(0,61),(0,45),(0,44),(0,48),(0,91),(0,58),(0,45),(0,54),(0,60),(0,47),(0,50)])"
     hash "_networkx_list_start"
     hash "131271928875036829"
     annotation "''"
@@ -1322,11 +1375,12 @@ graph [
     mergedDNA 0
     genomeIDs "'1'"
     geneIDs "'1_0_101'"
-    degrees 1
+    degrees 2
   ]
   node [
     id 53
     label "53"
+    CID 53
     size 1
     centroid "_networkx_list_start"
     centroid "'0_0_72'"
@@ -1335,7 +1389,7 @@ graph [
     seqIDs "['0_0_72']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-44,-41,-39,-38,-37,-36,-35,-34,-33,-32,-30,-28,-27,-25,-606,605,604,-22],[(14,66),(0,60),(0,41),(0,60),(0,44),(0,48),(0,41),(0,39),(0,66),(0,32),(0,58),(0,45),(0,54),(0,38),(0,30),(0,30),(0,30),(0,87)])"
+    ORF_info "([-34,-33,-32,-31,-30,-29,-28,-27,-26,-25,-24,-23,-22,-21,-606,605,604,-20],[(14,66),(0,60),(0,41),(0,60),(0,44),(0,48),(0,41),(0,39),(0,66),(0,32),(0,58),(0,45),(0,54),(0,38),(0,30),(0,30),(0,30),(0,87)])"
     hash "_networkx_list_start"
     hash "14540799518976696767"
     annotation "''"
@@ -1347,20 +1401,21 @@ graph [
     mergedDNA 0
     genomeIDs "'0'"
     geneIDs "'0_0_72'"
-    degrees 1
+    degrees 2
   ]
   node [
     id 54
     label "54"
+    CID 54
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_30'"
+    centroid "'2_0_31'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_30','3_0_28']"
+    seqIDs "['2_0_31','3_0_29']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-44,-463,-353,-352,-39,-38,-37,-571,-570,-30,-569,-606,605,604,-568],[(14,66),(0,41),(0,43),(0,34),(0,41),(0,60),(0,44),(0,60),(0,79),(0,58),(0,81),(0,30),(0,30),(0,30),(0,79)])"
+    ORF_info "([-34,-232,-231,-450,-32,-31,-30,-448,-447,-24,-446,-606,605,604,-445],[(14,66),(0,41),(0,43),(0,34),(0,41),(0,60),(0,44),(0,60),(0,79),(0,58),(0,81),(0,30),(0,30),(0,30),(0,79)])"
     hash "_networkx_list_start"
     hash "18172060715038088560"
     annotation "''"
@@ -1371,21 +1426,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_30;3_0_28'"
+    geneIDs "'2_0_31;3_0_29'"
     degrees 2
   ]
   node [
     id 55
     label "55"
+    CID 55
     size 1
     centroid "_networkx_list_start"
-    centroid "'0_0_33'"
+    centroid "'0_0_34'"
     maxLenId 0
     members "[0]"
-    seqIDs "['0_0_33']"
+    seqIDs "['0_0_34']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444],[(663,956)])"
+    ORF_info "([-210],[(663,956)])"
     hash "_networkx_list_start"
     hash "1955424231646982415"
     annotation "''"
@@ -1396,12 +1452,13 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_33'"
+    geneIDs "'0_0_34'"
     degrees 2
   ]
   node [
     id 56
     label "56"
+    CID 56
     size 1
     centroid "_networkx_list_start"
     centroid "'1_0_69'"
@@ -1410,7 +1467,7 @@ graph [
     seqIDs "['1_0_69']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([181,529,610,187,531],[(64,259),(0,53),(0,30),(0,48),(0,35)])"
+    ORF_info "([365,366,610,367,368],[(64,259),(0,53),(0,30),(0,48),(0,35)])"
     hash "_networkx_list_start"
     hash "12502154690874945970"
     annotation "''"
@@ -1427,15 +1484,68 @@ graph [
   node [
     id 57
     label "57"
-    size 1
+    CID 57
+    size 2
     centroid "_networkx_list_start"
-    centroid "'4_0_97'"
+    centroid "'4_0_117'"
     maxLenId 0
-    members "[4]"
-    seqIDs "['4_0_97']"
+    members "[1,4]"
+    seqIDs "['4_0_117','1_0_20']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([360],[(183,356)])"
+    ORF_info "([2,3,442,218,6,568],[(20,95),(0,66),(0,60),(0,31),(0,54),(0,38)])"
+    hash "_networkx_list_start"
+    hash "2122709079328075955"
+    annotation "''"
+    bitscore 0
+    description "''"
+    lengths "_networkx_list_start"
+    lengths 180
+    paralog 0
+    mergedDNA 0
+    genomeIDs "'1;4'"
+    geneIDs "'4_0_117;1_0_20'"
+    degrees 2
+  ]
+  node [
+    id 58
+    label "58"
+    CID 58
+    size 1
+    centroid "_networkx_list_start"
+    centroid "'0_0_30'"
+    maxLenId 0
+    members "[0]"
+    seqIDs "['0_0_30']"
+    hasEnd 1
+    ORF_info "_networkx_list_start"
+    ORF_info "([2,3,4,5,6,7],[(20,95),(0,66),(0,31),(0,60),(0,54),(0,38)])"
+    hash "_networkx_list_start"
+    hash "15798962428164982149"
+    annotation "''"
+    bitscore 0
+    description "''"
+    lengths "_networkx_list_start"
+    lengths 180
+    paralog 0
+    mergedDNA 0
+    genomeIDs "'0'"
+    geneIDs "'0_0_30'"
+    degrees 1
+  ]
+  node [
+    id 59
+    label "59"
+    CID 59
+    size 1
+    centroid "_networkx_list_start"
+    centroid "'4_0_98'"
+    maxLenId 0
+    members "[4]"
+    seqIDs "['4_0_98']"
+    hasEnd 1
+    ORF_info "_networkx_list_start"
+    ORF_info "([577],[(183,356)])"
     hash "_networkx_list_start"
     hash "10954569604203301818"
     annotation "''"
@@ -1446,21 +1556,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_97'"
+    geneIDs "'4_0_98'"
     degrees 2
   ]
   node [
-    id 58
-    label "58"
+    id 60
+    label "60"
+    CID 60
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_15'"
+    centroid "'4_0_16'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_15']"
+    seqIDs "['4_0_16']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([12,338,339,340,341,15,16,17,18,19,20,343],[(13,44),(0,45),(0,44),(0,36),(0,45),(0,44),(0,39),(0,52),(0,37),(0,48),(0,31),(0,40)])"
+    ORF_info "([11,569,221,222,223,14,15,16,17,18,19,570],[(13,44),(0,45),(0,44),(0,36),(0,45),(0,44),(0,39),(0,52),(0,37),(0,48),(0,31),(0,40)])"
     hash "_networkx_list_start"
     hash "10304161550160867872"
     annotation "''"
@@ -1471,21 +1582,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_15'"
-    degrees 1
+    geneIDs "'4_0_16'"
+    degrees 2
   ]
   node [
-    id 59
-    label "59"
+    id 61
+    label "61"
+    CID 61
     size 2
     centroid "_networkx_list_start"
-    centroid "'2_0_19'"
+    centroid "'2_0_20'"
     maxLenId 0
     members "[2,3]"
-    seqIDs "['2_0_19','3_0_19']"
+    seqIDs "['2_0_20','3_0_20']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([12,13,566,340,567,16,17,568],[(13,44),(0,55),(0,34),(0,36),(0,60),(0,39),(0,52),(0,48)])"
+    ORF_info "([11,12,443,222,444,15,16,445],[(13,44),(0,55),(0,34),(0,36),(0,60),(0,39),(0,52),(0,48)])"
     hash "_networkx_list_start"
     hash "13071902194382357696"
     annotation "''"
@@ -1496,21 +1608,22 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'2;3'"
-    geneIDs "'2_0_19;3_0_19'"
+    geneIDs "'2_0_20;3_0_20'"
     degrees 1
   ]
   node [
-    id 60
-    label "60"
+    id 62
+    label "62"
+    CID 62
     size 1
     centroid "_networkx_list_start"
-    centroid "'4_0_75'"
+    centroid "'4_0_76'"
     maxLenId 0
     members "[4]"
-    seqIDs "['4_0_75']"
+    seqIDs "['4_0_76']"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-360,-54,-53,-358],[(336,440),(0,49),(0,42),(0,41)])"
+    ORF_info "([-577,-41,-40,-236],[(336,440),(0,49),(0,42),(0,41)])"
     hash "_networkx_list_start"
     hash "16709989731948797498"
     annotation "''"
@@ -1521,7 +1634,7 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_75'"
+    geneIDs "'4_0_76'"
     degrees 2
   ]
   edge [
@@ -1582,17 +1695,17 @@ graph [
   ]
   edge [
     source 3
-    target 57
-    size 1
-    members "[4]"
-    genomeIDs "'4'"
-  ]
-  edge [
-    source 3
     target 52
     size 1
     members "[1]"
     genomeIDs "'1'"
+  ]
+  edge [
+    source 3
+    target 59
+    size 1
+    members "[4]"
+    genomeIDs "'4'"
   ]
   edge [
     source 3
@@ -1603,14 +1716,14 @@ graph [
   ]
   edge [
     source 4
-    target 27
+    target 54
     size 2
     members "[2,3]"
     genomeIDs "'2;3'"
   ]
   edge [
     source 4
-    target 54
+    target 27
     size 2
     members "[2,3]"
     genomeIDs "'2;3'"
@@ -1736,17 +1849,17 @@ graph [
   ]
   edge [
     source 12
-    target 20
-    size 2
-    members "[2,4]"
-    genomeIDs "'2;4'"
-  ]
-  edge [
-    source 12
     target 15
     size 4
     members "[1,2,3,4]"
     genomeIDs "'1;2;3;4'"
+  ]
+  edge [
+    source 12
+    target 20
+    size 2
+    members "[2,4]"
+    genomeIDs "'2;4'"
   ]
   edge [
     source 12
@@ -1761,13 +1874,6 @@ graph [
     size 1
     members "[3]"
     genomeIDs "'3'"
-  ]
-  edge [
-    source 14
-    target 25
-    size 1
-    members "[4]"
-    genomeIDs "'4'"
   ]
   edge [
     source 15
@@ -1827,14 +1933,14 @@ graph [
   ]
   edge [
     source 25
-    target 49
+    target 29
     size 2
     members "[2,3]"
     genomeIDs "'2;3'"
   ]
   edge [
     source 25
-    target 29
+    target 49
     size 2
     members "[2,3]"
     genomeIDs "'2;3'"
@@ -1960,21 +2066,35 @@ graph [
   ]
   edge [
     source 51
-    target 60
+    target 62
     size 1
     members "[4]"
     genomeIDs "'4'"
   ]
   edge [
     source 51
-    target 58
+    target 60
     size 1
     members "[4]"
     genomeIDs "'4'"
   ]
   edge [
+    source 52
+    target 57
+    size 1
+    members "[1]"
+    genomeIDs "'1'"
+  ]
+  edge [
+    source 53
+    target 58
+    size 1
+    members "[0]"
+    genomeIDs "'0'"
+  ]
+  edge [
     source 54
-    target 59
+    target 61
     size 2
     members "[2,3]"
     genomeIDs "'2;3'"
@@ -1982,6 +2102,13 @@ graph [
   edge [
     source 57
     target 60
+    size 1
+    members "[4]"
+    genomeIDs "'4'"
+  ]
+  edge [
+    source 59
+    target 62
     size 1
     members "[4]"
     genomeIDs "'4'"

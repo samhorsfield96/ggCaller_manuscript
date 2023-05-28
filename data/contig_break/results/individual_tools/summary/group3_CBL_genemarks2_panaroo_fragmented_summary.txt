@@ -1,0 +1,9 @@
+Total_true	84
+Total_called	162
+TP	76
+FP	85
+FN	8
+Artifical	0
+Duplicated	1
+Recall	0.9047619047619048
+Precision	0.4691358024691358

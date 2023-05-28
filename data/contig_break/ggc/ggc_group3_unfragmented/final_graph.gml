@@ -7,6 +7,7 @@ graph [
   node [
     id 0
     label "0"
+    CID 0
     size 1
     centroid "'0_0_21'"
     maxLenId 0
@@ -16,7 +17,7 @@ graph [
     seqIDs "'0_0_21'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([405,417,420,417,420,417,420,417,420,417,422,423,425,423,427],[(410,1588),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,74),(0,307),(0,87),(0,307),(0,154)])"
+    ORF_info "([202,203,204,203,204,203,204,203,204,203,205,206,207,206,208],[(410,1588),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,63),(0,424),(0,74),(0,307),(0,87),(0,307),(0,154)])"
     hash "_networkx_list_start"
     hash "14832492914792231767"
     annotation "'CR931662.1_cds_CAI33330.1_1'"
@@ -34,16 +35,17 @@ graph [
   node [
     id 1
     label "8"
+    CID 8
     size 2
     centroid "'1_0_53'"
     maxLenId 0
     members 1
     members 4
+    seqIDs "'4_0_37'"
     seqIDs "'1_0_53'"
-    seqIDs "'4_0_36'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([440,507,443,509,451,511,457,513,466,515,475],[(278,413),(0,60),(0,324),(0,60),(0,253),(0,60),(0,151),(0,60),(0,244),(0,66),(0,76)])"
+    ORF_info "([299,300,301,302,303,304,305,306,307,308,309],[(278,413),(0,60),(0,324),(0,60),(0,253),(0,60),(0,151),(0,60),(0,244),(0,66),(0,76)])"
     hash "_networkx_list_start"
     hash "11330924364041091358"
     annotation "'CR931663.1_cds_CAI33343.1_1'"
@@ -54,23 +56,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;4'"
-    geneIDs "'1_0_53;4_0_36'"
+    geneIDs "'4_0_37;1_0_53'"
     degrees 2
     name "'CR9316631_cds_CAI333431_1'"
   ]
   node [
     id 2
     label "11"
+    CID 11
     size 1
-    centroid "'4_0_99'"
+    centroid "'4_0_100'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_99'"
+    seqIDs "'4_0_100'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(1857,2966)])"
+    ORF_info "([198],[(1857,2966)])"
     hash "_networkx_list_start"
     hash "17628463652286136417"
     annotation "'CR931666.1_cds_CAI33424.1_1'"
@@ -81,27 +84,28 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_99'"
+    geneIDs "'4_0_100'"
     degrees 2
     name "'CR9316661_cds_CAI334241_1'"
   ]
   node [
     id 3
     label "12"
+    CID 12
     size 4
-    centroid "'4_0_14'"
+    centroid "'4_0_15'"
     maxLenId 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'4_0_14'"
-    seqIDs "'3_0_67'"
-    seqIDs "'2_0_68'"
-    seqIDs "'1_0_27'"
+    seqIDs "'4_0_15'"
+    seqIDs "'3_0_69'"
+    seqIDs "'1_0_28'"
+    seqIDs "'2_0_71'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([223,528,234,530,239,532,534,248,249,536,253,257],[(230,382),(0,60),(0,187),(0,60),(0,208),(0,50),(0,60),(0,336),(0,47),(0,60),(0,47),(0,155)])"
+    ORF_info "([382,383,384,385,386,387,170,390,542,336,544,393],[(230,382),(0,60),(0,187),(0,60),(0,208),(0,50),(0,60),(0,336),(0,47),(0,60),(0,47),(0,155)])"
     hash "_networkx_list_start"
     hash "601458250927102303"
     annotation "'CR931666.1_cds_CAI33418.1_1'"
@@ -114,23 +118,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'4_0_14;3_0_67;2_0_68;1_0_27'"
+    geneIDs "'4_0_15;3_0_69;1_0_28;2_0_71'"
     degrees 2
     name "'CR9316661_cds_CAI334181_1'"
   ]
   node [
     id 4
     label "13"
+    CID 13
     size 1
-    centroid "'0_0_60'"
+    centroid "'0_0_61'"
     maxLenId 0
     members "_networkx_list_start"
     members 0
     seqIDs "_networkx_list_start"
-    seqIDs "'0_0_60'"
+    seqIDs "'0_0_61'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([383,399,401,403,405],[(768,1763),(0,62),(0,61),(0,33),(0,44)])"
+    ORF_info "([197,199,200,201,202],[(768,1763),(0,62),(0,61),(0,33),(0,44)])"
     hash "_networkx_list_start"
     hash "3957486474147543016"
     annotation "'CR931662.1_cds_CAI33329.1_1'"
@@ -141,23 +146,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_60'"
+    geneIDs "'0_0_61'"
     degrees 2
     name "'CR9316621_cds_CAI333291_1'"
   ]
   node [
     id 5
     label "14"
+    CID 14
     size 1
-    centroid "'4_0_70'"
+    centroid "'4_0_71'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_70'"
+    seqIDs "'4_0_71'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(2953,3981)])"
+    ORF_info "([198],[(2953,3981)])"
     hash "_networkx_list_start"
     hash "5747260871623794733"
     annotation "'CR931666.1_cds_CAI33425.1_1'"
@@ -168,27 +174,28 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_70'"
-    degrees 2
+    geneIDs "'4_0_71'"
+    degrees 1
     name "'CR9316661_cds_CAI334251_1'"
   ]
   node [
     id 6
     label "15"
+    CID 15
     size 4
-    centroid "'4_0_55'"
+    centroid "'4_0_56'"
     maxLenId 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'4_0_55'"
     seqIDs "'3_0_7'"
+    seqIDs "'4_0_56'"
     seqIDs "'2_0_7'"
     seqIDs "'1_0_100'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([257,538,264,540,267,542,274,544,277,545,281],[(191,412),(0,60),(0,156),(0,60),(0,88),(0,60),(0,362),(0,65),(0,115),(0,84),(0,47)])"
+    ORF_info "([393,362,395,391,397,398,399,400,401,402,403],[(191,412),(0,60),(0,156),(0,60),(0,88),(0,60),(0,362),(0,65),(0,115),(0,84),(0,47)])"
     hash "_networkx_list_start"
     hash "2584158918693678247"
     annotation "'CR931666.1_cds_CAI33419.1_1'"
@@ -201,23 +208,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'4_0_55;3_0_7;2_0_7;1_0_100'"
+    geneIDs "'3_0_7;4_0_56;2_0_7;1_0_100'"
     degrees 2
     name "'CR9316661_cds_CAI334191_1'"
   ]
   node [
     id 7
     label "23"
+    CID 23
     size 1
-    centroid "'4_0_43'"
+    centroid "'4_0_44'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_43'"
+    seqIDs "'4_0_44'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(943,1794)])"
+    ORF_info "([198],[(943,1794)])"
     hash "_networkx_list_start"
     hash "5501518978006087294"
     annotation "'CR931666.1_cds_CAI33423.1_1'"
@@ -228,13 +236,14 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_43'"
+    geneIDs "'4_0_44'"
     degrees 2
     name "'CR9316661_cds_CAI334231_1'"
   ]
   node [
     id 8
     label "25"
+    CID 25
     size 4
     centroid "'1_0_62'"
     maxLenId 0
@@ -242,18 +251,18 @@ graph [
     members 2
     members 3
     members 4
-    seqIDs "'2_0_3'"
+    seqIDs "'3_0_42'"
     seqIDs "'1_0_62'"
-    seqIDs "'3_0_41'"
-    seqIDs "'4_0_72'"
+    seqIDs "'4_0_73'"
+    seqIDs "'2_0_3'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([300,555,302,556,305,557,308],[(5,111),(0,60),(0,100),(0,60),(0,266),(0,60),(0,355)])"
+    ORF_info "([418,419,420,421,422,423,424],[(5,111),(0,60),(0,100),(0,60),(0,266),(0,60),(0,355)])"
     hash "_networkx_list_start"
     hash "10695977410515667797"
-    annotation "'CR931666.1_cds_CAI33421.1_1'"
+    annotation "'CR931663.1_cds_CAI33352.1_1'"
     bitscore 553.0
-    description "'CR931666.1_cds_CAI33421.1_1 [gene=gtp3] [locus_tag=SPC15F_0020] [db_xref=GOA:Q4K1N0,InterPro:IPR005834,InterPro:IPR006357,UniProtKB/TrEMBL:Q4K1N0] [protein=putative phosphotransferase] [protein_id=CAI33421.1] [location=17332..18165] [gbkey=CDS]'"
+    description "'CR931663.1_cds_CAI33352.1_1 [gene=gtp3] [locus_tag=SPC15A_0020] [db_xref=GOA:Q4K1N0,InterPro:IPR005834,InterPro:IPR006357,UniProtKB/TrEMBL:Q4K1N0] [protein=putative phosphotransferase] [protein_id=CAI33352.1] [location=16840..17673] [gbkey=CDS]'"
     lengths 834
     lengths 834
     lengths 834
@@ -261,23 +270,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'1;2;3;4'"
-    geneIDs "'2_0_3;1_0_62;3_0_41;4_0_72'"
-    degrees 4
-    name "'CR9316661_cds_CAI334211_1'"
+    geneIDs "'3_0_42;1_0_62;4_0_73;2_0_3'"
+    degrees 3
+    name "'CR9316631_cds_CAI333521_1'"
   ]
   node [
     id 9
     label "38"
+    CID 38
     size 1
-    centroid "'4_0_48'"
+    centroid "'4_0_49'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_48'"
+    seqIDs "'4_0_49'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([429],[(239,877)])"
+    ORF_info "([198],[(239,877)])"
     hash "_networkx_list_start"
     hash "10980538132292930476"
     annotation "'CR931666.1_cds_CAI33422.1_1'"
@@ -288,23 +298,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_48'"
+    geneIDs "'4_0_49'"
     degrees 2
     name "'CR9316661_cds_CAI334221_1'"
   ]
   node [
     id 10
     label "39"
+    CID 39
     size 1
-    centroid "'0_0_64'"
+    centroid "'0_0_65'"
     maxLenId 0
     members "_networkx_list_start"
     members 0
     seqIDs "_networkx_list_start"
-    seqIDs "'0_0_64'"
+    seqIDs "'0_0_65'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444],[(154,672)])"
+    ORF_info "([-210],[(154,672)])"
     hash "_networkx_list_start"
     hash "2762613411059242138"
     annotation "''"
@@ -315,50 +326,52 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_64'"
+    geneIDs "'0_0_65'"
     degrees 1
     name "'group_0'"
   ]
   node [
     id 11
     label "43"
+    CID 43
     size 1
-    centroid "'0_0_53'"
+    centroid "'0_0_54'"
     maxLenId 0
     members "_networkx_list_start"
     members 0
     seqIDs "_networkx_list_start"
-    seqIDs "'0_0_53'"
+    seqIDs "'0_0_54'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444,-403,-432,-399,-427],[(977,1363),(0,33),(0,61),(0,62),(0,77)])"
+    ORF_info "([-210,-201,-209,-199,-208],[(977,1363),(0,33),(0,61),(0,62),(0,77)])"
     hash "_networkx_list_start"
     hash "18266310910023016443"
     annotation "'CR931662.1_cds_CAI33329.1_1'"
-    bitscore 80.5
+    bitscore 79.3
     description "'CR931662.1_cds_CAI33329.1_1 [gene=wciY] [locus_tag=SPC14_0016] [db_xref=GOA:O07343,InterPro:IPR007554,UniProtKB/TrEMBL:O07343] [protein=putative glycerol phosphotransferase] [protein_id=CAI33329.1] [location=12636..13715] [gbkey=CDS]'"
     lengths "_networkx_list_start"
     lengths 504
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_53'"
+    geneIDs "'0_0_54'"
     degrees 2
     name "'group_1'"
   ]
   node [
     id 12
     label "55"
+    CID 55
     size 1
-    centroid "'0_0_33'"
+    centroid "'0_0_34'"
     maxLenId 0
     members "_networkx_list_start"
     members 0
     seqIDs "_networkx_list_start"
-    seqIDs "'0_0_33'"
+    seqIDs "'0_0_34'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-444],[(663,956)])"
+    ORF_info "([-210],[(663,956)])"
     hash "_networkx_list_start"
     hash "1955424231646982415"
     annotation "''"
@@ -369,56 +382,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'0'"
-    geneIDs "'0_0_33'"
+    geneIDs "'0_0_34'"
     degrees 2
     name "'group_2'"
   ]
   node [
     id 13
-    label "56"
-    size 4
-    centroid "'1_0_69'"
-    maxLenId 0
-    members 1
-    members 2
-    members 3
-    members 4
-    seqIDs "'4_refound_-5'"
-    seqIDs "'3_refound_-4'"
-    seqIDs "'1_0_69'"
-    seqIDs "'2_refound_-3'"
-    hasEnd 1
-    ORF_info "_networkx_list_start"
-    ORF_info "([181,529,610,187,531],[(64,259),(0,53),(0,30),(0,48),(0,35)])"
-    hash "_networkx_list_start"
-    hash "12502154690874945970"
-    annotation "'CR931664.1_cds_CAI33371.1_1'"
-    bitscore 154.0
-    description "'CR931664.1_cds_CAI33371.1_1 [gene=wciZ] [locus_tag=SPC15B_0016] [db_xref=GOA:Q6X851,InterPro:IPR002656,UniProtKB/TrEMBL:Q6X851] [protein=putative acetyl transferase] [protein_id=CAI33371.1] [location=13021..13998] [gbkey=CDS]'"
-    lengths 202
-    lengths 202
-    lengths 246
-    lengths 202
-    paralog 0
-    mergedDNA 0
-    genomeIDs "'1;2;3;4'"
-    geneIDs "'4_refound_-5;3_refound_-4;1_0_69;2_refound_-3'"
-    degrees 2
-    name "'CR9316641_cds_CAI333711_1'"
-  ]
-  node [
-    id 14
-    label "57"
+    label "59"
+    CID 59
     size 1
-    centroid "'4_0_97'"
+    centroid "'4_0_98'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_97'"
+    seqIDs "'4_0_98'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([360],[(183,356)])"
+    ORF_info "([577],[(183,356)])"
     hash "_networkx_list_start"
     hash "10954569604203301818"
     annotation "''"
@@ -429,23 +410,24 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_97'"
+    geneIDs "'4_0_98'"
     degrees 2
     name "'group_3'"
   ]
   node [
-    id 15
-    label "60"
+    id 14
+    label "62"
+    CID 62
     size 1
-    centroid "'4_0_75'"
+    centroid "'4_0_76'"
     maxLenId 0
     members "_networkx_list_start"
     members 4
     seqIDs "_networkx_list_start"
-    seqIDs "'4_0_75'"
+    seqIDs "'4_0_76'"
     hasEnd 1
     ORF_info "_networkx_list_start"
-    ORF_info "([-360,-54,-53,-358],[(336,440),(0,49),(0,42),(0,41)])"
+    ORF_info "([-577,-41,-40,-236],[(336,440),(0,49),(0,42),(0,41)])"
     hash "_networkx_list_start"
     hash "16709989731948797498"
     annotation "''"
@@ -456,97 +438,104 @@ graph [
     paralog 0
     mergedDNA 0
     genomeIDs "'4'"
-    geneIDs "'4_0_75'"
+    geneIDs "'4_0_76'"
     degrees 2
     name "'group_4'"
   ]
   node [
-    id 16
-    label "73"
+    id 15
+    label "88"
+    CID 88
     size 4
-    centroid "'1_0_94;3_0_3;3_0_78;4_0_28'"
-    maxLenId 3
+    centroid "'1_0_94;3_0_3;3_0_80;1_0_69;4_0_29'"
+    maxLenId 4
     members 1
     members 2
     members 3
     members 4
     seqIDs "'1_0_94'"
-    seqIDs "'2_0_14'"
-    seqIDs "'3_0_78'"
-    seqIDs "'4_0_28'"
+    seqIDs "'3_0_80'"
+    seqIDs "'1_0_69'"
+    seqIDs "'4_0_29'"
     seqIDs "'3_0_3'"
+    seqIDs "'2_0_15'"
     hasEnd 1
-    ORF_info "([209,537,214,215,523,219,524,539,223],[(21,112),(0,60),(0,36),(0,103),(0,60),(0,72),(0,43),(0,60),(0,183)])"
-    ORF_info "([209,211,212,214,215,217,219,220,221,223],[(21,112),(0,36),(0,53),(0,36),(0,103),(0,60),(0,72),(0,60),(0,43),(0,183)])"
-    ORF_info "([181,183,185,610,187,189,191,192,194,195,197,199,201,611],[(64,259),(0,35),(0,59),(0,30),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,66),(0,44),(0,46),(0,30)])"
-    ORF_info "([181,183,514,187,189,191,192,516,195,518,611,202,520,207,209,211,522,215,523,219,524,526,221,223],[(64,259),(0,35),(0,60),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,96),(0,30),(0,42),(0,60),(0,35),(0,112),(0,36),(0,60),(0,103),(0,60),(0,72),(0,43),(0,46),(0,43),(0,183)])"
+    ORF_info "([374,375,376,377,378,379,380,381,382],[(21,112),(0,60),(0,36),(0,103),(0,60),(0,72),(0,43),(0,60),(0,183)])"
+    ORF_info "([374,534,535,376,377,536,379,537,538,382],[(21,112),(0,36),(0,53),(0,36),(0,103),(0,60),(0,72),(0,60),(0,43),(0,183)])"
+    ORF_info "([365,522,523,610,367,524,369,526,527,528,529,566,531,611],[(64,259),(0,35),(0,59),(0,30),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,66),(0,44),(0,46),(0,30)])"
+    ORF_info "([365,366,610,367,368],[(64,259),(0,53),(0,30),(0,48),(0,35)])"
+    ORF_info "([365,522,183,367,524,369,526,95,528,163,611,371,506,533,374,534,425,377,378,379,380,257,538,382],[(64,259),(0,35),(0,60),(0,48),(0,54),(0,62),(0,75),(0,60),(0,34),(0,96),(0,30),(0,42),(0,60),(0,35),(0,112),(0,36),(0,60),(0,103),(0,60),(0,72),(0,43),(0,46),(0,43),(0,183)])"
     hash "6617175128042804592"
     hash "13816804210823983154"
     hash "8805665275594221217"
+    hash "12502154690874945970"
     hash "10443367503962757468"
-    annotation "'CR931666.1_cds_CAI33417.1_1'"
+    annotation "'CR931664.1_cds_CAI33371.1_1;CR931666.1_cds_CAI33417.1_1'"
     bitscore 610.0
-    description "'CR931666.1_cds_CAI33417.1_1 [gene=wciZ] [locus_tag=SPC15F_0016] [db_xref=GOA:Q4K1J7,InterPro:IPR002656,UniProtKB/TrEMBL:Q4K1J7] [protein=putative acetyl transferase] [protein_id=CAI33417.1] [location=13406..14383] [gbkey=CDS]'"
+    description "'CR931664.1_cds_CAI33371.1_1 [gene=wciZ] [locus_tag=SPC15B_0016] [db_xref=GOA:Q6X851,InterPro:IPR002656,UniProtKB/TrEMBL:Q6X851] [protein=putative acetyl transferase] [protein_id=CAI33371.1] [location=13021..13998] [gbkey=CDS];CR931666.1_cds_CAI33417.1_1 [gene=wciZ] [locus_tag=SPC15F_0016] [db_xref=GOA:Q4K1J7,InterPro:IPR002656,UniProtKB/TrEMBL:Q4K1J7] [protein=putative acetyl transferase] [protein_id=CAI33417.1] [location=13406..14383] [gbkey=CDS]'"
     lengths 477
-    lengths 978
     lengths 462
+    lengths 246
     lengths 978
     lengths 477
+    lengths 978
     paralog 0
     mergedDNA 1
-    name "'CR9316661_cds_CAI334171_1'"
+    name "'CR9316641_cds_CAI333711_1~~~CR9316661_cds_CAI334171_1'"
     genomeIDs "'1;2;3;4'"
-    geneIDs "'1_0_94;2_0_14;3_0_78;4_0_28;3_0_3'"
-    degrees 3
+    geneIDs "'1_0_94;3_0_80;1_0_69;4_0_29;3_0_3;2_0_15'"
+    degrees 2
   ]
   node [
-    id 17
-    label "86"
+    id 16
+    label "89"
+    CID 89
     size 4
-    centroid "'2_0_85;1_0_25'"
+    centroid "'2_0_88;1_0_26'"
     maxLenId 1
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'3_0_86'"
-    seqIDs "'4_0_21'"
-    seqIDs "'1_0_25'"
-    seqIDs "'2_0_85'"
+    seqIDs "'3_0_88'"
+    seqIDs "'1_0_26'"
+    seqIDs "'2_0_88'"
+    seqIDs "'4_0_22'"
     hasEnd 1
-    ORF_info "([283,284,285,286,287,288,290,291,292,293,295,296],[(5,48),(0,60),(0,340),(0,37),(0,60),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
-    ORF_info "([283,547,285,286,549,550,288,551,291,292,293,552,554],[(5,48),(0,60),(0,340),(0,37),(0,52),(0,37),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
+    ORF_info "([405,549,407,408,550,411,551,413,414,415,553,554],[(5,48),(0,60),(0,340),(0,37),(0,60),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
+    ORF_info "([405,406,407,408,409,410,411,412,413,414,415,416,417],[(5,48),(0,60),(0,340),(0,37),(0,52),(0,37),(0,38),(0,110),(0,38),(0,60),(0,79),(0,99),(0,59)])"
     hash "7033180884873361275"
     hash "2706802055575591409"
-    annotation "'CR931665.1_cds_CAI33397.1_1;CR931666.1_cds_CAI33420.1_1'"
+    annotation "'CR931665.1_cds_CAI33397.1_1;CR931663.1_cds_CAI33351.1_1'"
     bitscore 461.0
-    description "'CR931665.1_cds_CAI33397.1_1 [gene=gtp2] [locus_tag=SPC15C_0019] [db_xref=GOA:Q6X848,InterPro:IPR005835,UniProtKB/TrEMBL:Q6X848] [protein=putative nucleotidyl transferase] [protein_id=CAI33397.1] [location=16230..16934] [gbkey=CDS];CR931666.1_cds_CAI33420.1_1 [gene=gtp2] [locus_tag=SPC15F_0019] [db_xref=GOA:Q4K1J4,InterPro:IPR005835,UniProtKB/TrEMBL:Q4K1J4] [protein=putative nucleotidyl transferase] [protein_id=CAI33420.1] [location=16613..17317] [gbkey=CDS]'"
+    description "'CR931665.1_cds_CAI33397.1_1 [gene=gtp2] [locus_tag=SPC15C_0019] [db_xref=GOA:Q6X848,InterPro:IPR005835,UniProtKB/TrEMBL:Q6X848] [protein=putative nucleotidyl transferase] [protein_id=CAI33397.1] [location=16230..16934] [gbkey=CDS];CR931663.1_cds_CAI33351.1_1 [gene=gtp2] [locus_tag=SPC15A_0019] [db_xref=GOA:Q4K1J4,InterPro:IPR005835,UniProtKB/TrEMBL:Q4K1J4] [protein=putative nucleotidyl transferase] [protein_id=CAI33351.1] [location=16121..16825] [gbkey=CDS]'"
     lengths 705
     lengths 705
     lengths 705
     lengths 705
     paralog 0
     mergedDNA 0
-    name "'CR9316651_cds_CAI333971_1~~~CR9316661_cds_CAI334201_1'"
+    name "'CR9316651_cds_CAI333971_1~~~CR9316631_cds_CAI333511_1'"
     genomeIDs "'1;2;3;4'"
-    geneIDs "'3_0_86;4_0_21;1_0_25;2_0_85'"
+    geneIDs "'3_0_88;1_0_26;2_0_88;4_0_22'"
     degrees 2
   ]
   node [
-    id 18
-    label "88"
+    id 17
+    label "91"
+    CID 91
     size 3
-    centroid "'1_0_28;2_0_57'"
+    centroid "'1_0_29;2_0_60'"
     maxLenId 0
     members 1
     members 2
     members 3
-    seqIDs "'2_0_57'"
-    seqIDs "'1_0_28'"
-    seqIDs "'3_0_57'"
+    seqIDs "'2_0_60'"
+    seqIDs "'3_0_59'"
+    seqIDs "'1_0_29'"
     hasEnd 1
-    ORF_info "([-562,-322,-561,-319,-560,-316,-559,-313,-558],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
-    ORF_info "([-324,-322,-320,-319,-318,-316,-314,-313,-312],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
+    ORF_info "([-435,-434,-433,-432,-431,-430,-429,-428,-427],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
+    ORF_info "([-561,-434,-560,-432,-559,-430,-558,-428,-557],[(18,114),(0,84),(0,60),(0,41),(0,128),(0,46),(0,60),(0,48),(0,58)])"
     hash "9749580224683268013"
     hash "18032104215479760017"
     annotation "''"
@@ -559,14 +548,15 @@ graph [
     mergedDNA 0
     name "'group_5'"
     genomeIDs "'1;2;3'"
-    geneIDs "'2_0_57;1_0_28;3_0_57'"
+    geneIDs "'2_0_60;3_0_59;1_0_29'"
     degrees 1
   ]
   node [
-    id 19
-    label "92"
+    id 18
+    label "95"
+    CID 95
     size 5
-    centroid "'0_0_24;1_0_11;4_0_98;2_0_0'"
+    centroid "'0_0_24;1_0_11;4_0_99;2_0_0'"
     maxLenId 1
     members 0
     members 1
@@ -574,54 +564,55 @@ graph [
     members 3
     members 4
     seqIDs "'1_0_11'"
+    seqIDs "'4_0_99'"
     seqIDs "'3_0_0'"
     seqIDs "'2_0_0'"
     seqIDs "'0_0_24'"
-    seqIDs "'4_0_98'"
     hasEnd 1
-    ORF_info "([180,182,184,186,188,190,193,196,200,203,205,208],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
-    ORF_info "([410,493,414],[(291,712),(0,81),(0,245)])"
-    ORF_info "([410,411,414],[(291,712),(0,81),(0,245)])"
-    ORF_info "([180,597,184,598,188,599,193,600,200,601,205,602],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
+    ORF_info "([112,113,114,115,116,117,118,119,120,121,122,123],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
+    ORF_info "([280,281,282],[(291,712),(0,81),(0,245)])"
+    ORF_info "([280,592,282],[(291,712),(0,81),(0,245)])"
+    ORF_info "([112,479,114,480,116,481,118,482,120,483,122,484],[(65,300),(0,78),(0,53),(0,60),(0,48),(0,60),(0,98),(0,88),(0,52),(0,60),(0,56),(0,114)])"
     hash "2633420874360379037"
     hash "5620201924637747438"
     hash "9326123912594561806"
     hash "10999347607512153092"
-    annotation "'CR931662.1_cds_CAI33320.1_1;CR931666.1_cds_CAI33408.1_1;CR931665.1_cds_CAI33385.1_1'"
+    annotation "'CR931662.1_cds_CAI33320.1_1;CR931663.1_cds_CAI33339.1_1;CR931665.1_cds_CAI33385.1_1'"
     bitscore 439.0
-    description "'CR931662.1_cds_CAI33320.1_1 [gene=wze] [locus_tag=SPC14_0007] [db_xref=GOA:Q4K1S7,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1S7] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33320.1] [location=4089..4772] [gbkey=CDS];CR931666.1_cds_CAI33408.1_1 [gene=wze] [locus_tag=SPC15F_0007] [db_xref=GOA:Q4K1K6,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1K6] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33408.1] [location=4442..5131] [gbkey=CDS];CR931665.1_cds_CAI33385.1_1 [gene=wze] [locus_tag=SPC15C_0007] [db_xref=GOA:Q4K1M4,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1M4] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33385.1] [location=4093..4776] [gbkey=CDS]'"
+    description "'CR931662.1_cds_CAI33320.1_1 [gene=wze] [locus_tag=SPC14_0007] [db_xref=GOA:Q4K1S7,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1S7] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33320.1] [location=4089..4772] [gbkey=CDS];CR931663.1_cds_CAI33339.1_1 [gene=wze] [locus_tag=SPC15A_0007] [db_xref=GOA:Q4K1K6,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1K6] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33339.1] [location=4091..4780] [gbkey=CDS];CR931665.1_cds_CAI33385.1_1 [gene=wze] [locus_tag=SPC15C_0007] [db_xref=GOA:Q4K1M4,InterPro:IPR002586,InterPro:IPR005702,UniProtKB/TrEMBL:Q4K1M4] [protein=tyrosine-protein kinase Wze] [protein_id=CAI33385.1] [location=4093..4776] [gbkey=CDS]'"
+    lengths 690
     lengths 690
     lengths 684
     lengths 684
     lengths 684
-    lengths 690
     paralog 0
     mergedDNA 1
-    name "'CR9316621_cds_CAI333201_1~~~CR9316661_cds_CAI334081_1~~~CR9316651_cds_CAI333851_1'"
+    name "'CR9316621_cds_CAI333201_1~~~CR9316631_cds_CAI333391_1~~~CR9316651_cds_CAI333851_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_0_11;3_0_0;2_0_0;0_0_24;4_0_98'"
+    geneIDs "'1_0_11;4_0_99;3_0_0;2_0_0;0_0_24'"
     degrees 2
   ]
   node [
-    id 20
-    label "93"
+    id 19
+    label "96"
+    CID 96
     size 5
-    centroid "'0_0_94;4_0_116;2_0_24'"
+    centroid "'0_0_94;4_0_118;2_0_25'"
     maxLenId 0
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'2_0_24'"
+    seqIDs "'3_0_25'"
+    seqIDs "'4_0_118'"
+    seqIDs "'2_0_25'"
     seqIDs "'0_0_94'"
-    seqIDs "'4_0_116'"
     seqIDs "'1_0_6'"
-    seqIDs "'3_0_24'"
     hasEnd 1
-    ORF_info "([213,216,218,222,224,225,226,227,228,230,232,233,235,237,238,241,243,244,245,246,247,250,252],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
-    ORF_info "([414,415,416,418,419,421,426],[(260,441),(0,60),(0,290),(0,60),(0,47),(0,81),(0,822)])"
-    ORF_info "([603,216,321,222,229,225,298,227,45,230,430,233,310,237,428,241,127,244,259,246,413,250,412],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
+    ORF_info "([125,126,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
+    ORF_info "([282,593,284,594,286,595,288],[(260,441),(0,60),(0,290),(0,60),(0,47),(0,81),(0,822)])"
+    ORF_info "([485,126,486,129,487,131,488,133,489,135,490,137,491,139,492,141,493,143,494,145,495,147,496],[(24,72),(0,147),(0,82),(0,191),(0,60),(0,36),(0,68),(0,47),(0,60),(0,115),(0,103),(0,38),(0,105),(0,98),(0,60),(0,127),(0,76),(0,34),(0,60),(0,71),(0,72),(0,259),(0,48)])"
     hash "4680166035743638900"
     hash "6811547773617742407"
     hash "14667726273356434230"
@@ -637,103 +628,106 @@ graph [
     mergedDNA 0
     name "'CR9316621_cds_CAI333211_1~~~CR9316661_cds_CAI334091_1~~~CR9316651_cds_CAI333861_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'2_0_24;0_0_94;4_0_116;1_0_6;3_0_24'"
+    geneIDs "'3_0_25;4_0_118;2_0_25;0_0_94;1_0_6'"
+    degrees 2
+  ]
+  node [
+    id 20
+    label "97"
+    CID 97
+    size 5
+    centroid "'1_0_55;0_0_78;2_0_54'"
+    maxLenId 1
+    members 0
+    members 1
+    members 2
+    members 3
+    members 4
+    seqIDs "'3_0_53'"
+    seqIDs "'1_0_55'"
+    seqIDs "'4_0_4'"
+    seqIDs "'0_0_78'"
+    seqIDs "'2_0_54'"
+    hasEnd 1
+    ORF_info "([273,102,274,275,104,105,106,276,277,108,109,278,279,280],[(27,60),(0,38),(0,70),(0,44),(0,107),(0,67),(0,39),(0,31),(0,58),(0,89),(0,54),(0,98),(0,60),(0,281)])"
+    ORF_info "([101,102,103,104,105,106,107,108,109,110,111,112],[(19,52),(0,38),(0,85),(0,107),(0,67),(0,39),(0,60),(0,89),(0,54),(0,226),(0,158),(0,55)])"
+    ORF_info "([474,275,104,475,106,276,476,109,110,478,112],[(19,102),(0,44),(0,107),(0,67),(0,39),(0,31),(0,118),(0,54),(0,226),(0,158),(0,55)])"
+    hash "12044409901396293309"
+    hash "7309904072966270884"
+    hash "9505002093513791938"
+    annotation "'CR931663.1_cds_CAI33338.1_1;CR931662.1_cds_CAI33319.1_1;CR931665.1_cds_CAI33384.1_1'"
+    bitscore 426.0
+    description "'CR931663.1_cds_CAI33338.1_1 [gene=wzd] [locus_tag=SPC15A_0006] [db_xref=GOA:Q4K1K7,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1K7] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33338.1] [location=3389..4081] [gbkey=CDS];CR931662.1_cds_CAI33319.1_1 [gene=wzd] [locus_tag=SPC14_0006] [db_xref=GOA:Q4K1S8,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1S8] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33319.1] [location=3387..4079] [gbkey=CDS];CR931665.1_cds_CAI33384.1_1 [gene=wzd] [locus_tag=SPC15C_0006] [db_xref=GOA:Q4K1M5,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1M5] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33384.1] [location=3391..4083] [gbkey=CDS]'"
+    lengths 693
+    lengths 693
+    lengths 693
+    lengths 693
+    lengths 693
+    paralog 0
+    mergedDNA 0
+    name "'CR9316631_cds_CAI333381_1~~~CR9316621_cds_CAI333191_1~~~CR9316651_cds_CAI333841_1'"
+    genomeIDs "'0;1;2;3;4'"
+    geneIDs "'3_0_53;1_0_55;4_0_4;0_0_78;2_0_54'"
     degrees 2
   ]
   node [
     id 21
-    label "94"
+    label "98"
+    CID 98
     size 5
-    centroid "'1_0_55;0_0_78;2_0_52'"
+    centroid "'0_0_19;4_0_124'"
     maxLenId 1
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'1_0_55'"
-    seqIDs "'4_0_4'"
-    seqIDs "'0_0_78'"
-    seqIDs "'2_0_52'"
-    seqIDs "'3_0_52'"
+    seqIDs "'4_0_124'"
+    seqIDs "'1_0_44'"
+    seqIDs "'3_0_38'"
+    seqIDs "'2_0_40'"
+    seqIDs "'0_0_19'"
     hasEnd 1
-    ORF_info "([398,151,400,402,155,157,158,404,406,164,167,407,490,410],[(27,60),(0,38),(0,70),(0,44),(0,107),(0,67),(0,39),(0,31),(0,58),(0,89),(0,54),(0,98),(0,60),(0,281)])"
-    ORF_info "([149,151,152,155,157,158,160,164,167,173,176,180],[(19,52),(0,38),(0,85),(0,107),(0,67),(0,39),(0,60),(0,89),(0,54),(0,226),(0,158),(0,55)])"
-    ORF_info "([593,402,155,594,158,404,595,167,173,596,180],[(19,102),(0,44),(0,107),(0,67),(0,39),(0,31),(0,118),(0,54),(0,226),(0,158),(0,55)])"
-    hash "12044409901396293309"
-    hash "7309904072966270884"
-    hash "9505002093513791938"
-    annotation "'CR931666.1_cds_CAI33407.1_1;CR931662.1_cds_CAI33319.1_1;CR931664.1_cds_CAI33361.1_1'"
-    bitscore 426.0
-    description "'CR931666.1_cds_CAI33407.1_1 [gene=wzd] [locus_tag=SPC15F_0006] [db_xref=GOA:Q4K1K7,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1K7] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33407.1] [location=3740..4432] [gbkey=CDS];CR931662.1_cds_CAI33319.1_1 [gene=wzd] [locus_tag=SPC14_0006] [db_xref=GOA:Q4K1S8,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1S8] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33319.1] [location=3387..4079] [gbkey=CDS];CR931664.1_cds_CAI33361.1_1 [gene=wzd] [locus_tag=SPC15B_0006] [db_xref=GOA:Q4K1M5,InterPro:IPR003856,InterPro:IPR005701,UniProtKB/TrEMBL:Q4K1M5] [protein=capsular polysaccharide biosynthesis protein Wzd] [protein_id=CAI33361.1] [location=3391..4083] [gbkey=CDS]'"
-    lengths 693
-    lengths 693
-    lengths 693
-    lengths 693
-    lengths 693
+    ORF_info "([149,150,151,152,153,154],[(0,31),(0,60),(0,37),(0,366),(0,37),(0,63)])"
+    ORF_info "([288,289,290,291,292,596,296],[(826,927),(0,247),(0,60),(0,67),(0,56),(0,60),(0,32)])"
+    hash "7928260616065006055"
+    hash "4168252465035560394"
+    annotation "'CR931662.1_cds_CAI33322.1_1;CR931663.1_cds_CAI33341.1_1'"
+    bitscore 313.0
+    description "'CR931662.1_cds_CAI33322.1_1 [gene=wchJ] [locus_tag=SPC14_0009] [db_xref=GOA:P72514,InterPro:IPR013969,UniProtKB/TrEMBL:P72514] [protein=putative glycosyl transferase enhancer] [protein_id=CAI33322.1] [location=6159..6608] [gbkey=CDS];CR931663.1_cds_CAI33341.1_1 [gene=wchJ] [locus_tag=SPC15A_0009] [db_xref=GOA:Q4K1K4,InterPro:IPR013969,UniProtKB/TrEMBL:Q4K1K4] [protein=putative glycosyl transferase enhancer] [protein_id=CAI33341.1] [location=6166..6615] [gbkey=CDS]'"
+    lengths 450
+    lengths 450
+    lengths 450
+    lengths 450
+    lengths 450
     paralog 0
     mergedDNA 0
-    name "'CR9316661_cds_CAI334071_1~~~CR9316621_cds_CAI333191_1~~~CR9316641_cds_CAI333611_1'"
+    name "'CR9316621_cds_CAI333221_1~~~CR9316631_cds_CAI333411_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_0_55;4_0_4;0_0_78;2_0_52;3_0_52'"
+    geneIDs "'4_0_124;1_0_44;3_0_38;2_0_40;0_0_19'"
     degrees 2
   ]
   node [
     id 22
-    label "95"
+    label "99"
+    CID 99
     size 5
-    centroid "'0_0_19;4_0_123'"
-    maxLenId 1
-    members 0
-    members 1
-    members 2
-    members 3
-    members 4
-    seqIDs "'1_0_44'"
-    seqIDs "'2_0_38'"
-    seqIDs "'3_0_37'"
-    seqIDs "'0_0_19'"
-    seqIDs "'4_0_123'"
-    hasEnd 1
-    ORF_info "([254,255,256,258,260,262],[(0,31),(0,60),(0,37),(0,366),(0,37),(0,63)])"
-    ORF_info "([426,431,433,434,435,436,437],[(826,927),(0,247),(0,60),(0,67),(0,56),(0,60),(0,32)])"
-    hash "7928260616065006055"
-    hash "4168252465035560394"
-    annotation "'CR931662.1_cds_CAI33322.1_1;CR931666.1_cds_CAI33410.1_1'"
-    bitscore 313.0
-    description "'CR931662.1_cds_CAI33322.1_1 [gene=wchJ] [locus_tag=SPC14_0009] [db_xref=GOA:P72514,InterPro:IPR013969,UniProtKB/TrEMBL:P72514] [protein=putative glycosyl transferase enhancer] [protein_id=CAI33322.1] [location=6159..6608] [gbkey=CDS];CR931666.1_cds_CAI33410.1_1 [gene=wchJ] [locus_tag=SPC15F_0009] [db_xref=GOA:Q4K1K4,InterPro:IPR013969,UniProtKB/TrEMBL:Q4K1K4] [protein=putative glycosyl transferase enhancer] [protein_id=CAI33410.1] [location=6517..6966] [gbkey=CDS]'"
-    lengths 450
-    lengths 450
-    lengths 450
-    lengths 450
-    lengths 450
-    paralog 0
-    mergedDNA 0
-    name "'CR9316621_cds_CAI333221_1~~~CR9316661_cds_CAI334101_1'"
-    genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_0_44;2_0_38;3_0_37;0_0_19;4_0_123'"
-    degrees 2
-  ]
-  node [
-    id 23
-    label "96"
-    size 5
-    centroid "'4_0_12;0_0_31;2_0_49'"
+    centroid "'4_0_13;0_0_32;2_0_51'"
     maxLenId 0
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'0_0_31'"
-    seqIDs "'2_0_49'"
-    seqIDs "'1_0_21'"
-    seqIDs "'3_0_83'"
-    seqIDs "'4_0_12'"
+    seqIDs "'1_0_22'"
+    seqIDs "'2_0_51'"
+    seqIDs "'0_0_32'"
+    seqIDs "'4_0_13'"
+    seqIDs "'3_0_85'"
     hasEnd 1
-    ORF_info "([132,133,377,378,136,137,379,380,381,382,384,385,387,388,389,390,391,392,393,394,396,145,146],[(21,60),(0,67),(0,35),(0,68),(0,43),(0,86),(0,53),(0,60),(0,44),(0,37),(0,31),(0,60),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,177),(0,33),(0,46)])"
-    ORF_info "([132,133,134,135,136,137,142,143,144,145,146],[(21,60),(0,67),(0,61),(0,42),(0,43),(0,86),(0,419),(0,129),(0,56),(0,33),(0,46)])"
-    ORF_info "([132,133,377,479,585,137,379,482,586,382,384,587,588,486,387,388,488,390,589,392,590,394,591,143,592,146],[(21,60),(0,67),(0,35),(0,40),(0,71),(0,86),(0,53),(0,44),(0,60),(0,37),(0,31),(0,35),(0,52),(0,31),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,50),(0,129),(0,60),(0,46)])"
+    ORF_info "([88,89,253,587,92,93,256,588,260,261,467,589,264,265,590,267,268,269,270,271,272,98,99],[(21,60),(0,67),(0,35),(0,68),(0,43),(0,86),(0,53),(0,60),(0,44),(0,37),(0,31),(0,60),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,177),(0,33),(0,46)])"
+    ORF_info "([88,89,90,91,92,93,94,96,97,98,99],[(21,60),(0,67),(0,61),(0,42),(0,43),(0,86),(0,419),(0,129),(0,56),(0,33),(0,46)])"
+    ORF_info "([88,89,253,254,465,93,256,258,466,261,467,468,469,263,264,265,266,267,470,269,471,271,472,96,473,99],[(21,60),(0,67),(0,35),(0,40),(0,71),(0,86),(0,53),(0,44),(0,60),(0,37),(0,31),(0,35),(0,52),(0,31),(0,35),(0,85),(0,60),(0,87),(0,60),(0,49),(0,60),(0,54),(0,50),(0,129),(0,60),(0,46)])"
     hash "238852219439493858"
     hash "1144255875246885025"
     hash "859092023335869067"
@@ -749,50 +743,52 @@ graph [
     mergedDNA 0
     name "'CR9316661_cds_CAI334061_1~~~CR9316621_cds_CAI333181_1~~~CR9316641_cds_CAI333601_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'0_0_31;2_0_49;1_0_21;3_0_83;4_0_12'"
+    geneIDs "'1_0_22;2_0_51;0_0_32;4_0_13;3_0_85'"
     degrees 2
   ]
   node [
-    id 24
-    label "97"
+    id 23
+    label "100"
+    CID 100
     size 5
-    centroid "'0_0_73;2_0_88;1_0_22'"
-    maxLenId 2
+    centroid "'0_0_73;1_0_23;2_0_91'"
+    maxLenId 1
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'4_0_25'"
+    seqIDs "'1_0_23'"
+    seqIDs "'2_0_91'"
+    seqIDs "'4_0_26'"
     seqIDs "'0_0_73'"
-    seqIDs "'2_0_88'"
-    seqIDs "'1_0_22'"
-    seqIDs "'3_0_88'"
+    seqIDs "'3_0_90'"
     hasEnd 1
-    ORF_info "([263,265,268,270,271,272,273,275],[(20,69),(0,60),(0,130),(0,36),(0,49),(0,51),(0,49),(0,282)])"
-    ORF_info "([409,271,397],[(57,245),(0,49),(0,324)])"
-    ORF_info "([263,438,268,439,273,440],[(20,69),(0,60),(0,130),(0,78),(0,49),(0,285)])"
+    ORF_info "([155,156,157,158,159,160,161,162],[(20,69),(0,60),(0,130),(0,36),(0,49),(0,51),(0,49),(0,282)])"
+    ORF_info "([155,297,157,298,161,299],[(20,69),(0,60),(0,130),(0,78),(0,49),(0,285)])"
+    ORF_info "([502,159,503],[(57,245),(0,49),(0,324)])"
     hash "12278268020066546241"
-    hash "11159443002896694123"
     hash "12749337753942700312"
-    annotation "'CR931662.1_cds_CAI33323.1_1;CR931665.1_cds_CAI33388.1_1;CR931666.1_cds_CAI33411.1_1'"
+    hash "11159443002896694123"
+    annotation "'CR931662.1_cds_CAI33323.1_1;CR931666.1_cds_CAI33411.1_1;CR931665.1_cds_CAI33388.1_1'"
     bitscore 343.0
-    description "'CR931662.1_cds_CAI33323.1_1 [gene=wchK] [locus_tag=SPC14_0010] [db_xref=GOA:Q4K1S4,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1S4] [protein=putative glycosyl transferase] [protein_id=CAI33323.1] [location=6608..7111] [gbkey=CDS];CR931665.1_cds_CAI33388.1_1 [gene=wchK] [locus_tag=SPC15C_0010] [db_xref=GOA:Q4K1M1,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1M1] [protein=putative glycosyl transferase] [protein_id=CAI33388.1] [location=6612..7115] [gbkey=CDS];CR931666.1_cds_CAI33411.1_1 [gene=wchK] [locus_tag=SPC15F_0010] [db_xref=GOA:Q4K1K3,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1K3] [protein=putative glycosyl transferase] [protein_id=CAI33411.1] [location=6966..7472] [gbkey=CDS]'"
+    description "'CR931662.1_cds_CAI33323.1_1 [gene=wchK] [locus_tag=SPC14_0010] [db_xref=GOA:Q4K1S4,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1S4] [protein=putative glycosyl transferase] [protein_id=CAI33323.1] [location=6608..7111] [gbkey=CDS];CR931666.1_cds_CAI33411.1_1 [gene=wchK] [locus_tag=SPC15F_0010] [db_xref=GOA:Q4K1K3,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1K3] [protein=putative glycosyl transferase] [protein_id=CAI33411.1] [location=6966..7472] [gbkey=CDS];CR931665.1_cds_CAI33388.1_1 [gene=wchK] [locus_tag=SPC15C_0010] [db_xref=GOA:Q4K1M1,InterPro:IPR007235,UniProtKB/TrEMBL:Q4K1M1] [protein=putative glycosyl transferase] [protein_id=CAI33388.1] [location=6612..7115] [gbkey=CDS]'"
     lengths 507
     lengths 504
-    lengths 504
     lengths 507
+    lengths 504
     lengths 504
     paralog 0
     mergedDNA 0
-    name "'CR9316621_cds_CAI333231_1~~~CR9316651_cds_CAI333881_1~~~CR9316661_cds_CAI334111_1'"
+    name "'CR9316621_cds_CAI333231_1~~~CR9316661_cds_CAI334111_1~~~CR9316651_cds_CAI333881_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'4_0_25;0_0_73;2_0_88;1_0_22;3_0_88'"
+    geneIDs "'1_0_23;2_0_91;4_0_26;0_0_73;3_0_90'"
     degrees 3
   ]
   node [
-    id 25
-    label "98"
+    id 24
+    label "101"
+    CID 101
     size 5
     centroid "'1_0_46;0_0_17'"
     maxLenId 1
@@ -801,14 +797,14 @@ graph [
     members 2
     members 3
     members 4
-    seqIDs "'2_0_26'"
-    seqIDs "'4_0_95'"
-    seqIDs "'1_0_46'"
-    seqIDs "'3_0_25'"
+    seqIDs "'4_0_96'"
+    seqIDs "'3_0_26'"
     seqIDs "'0_0_17'"
+    seqIDs "'1_0_46'"
+    seqIDs "'2_0_27'"
     hasEnd 1
-    ORF_info "([75,-609,76,77,467,82,83,86,90,92,93,95,97,98,469,368,104,106,107,108,109,371,470,373,471,117,472,473,375,474,126,128,476],[(6,60),(0,30),(0,67),(0,52),(0,60),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,45),(0,60),(0,120),(0,66),(0,34),(0,40),(0,49),(0,31),(0,60),(0,51),(0,43),(0,53)])"
-    ORF_info "([75,-609,76,77,79,80,82,83,86,90,92,93,95,97,98,99,101,104,106,107,108,109,111,113,115,117,120,122,124,125,126,128,130],[(6,60),(0,30),(0,67),(0,52),(0,55),(0,34),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,93),(0,60),(0,109),(0,34),(0,60),(0,40),(0,42),(0,38),(0,51),(0,43),(0,53)])"
+    ORF_info "([55,-609,56,57,240,60,61,62,63,64,65,66,67,68,241,242,71,72,73,74,75,243,244,245,246,79,247,248,249,250,84,85,251],[(6,60),(0,30),(0,67),(0,52),(0,60),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,45),(0,60),(0,120),(0,66),(0,34),(0,40),(0,49),(0,31),(0,60),(0,51),(0,43),(0,53)])"
+    ORF_info "([55,-609,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86],[(6,60),(0,30),(0,67),(0,52),(0,55),(0,34),(0,56),(0,46),(0,86),(0,355),(0,60),(0,136),(0,60),(0,79),(0,53),(0,36),(0,53),(0,184),(0,67),(0,60),(0,60),(0,67),(0,93),(0,60),(0,109),(0,34),(0,60),(0,40),(0,42),(0,38),(0,51),(0,43),(0,53)])"
     hash "5738994502411343692"
     hash "2264214235709064614"
     annotation "'CR931663.1_cds_CAI33336.1_1;CR931662.1_cds_CAI33317.1_1'"
@@ -823,96 +819,130 @@ graph [
     mergedDNA 0
     name "'CR9316631_cds_CAI333361_1~~~CR9316621_cds_CAI333171_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'2_0_26;4_0_95;1_0_46;3_0_25;0_0_17'"
+    geneIDs "'4_0_96;3_0_26;0_0_17;1_0_46;2_0_27'"
     degrees 3
   ]
   node [
-    id 26
-    label "99"
+    id 25
+    label "102"
+    CID 102
     size 3
-    centroid "'0_0_93;2_0_22'"
+    centroid "'0_0_93;2_0_23'"
     maxLenId 1
     members 0
     members 2
     members 3
-    seqIDs "'3_0_22'"
+    seqIDs "'2_0_23'"
     seqIDs "'0_0_93'"
-    seqIDs "'2_0_22'"
+    seqIDs "'3_0_23'"
     hasEnd 1
-    ORF_info "([275,280,289,294],[(272,584),(0,32),(0,829),(0,86)])"
-    ORF_info "([397,280,395,294],[(314,626),(0,32),(0,829),(0,86)])"
+    ORF_info "([162,164,165,166],[(272,584),(0,32),(0,829),(0,86)])"
+    ORF_info "([503,164,505,166],[(314,626),(0,32),(0,829),(0,86)])"
     hash "7485037206903684149"
     hash "4767449302586154623"
-    annotation "'CR931662.1_cds_CAI33324.1_1;CR931665.1_cds_CAI33389.1_1'"
+    annotation "'CR931662.1_cds_CAI33324.1_1;CR931664.1_cds_CAI33366.1_1'"
     bitscore 747.0
-    description "'CR931662.1_cds_CAI33324.1_1 [gene=wzy] [locus_tag=SPC14_0011] [db_xref=UniProtKB/TrEMBL:P72516] [protein=oligosaccharide repeat unit polymerase Wzy] [protein_id=CAI33324.1] [location=7101..8273] [gbkey=CDS];CR931665.1_cds_CAI33389.1_1 [gene=wzy] [locus_tag=SPC15C_0011] [db_xref=UniProtKB/TrEMBL:Q4K1M0] [protein=oligosaccharide repeat unit polymerase Wzy] [protein_id=CAI33389.1] [location=7105..8277] [gbkey=CDS]'"
+    description "'CR931662.1_cds_CAI33324.1_1 [gene=wzy] [locus_tag=SPC14_0011] [db_xref=UniProtKB/TrEMBL:P72516] [protein=oligosaccharide repeat unit polymerase Wzy] [protein_id=CAI33324.1] [location=7101..8273] [gbkey=CDS];CR931664.1_cds_CAI33366.1_1 [gene=wzy] [locus_tag=SPC15B_0011] [db_xref=UniProtKB/TrEMBL:Q4K1M0] [protein=oligosaccharide repeat unit polymerase Wzy] [protein_id=CAI33366.1] [location=7105..8277] [gbkey=CDS]'"
     lengths 1173
     lengths 1173
     lengths 1173
     paralog 0
     mergedDNA 0
-    name "'CR9316621_cds_CAI333241_1~~~CR9316651_cds_CAI333891_1'"
+    name "'CR9316621_cds_CAI333241_1~~~CR9316641_cds_CAI333661_1'"
     genomeIDs "'0;2;3'"
-    geneIDs "'3_0_22;0_0_93;2_0_22'"
+    geneIDs "'2_0_23;0_0_93;3_0_23'"
     degrees 2
   ]
   node [
-    id 27
-    label "101"
+    id 26
+    label "104"
+    CID 104
     size 5
-    centroid "'0_0_83;2_0_44;1_0_26'"
+    centroid "'0_0_83;2_0_46;1_0_27'"
     maxLenId 2
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'3_0_45'"
-    seqIDs "'2_0_44'"
-    seqIDs "'1_0_26'"
+    seqIDs "'4_0_30'"
+    seqIDs "'3_0_46'"
+    seqIDs "'1_0_27'"
+    seqIDs "'2_0_46'"
     seqIDs "'0_0_83'"
-    seqIDs "'4_0_29'"
     hasEnd 1
-    ORF_info "([294,297,299,304,26,306,31,309],[(83,217),(0,107),(0,34),(0,549),(0,31),(0,105),(0,31),(0,231)])"
-    ORF_info "([294,7,21,23,24,26,29,31,40],[(83,217),(0,183),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
-    ORF_info "([475,299,478,21,481,24,26,29,31,40],[(78,293),(0,34),(0,100),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
+    ORF_info "([166,167,168,169,171,172,173,174],[(83,217),(0,107),(0,34),(0,549),(0,31),(0,105),(0,31),(0,231)])"
+    ORF_info "([166,507,311,508,313,171,314,173,315],[(83,217),(0,183),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
+    ORF_info "([309,168,310,311,312,313,171,314,173,315],[(78,293),(0,34),(0,100),(0,417),(0,60),(0,59),(0,31),(0,105),(0,31),(0,237)])"
     hash "11149660458259146032"
     hash "17084882926348420748"
     hash "4019591176854000251"
-    annotation "'CR931662.1_cds_CAI33325.1_1;CR931664.1_cds_CAI33367.1_1;CR931666.1_cds_CAI33413.1_1'"
+    annotation "'CR931662.1_cds_CAI33325.1_1;CR931665.1_cds_CAI33390.1_1;CR931663.1_cds_CAI33344.1_1'"
     bitscore 675.0
-    description "'CR931662.1_cds_CAI33325.1_1 [gene=wchL] [locus_tag=SPC14_0012] [db_xref=GOA:Q4K1S2,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1S2] [protein=putative glycosyl transferase] [protein_id=CAI33325.1] [location=8270..9289] [gbkey=CDS];CR931664.1_cds_CAI33367.1_1 [gene=wchL] [locus_tag=SPC15B_0012] [db_xref=GOA:Q4K1L9,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1L9] [protein=putative glycosyl transferase] [protein_id=CAI33367.1] [location=8274..9299] [gbkey=CDS];CR931666.1_cds_CAI33413.1_1 [gene=wchL] [locus_tag=SPC15F_0012] [db_xref=GOA:Q4K1K1,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1K1] [protein=putative glycosyl transferase] [protein_id=CAI33413.1] [location=8666..9694] [gbkey=CDS]'"
-    lengths 1026
+    description "'CR931662.1_cds_CAI33325.1_1 [gene=wchL] [locus_tag=SPC14_0012] [db_xref=GOA:Q4K1S2,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1S2] [protein=putative glycosyl transferase] [protein_id=CAI33325.1] [location=8270..9289] [gbkey=CDS];CR931665.1_cds_CAI33390.1_1 [gene=wchL] [locus_tag=SPC15C_0012] [db_xref=GOA:Q4K1L9,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1L9] [protein=putative glycosyl transferase] [protein_id=CAI33390.1] [location=8274..9299] [gbkey=CDS];CR931663.1_cds_CAI33344.1_1 [gene=wchL] [locus_tag=SPC15A_0012] [db_xref=GOA:Q4K1K1,InterPro:IPR001173,UniProtKB/TrEMBL:Q4K1K1] [protein=putative glycosyl transferase] [protein_id=CAI33344.1] [location=8315..9343] [gbkey=CDS]'"
+    lengths 1029
     lengths 1026
     lengths 1029
+    lengths 1026
     lengths 1020
-    lengths 1029
     paralog 0
     mergedDNA 0
-    name "'CR9316621_cds_CAI333251_1~~~CR9316641_cds_CAI333671_1~~~CR9316661_cds_CAI334131_1'"
+    name "'CR9316621_cds_CAI333251_1~~~CR9316651_cds_CAI333901_1~~~CR9316631_cds_CAI333441_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'3_0_45;2_0_44;1_0_26;0_0_83;4_0_29'"
+    geneIDs "'4_0_30;3_0_46;1_0_27;2_0_46;0_0_83'"
     degrees 3
   ]
   node [
+    id 27
+    label "105"
+    CID 105
+    size 3
+    centroid "'0_0_30;4_0_117'"
+    maxLenId 1
+    members 0
+    members 1
+    members 4
+    seqIDs "'4_0_117'"
+    seqIDs "'0_0_30'"
+    seqIDs "'1_0_20'"
+    hasEnd 1
+    ORF_info "([2,3,4,5,6,7],[(20,95),(0,66),(0,31),(0,60),(0,54),(0,38)])"
+    ORF_info "([2,3,442,218,6,568],[(20,95),(0,66),(0,60),(0,31),(0,54),(0,38)])"
+    hash "15798962428164982149"
+    hash "2122709079328075955"
+    annotation "'CR931662.1_cds_CAI33314.1_1;CR931663.1_cds_CAI33333.1_1'"
+    bitscore 55.1
+    description "'CR931662.1_cds_CAI33314.1_1 [gene=dexB] [locus_tag=SPC14_0001] [db_xref=GOA:Q4K1T1,InterPro:IPR013780,UniProtKB/TrEMBL:Q4K1T1] [frame=3] [protein_id=CAI33314.1] [location=<1..134] [gbkey=CDS];CR931663.1_cds_CAI33333.1_1 [gene=dexB] [locus_tag=SPC15A_0001] [db_xref=GOA:Q4K1T1,InterPro:IPR013780,UniProtKB/TrEMBL:Q4K1T1] [frame=3] [protein_id=CAI33333.1] [location=<1..134] [gbkey=CDS]'"
+    lengths 180
+    lengths 180
+    lengths 180
+    paralog 0
+    mergedDNA 0
+    name "'CR9316621_cds_CAI333141_1~~~CR9316631_cds_CAI333331_1'"
+    genomeIDs "'0;1;4'"
+    geneIDs "'4_0_117;0_0_30;1_0_20'"
+    degrees 2
+  ]
+  node [
     id 28
-    label "102"
+    label "106"
+    CID 106
     size 5
-    centroid "'0_0_88;2_0_66'"
+    centroid "'0_0_88;2_0_69'"
     maxLenId 0
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'4_0_24'"
-    seqIDs "'0_0_88'"
     seqIDs "'1_0_2'"
-    seqIDs "'2_0_66'"
-    seqIDs "'3_0_15'"
+    seqIDs "'0_0_88'"
+    seqIDs "'2_0_69'"
+    seqIDs "'3_0_16'"
+    seqIDs "'4_0_25'"
     hasEnd 1
-    ORF_info "([309,42,315,63,66,69,317,74,323,88],[(201,317),(0,40),(0,441),(0,102),(0,60),(0,75),(0,60),(0,40),(0,288),(0,40)])"
-    ORF_info "([40,42,43,48,50,59,63,66,69,72,74,78,81,84,198,87,88],[(245,316),(0,40),(0,49),(0,87),(0,60),(0,332),(0,102),(0,60),(0,75),(0,60),(0,40),(0,166),(0,60),(0,67),(0,60),(0,51),(0,40)])"
+    ORF_info "([174,175,176,177,178,179,180,181,182,184],[(201,317),(0,40),(0,441),(0,102),(0,60),(0,75),(0,60),(0,40),(0,288),(0,40)])"
+    ORF_info "([315,175,509,317,510,319,177,178,179,322,181,323,511,325,512,327,184],[(245,316),(0,40),(0,49),(0,87),(0,60),(0,332),(0,102),(0,60),(0,75),(0,60),(0,40),(0,166),(0,60),(0,67),(0,60),(0,51),(0,40)])"
     hash "7017965351568178675"
     hash "3372764709443277038"
     annotation "'CR931662.1_cds_CAI33326.1_1;CR931664.1_cds_CAI33368.1_1'"
@@ -927,28 +957,29 @@ graph [
     mergedDNA 0
     name "'CR9316621_cds_CAI333261_1~~~CR9316641_cds_CAI333681_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'4_0_24;0_0_88;1_0_2;2_0_66;3_0_15'"
+    geneIDs "'1_0_2;0_0_88;2_0_69;3_0_16;4_0_25'"
     degrees 2
   ]
   node [
     id 29
-    label "103"
+    label "107"
+    CID 107
     size 5
-    centroid "'0_0_45;1_0_36'"
+    centroid "'0_0_46;1_0_37'"
     maxLenId 1
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'1_0_36'"
-    seqIDs "'0_0_45'"
-    seqIDs "'2_0_58'"
-    seqIDs "'4_0_37'"
-    seqIDs "'3_0_58'"
+    seqIDs "'2_0_61'"
+    seqIDs "'0_0_46'"
+    seqIDs "'1_0_37'"
+    seqIDs "'3_0_60'"
+    seqIDs "'4_0_38'"
     hasEnd 1
-    ORF_info "([331,102,334,105,342,112,347],[(117,538),(0,39),(0,113),(0,49),(0,278),(0,34),(0,88)])"
-    ORF_info "([89,487,94,489,100,102,103,105,110,112,114],[(45,205),(0,60),(0,195),(0,60),(0,134),(0,39),(0,113),(0,49),(0,278),(0,34),(0,76)])"
+    ORF_info "([185,186,187,188,189,190,191],[(117,538),(0,39),(0,113),(0,49),(0,278),(0,34),(0,88)])"
+    ORF_info "([328,329,330,331,332,186,333,188,334,190,335],[(45,205),(0,60),(0,195),(0,60),(0,134),(0,39),(0,113),(0,49),(0,278),(0,34),(0,76)])"
     hash "17083747222346147370"
     hash "2215011022332423275"
     annotation "'CR931662.1_cds_CAI33327.1_1;CR931663.1_cds_CAI33346.1_1'"
@@ -963,28 +994,29 @@ graph [
     mergedDNA 0
     name "'CR9316621_cds_CAI333271_1~~~CR9316631_cds_CAI333461_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_0_36;0_0_45;2_0_58;4_0_37;3_0_58'"
+    geneIDs "'2_0_61;0_0_46;1_0_37;3_0_60;4_0_38'"
     degrees 2
   ]
   node [
     id 30
-    label "104"
+    label "108"
+    CID 108
     size 5
-    centroid "'0_0_57;4_0_82'"
+    centroid "'0_0_58;4_0_83'"
     maxLenId 1
     members 0
     members 1
     members 2
     members 3
     members 4
-    seqIDs "'3_0_77'"
+    seqIDs "'2_0_81'"
     seqIDs "'1_0_97'"
-    seqIDs "'2_0_78'"
-    seqIDs "'4_0_82'"
-    seqIDs "'0_0_57'"
+    seqIDs "'4_0_83'"
+    seqIDs "'0_0_58'"
+    seqIDs "'3_0_79'"
     hasEnd 1
-    ORF_info "([347,119,349,123,359,139,383],[(81,179),(0,34),(0,60),(0,31),(0,596),(0,34),(0,784)])"
-    ORF_info "([114,491,118,119,121,123,129,139,140,492,147,494,153,497,159],[(81,136),(0,60),(0,41),(0,34),(0,60),(0,31),(0,596),(0,34),(0,117),(0,60),(0,353),(0,60),(0,121),(0,75),(0,172)])"
+    ORF_info "([191,192,193,194,195,196,197],[(81,179),(0,34),(0,60),(0,31),(0,596),(0,34),(0,784)])"
+    ORF_info "([335,337,338,192,339,194,340,196,341,602,343,344,345,346,347],[(81,136),(0,60),(0,41),(0,34),(0,60),(0,31),(0,596),(0,34),(0,117),(0,60),(0,353),(0,60),(0,121),(0,75),(0,172)])"
     hash "16864870410880944008"
     hash "2652586237674114606"
     annotation "'CR931662.1_cds_CAI33328.1_1;CR931663.1_cds_CAI33347.1_1'"
@@ -999,30 +1031,68 @@ graph [
     mergedDNA 0
     name "'CR9316621_cds_CAI333281_1~~~CR9316631_cds_CAI333471_1'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'3_0_77;1_0_97;2_0_78;4_0_82;0_0_57'"
-    degrees 4
+    geneIDs "'2_0_81;1_0_97;4_0_83;0_0_58;3_0_79'"
+    degrees 3
   ]
   node [
     id 31
-    label "105"
+    label "109"
+    CID 109
     size 5
-    centroid "'4_0_0;1_0_101;0_0_72;2_0_30'"
+    centroid "'4_0_16;2_0_20'"
+    maxLenId 0
+    members 0
+    members 1
+    members 2
+    members 3
+    members 4
+    seqIDs "'4_0_16'"
+    seqIDs "'3_0_20'"
+    seqIDs "'1_refound_-2'"
+    seqIDs "'2_0_20'"
+    seqIDs "'0_refound_-1'"
+    hasEnd 1
+    ORF_info "([11,569,221,222,223,14,15,16,17,18,19,570],[(13,44),(0,45),(0,44),(0,36),(0,45),(0,44),(0,39),(0,52),(0,37),(0,48),(0,31),(0,40)])"
+    ORF_info "([11,12,443,222,444,15,16,445],[(13,44),(0,55),(0,34),(0,36),(0,60),(0,39),(0,52),(0,48)])"
+    hash "10304161550160867872"
+    hash "13071902194382357696"
+    annotation "''"
+    bitscore 0
+    description "''"
+    lengths 174
+    lengths 153
+    lengths 174
+    lengths 153
+    lengths 173
+    paralog 0
+    mergedDNA 0
+    name "'group_6'"
+    genomeIDs "'0;1;2;3;4'"
+    geneIDs "'4_0_16;3_0_20;1_refound_-2;2_0_20;0_refound_-1'"
+    degrees 2
+  ]
+  node [
+    id 32
+    label "110"
+    CID 110
+    size 5
+    centroid "'4_0_0;1_0_101;0_0_72;2_0_31'"
     maxLenId 1
     members 0
     members 1
     members 2
     members 3
     members 4
+    seqIDs "'2_0_31'"
     seqIDs "'1_0_101'"
-    seqIDs "'4_0_0'"
     seqIDs "'0_0_72'"
-    seqIDs "'2_0_30'"
-    seqIDs "'3_0_28'"
+    seqIDs "'3_0_29'"
+    seqIDs "'4_0_0'"
     hasEnd 1
-    ORF_info "([-354,-353,-352,-39,-351,-350,-37,-36,-35,-34,-348,-32,-30,-28,-346,605,-345,-344,-343],[(14,78),(0,43),(0,34),(0,41),(0,44),(0,45),(0,44),(0,48),(0,41),(0,39),(0,65),(0,32),(0,58),(0,45),(0,65),(0,30),(0,49),(0,47),(0,50)])"
-    ORF_info "([-44,-463,-353,-462,-350,-37,-36,-460,-30,-28,-27,-458,-344,-456],[(14,66),(0,41),(0,43),(0,61),(0,45),(0,44),(0,48),(0,91),(0,58),(0,45),(0,54),(0,60),(0,47),(0,50)])"
-    ORF_info "([-44,-41,-39,-38,-37,-36,-35,-34,-33,-32,-30,-28,-27,-25,-606,605,604,-22],[(14,66),(0,60),(0,41),(0,60),(0,44),(0,48),(0,41),(0,39),(0,66),(0,32),(0,58),(0,45),(0,54),(0,38),(0,30),(0,30),(0,30),(0,87)])"
-    ORF_info "([-44,-463,-353,-352,-39,-38,-37,-571,-570,-30,-569,-606,605,604,-568],[(14,66),(0,41),(0,43),(0,34),(0,41),(0,60),(0,44),(0,60),(0,79),(0,58),(0,81),(0,30),(0,30),(0,30),(0,79)])"
+    ORF_info "([-575,-231,-450,-32,-574,-229,-30,-29,-28,-27,-573,-25,-24,-23,-572,605,-571,-226,-570],[(14,78),(0,43),(0,34),(0,41),(0,44),(0,45),(0,44),(0,48),(0,41),(0,39),(0,65),(0,32),(0,58),(0,45),(0,65),(0,30),(0,49),(0,47),(0,50)])"
+    ORF_info "([-34,-232,-231,-230,-229,-30,-29,-228,-24,-23,-22,-227,-226,-225],[(14,66),(0,41),(0,43),(0,61),(0,45),(0,44),(0,48),(0,91),(0,58),(0,45),(0,54),(0,60),(0,47),(0,50)])"
+    ORF_info "([-34,-33,-32,-31,-30,-29,-28,-27,-26,-25,-24,-23,-22,-21,-606,605,604,-20],[(14,66),(0,60),(0,41),(0,60),(0,44),(0,48),(0,41),(0,39),(0,66),(0,32),(0,58),(0,45),(0,54),(0,38),(0,30),(0,30),(0,30),(0,87)])"
+    ORF_info "([-34,-232,-231,-450,-32,-31,-30,-448,-447,-24,-446,-606,605,604,-445],[(14,66),(0,41),(0,43),(0,34),(0,41),(0,60),(0,44),(0,60),(0,79),(0,58),(0,81),(0,30),(0,30),(0,30),(0,79)])"
     hash "8201068356544968841"
     hash "131271928875036829"
     hash "14540799518976696767"
@@ -1030,53 +1100,17 @@ graph [
     annotation "''"
     bitscore 0
     description "''"
-    lengths 363
+    lengths 357
     lengths 363
     lengths 363
     lengths 357
-    lengths 357
-    paralog 0
-    mergedDNA 0
-    name "'group_6'"
-    genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_0_101;4_0_0;0_0_72;2_0_30;3_0_28'"
-    degrees 3
-  ]
-  node [
-    id 32
-    label "106"
-    size 5
-    centroid "'4_0_15;2_0_19'"
-    maxLenId 0
-    members 0
-    members 1
-    members 2
-    members 3
-    members 4
-    seqIDs "'1_refound_-2'"
-    seqIDs "'4_0_15'"
-    seqIDs "'0_refound_-1'"
-    seqIDs "'2_0_19'"
-    seqIDs "'3_0_19'"
-    hasEnd 1
-    ORF_info "([12,338,339,340,341,15,16,17,18,19,20,343],[(13,44),(0,45),(0,44),(0,36),(0,45),(0,44),(0,39),(0,52),(0,37),(0,48),(0,31),(0,40)])"
-    ORF_info "([12,13,566,340,567,16,17,568],[(13,44),(0,55),(0,34),(0,36),(0,60),(0,39),(0,52),(0,48)])"
-    hash "10304161550160867872"
-    hash "13071902194382357696"
-    annotation "''"
-    bitscore 0
-    description "''"
-    lengths 174
-    lengths 174
-    lengths 173
-    lengths 153
-    lengths 153
+    lengths 363
     paralog 0
     mergedDNA 0
     name "'group_7'"
     genomeIDs "'0;1;2;3;4'"
-    geneIDs "'1_refound_-2;4_0_15;0_refound_-1;2_0_19;3_0_19'"
-    degrees 1
+    geneIDs "'2_0_31;1_0_101;0_0_72;3_0_29;4_0_0'"
+    degrees 4
   ]
   edge [
     source 0
@@ -1096,7 +1130,7 @@ graph [
   ]
   edge [
     source 1
-    target 24
+    target 23
     size 2
     members 1
     members 4
@@ -1104,7 +1138,7 @@ graph [
   ]
   edge [
     source 1
-    target 27
+    target 26
     size 2
     members 1
     members 4
@@ -1138,7 +1172,7 @@ graph [
   ]
   edge [
     source 3
-    target 16
+    target 15
     size 4
     members 1
     members 2
@@ -1155,16 +1189,8 @@ graph [
     genomeIDs "'0'"
   ]
   edge [
-    source 5
-    target 8
-    size 1
-    members "_networkx_list_start"
-    members 4
-    genomeIDs "'4'"
-  ]
-  edge [
     source 6
-    target 17
+    target 16
     size 4
     members 1
     members 2
@@ -1190,7 +1216,7 @@ graph [
   ]
   edge [
     source 8
-    target 17
+    target 16
     size 4
     members 1
     members 2
@@ -1200,7 +1226,7 @@ graph [
   ]
   edge [
     source 8
-    target 18
+    target 17
     size 3
     members 1
     members 2
@@ -1225,23 +1251,15 @@ graph [
   ]
   edge [
     source 13
-    target 16
+    target 14
     size 1
     members "_networkx_list_start"
-    members 1
-    genomeIDs "'1'"
+    members 4
+    genomeIDs "'4'"
   ]
   edge [
     source 13
-    target 30
-    size 1
-    members "_networkx_list_start"
-    members 1
-    genomeIDs "'1'"
-  ]
-  edge [
-    source 14
-    target 15
+    target 24
     size 1
     members "_networkx_list_start"
     members 4
@@ -1249,7 +1267,7 @@ graph [
   ]
   edge [
     source 14
-    target 25
+    target 32
     size 1
     members "_networkx_list_start"
     members 4
@@ -1257,23 +1275,27 @@ graph [
   ]
   edge [
     source 15
-    target 31
-    size 1
-    members "_networkx_list_start"
-    members 4
-    genomeIDs "'4'"
-  ]
-  edge [
-    source 16
     target 30
-    size 3
+    size 4
+    members 1
     members 2
     members 3
     members 4
-    genomeIDs "'2;3;4'"
+    genomeIDs "'1;2;3;4'"
   ]
   edge [
-    source 19
+    source 18
+    target 19
+    size 5
+    members 0
+    members 1
+    members 2
+    members 3
+    members 4
+    genomeIDs "'0;1;2;3;4'"
+  ]
+  edge [
+    source 18
     target 20
     size 5
     members 0
@@ -1330,17 +1352,6 @@ graph [
   edge [
     source 23
     target 25
-    size 5
-    members 0
-    members 1
-    members 2
-    members 3
-    members 4
-    genomeIDs "'0;1;2;3;4'"
-  ]
-  edge [
-    source 24
-    target 26
     size 3
     members 0
     members 2
@@ -1348,8 +1359,8 @@ graph [
     genomeIDs "'0;2;3'"
   ]
   edge [
-    source 25
-    target 31
+    source 24
+    target 32
     size 4
     members 0
     members 1
@@ -1358,8 +1369,8 @@ graph [
     genomeIDs "'0;1;2;3'"
   ]
   edge [
-    source 26
-    target 27
+    source 25
+    target 26
     size 3
     members 0
     members 2
@@ -1367,7 +1378,7 @@ graph [
     genomeIDs "'0;2;3'"
   ]
   edge [
-    source 27
+    source 26
     target 28
     size 5
     members 0
@@ -1376,6 +1387,22 @@ graph [
     members 3
     members 4
     genomeIDs "'0;1;2;3;4'"
+  ]
+  edge [
+    source 27
+    target 31
+    size 1
+    members "_networkx_list_start"
+    members 4
+    genomeIDs "'4'"
+  ]
+  edge [
+    source 27
+    target 32
+    size 2
+    members 0
+    members 1
+    genomeIDs "'0;1'"
   ]
   edge [
     source 28
