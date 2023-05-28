@@ -1,193 +1,193 @@
 Group,Stat,Type,Value
-"('PspA', 'Prokka + Panaroo')",Median,AAI,0.4095513748191027
-"('PspA', 'Reference')",Median,AAI,0.2457293035479632
-"('PspA', 'ggCaller')",Median,AAI,0.296474358974359
-"('PsrP', 'Prokka + Panaroo')",Median,AAI,0.088235294117647
-"('PsrP', 'Reference')",Median,AAI,0.8505263157894737
-"('PsrP', 'ggCaller')",Median,AAI,0.0729483282674772
-"('pbp1a', 'Prokka + Panaroo')",Median,AAI,0.9944367176634216
-"('pbp1a', 'Reference')",Median,AAI,0.9944367176634216
-"('pbp1a', 'ggCaller')",Median,AAI,0.9944367176634216
-"('pbp2b', 'Prokka + Panaroo')",Median,AAI,0.9823529411764704
-"('pbp2b', 'Reference')",Median,AAI,0.9823529411764704
-"('pbp2b', 'ggCaller')",Median,AAI,0.9823529411764704
+"('Pbp1a', 'Manual + COGsoft')",Median,AAI,0.988950276243094
+"('Pbp1a', 'Prokka + Panaroo')",Median,AAI,0.9889349930843707
+"('Pbp1a', 'ggCaller')",Median,AAI,0.988950276243094
+"('Pbp2b', 'Manual + COGsoft')",Median,AAI,0.9653679653679653
+"('Pbp2b', 'Prokka + Panaroo')",Median,AAI,0.9653179190751445
+"('Pbp2b', 'ggCaller')",Median,AAI,0.9653679653679653
+"('PspA', 'Manual + COGsoft')",Median,AAI,0.2870748299319728
+"('PspA', 'Prokka + Panaroo')",Median,AAI,0.48148148148148145
+"('PspA', 'ggCaller')",Median,AAI,0.3020833333333333
+"('PsrP', 'Manual + COGsoft')",Median,AAI,0.8133874239350912
+"('PsrP', 'Prokka + Panaroo')",Median,AAI,0.1791044776119403
+"('PsrP', 'ggCaller')",Median,AAI,0.34886499402628435
+"('Pbp1a', 'Manual + COGsoft', 'end')",Median,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'start')",Median,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'within')",Median,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'end')",Median,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'start')",Median,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'within')",Median,Length,0.0
+"('Pbp1a', 'ggCaller', 'end')",Median,Length,0.0
+"('Pbp1a', 'ggCaller', 'start')",Median,Length,0.0
+"('Pbp1a', 'ggCaller', 'within')",Median,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'end')",Median,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'start')",Median,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'within')",Median,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'end')",Median,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'start')",Median,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'within')",Median,Length,0.0
+"('Pbp2b', 'ggCaller', 'end')",Median,Length,0.0
+"('Pbp2b', 'ggCaller', 'start')",Median,Length,0.0
+"('Pbp2b', 'ggCaller', 'within')",Median,Length,0.0
+"('PspA', 'Manual + COGsoft', 'end')",Median,Length,0.0
+"('PspA', 'Manual + COGsoft', 'start')",Median,Length,0.0
+"('PspA', 'Manual + COGsoft', 'within')",Median,Length,0.0054869684499314125
 "('PspA', 'Prokka + Panaroo', 'end')",Median,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'start')",Median,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'within')",Median,Length,0.018426103646833013
-"('PspA', 'Reference', 'end')",Median,Length,0.0
-"('PspA', 'Reference', 'start')",Median,Length,0.0
-"('PspA', 'Reference', 'within')",Median,Length,0.0054869684499314125
 "('PspA', 'ggCaller', 'end')",Median,Length,0.0
 "('PspA', 'ggCaller', 'start')",Median,Length,0.0
-"('PspA', 'ggCaller', 'within')",Median,Length,0.029242016160061564
+"('PspA', 'ggCaller', 'within')",Median,Length,0.0196319018404908
+"('PsrP', 'Manual + COGsoft', 'end')",Median,Length,-0.8095441900278194
+"('PsrP', 'Manual + COGsoft', 'start')",Median,Length,0.0021399529210357373
+"('PsrP', 'Manual + COGsoft', 'within')",Median,Length,0.045153006633854055
 "('PsrP', 'Prokka + Panaroo', 'end')",Median,Length,0.00030441400304414006
 "('PsrP', 'Prokka + Panaroo', 'start')",Median,Length,-0.00837138508371385
 "('PsrP', 'Prokka + Panaroo', 'within')",Median,Length,0.604261796042618
-"('PsrP', 'Reference', 'end')",Median,Length,-0.8095441900278194
-"('PsrP', 'Reference', 'start')",Median,Length,0.0021399529210357373
-"('PsrP', 'Reference', 'within')",Median,Length,0.045153006633854055
-"('PsrP', 'ggCaller', 'end')",Median,Length,-0.010623084780388151
-"('PsrP', 'ggCaller', 'start')",Median,Length,-0.008171603677221655
-"('PsrP', 'ggCaller', 'within')",Median,Length,0.862308478038815
-"('pbp1a', 'Prokka + Panaroo', 'end')",Median,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'start')",Median,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'within')",Median,Length,0.0
-"('pbp1a', 'Reference', 'end')",Median,Length,0.0
-"('pbp1a', 'Reference', 'start')",Median,Length,0.0
-"('pbp1a', 'Reference', 'within')",Median,Length,0.0
-"('pbp1a', 'ggCaller', 'end')",Median,Length,0.0
-"('pbp1a', 'ggCaller', 'start')",Median,Length,0.0
-"('pbp1a', 'ggCaller', 'within')",Median,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'end')",Median,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'start')",Median,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'within')",Median,Length,0.0
-"('pbp2b', 'Reference', 'end')",Median,Length,0.0
-"('pbp2b', 'Reference', 'start')",Median,Length,0.0
-"('pbp2b', 'Reference', 'within')",Median,Length,0.0
-"('pbp2b', 'ggCaller', 'end')",Median,Length,0.0
-"('pbp2b', 'ggCaller', 'start')",Median,Length,0.0
-"('pbp2b', 'ggCaller', 'within')",Median,Length,0.0
-"('PspA', 'Prokka + Panaroo')",Mean,AAI,0.36244934401538736
-"('PspA', 'Reference')",Mean,AAI,0.31087019869492116
-"('PspA', 'ggCaller')",Mean,AAI,0.32118202640942883
-"('PsrP', 'Prokka + Panaroo')",Mean,AAI,0.16056030573725386
-"('PsrP', 'Reference')",Mean,AAI,0.8197878430100307
-"('PsrP', 'ggCaller')",Mean,AAI,0.24974345894539451
-"('pbp1a', 'Prokka + Panaroo')",Mean,AAI,0.9568711281988572
-"('pbp1a', 'Reference')",Mean,AAI,0.9571462842238663
-"('pbp1a', 'ggCaller')",Mean,AAI,0.95373344112416
-"('pbp2b', 'Prokka + Panaroo')",Mean,AAI,0.978007138079608
-"('pbp2b', 'Reference')",Mean,AAI,0.9794318569832661
-"('pbp2b', 'ggCaller')",Mean,AAI,0.9749893140891874
+"('PsrP', 'ggCaller', 'end')",Median,Length,0.0
+"('PsrP', 'ggCaller', 'start')",Median,Length,-0.45869947275922673
+"('PsrP', 'ggCaller', 'within')",Median,Length,0.45166959578207383
+"('Pbp1a', 'Manual + COGsoft')",Mean,AAI,0.9279058499751639
+"('Pbp1a', 'Prokka + Panaroo')",Mean,AAI,0.9275719701313524
+"('Pbp1a', 'ggCaller')",Mean,AAI,0.9277440823485739
+"('Pbp2b', 'Manual + COGsoft')",Mean,AAI,0.9624652966275917
+"('Pbp2b', 'Prokka + Panaroo')",Mean,AAI,0.9631678582521438
+"('Pbp2b', 'ggCaller')",Mean,AAI,0.9610636749537047
+"('PspA', 'Manual + COGsoft')",Mean,AAI,0.3437753167524099
+"('PspA', 'Prokka + Panaroo')",Mean,AAI,0.41005313770478385
+"('PspA', 'ggCaller')",Mean,AAI,0.35754596446418935
+"('PsrP', 'Manual + COGsoft')",Mean,AAI,0.8077699861207942
+"('PsrP', 'Prokka + Panaroo')",Mean,AAI,0.2849043073216543
+"('PsrP', 'ggCaller')",Mean,AAI,0.421394123310199
+"('Pbp1a', 'Manual + COGsoft', 'end')",Mean,Length,-0.0007972927481795149
+"('Pbp1a', 'Manual + COGsoft', 'start')",Mean,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'within')",Mean,Length,-1.5502914547935007e-05
+"('Pbp1a', 'Prokka + Panaroo', 'end')",Mean,Length,-3.754748652707836e-05
+"('Pbp1a', 'Prokka + Panaroo', 'start')",Mean,Length,-0.0008658008658008658
+"('Pbp1a', 'Prokka + Panaroo', 'within')",Mean,Length,-1.1043378390317166e-05
+"('Pbp1a', 'ggCaller', 'end')",Mean,Length,0.000140210666526456
+"('Pbp1a', 'ggCaller', 'start')",Mean,Length,-0.0008127837075205495
+"('Pbp1a', 'ggCaller', 'within')",Mean,Length,0.0001665001665001665
+"('Pbp2b', 'Manual + COGsoft', 'end')",Mean,Length,-0.0004147834544310315
+"('Pbp2b', 'Manual + COGsoft', 'start')",Mean,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'within')",Mean,Length,-2.383812956500181e-06
+"('Pbp2b', 'Prokka + Panaroo', 'end')",Mean,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'start')",Mean,Length,-0.0011323111543375861
+"('Pbp2b', 'Prokka + Panaroo', 'within')",Mean,Length,-4.767625913000362e-06
+"('Pbp2b', 'ggCaller', 'end')",Mean,Length,0.0
+"('Pbp2b', 'ggCaller', 'start')",Mean,Length,-0.0011323111543375861
+"('Pbp2b', 'ggCaller', 'within')",Mean,Length,-4.767625913000362e-06
+"('PspA', 'Manual + COGsoft', 'end')",Mean,Length,-0.12159536079289165
+"('PspA', 'Manual + COGsoft', 'start')",Mean,Length,-0.1497624167377254
+"('PspA', 'Manual + COGsoft', 'within')",Mean,Length,-0.07878712045378712
 "('PspA', 'Prokka + Panaroo', 'end')",Mean,Length,-0.024341423288101814
 "('PspA', 'Prokka + Panaroo', 'start')",Mean,Length,-0.09055688939121362
 "('PspA', 'Prokka + Panaroo', 'within')",Mean,Length,-0.031851772589565765
-"('PspA', 'Reference', 'end')",Mean,Length,-0.12159536079289165
-"('PspA', 'Reference', 'start')",Mean,Length,-0.1497624167377254
-"('PspA', 'Reference', 'within')",Mean,Length,-0.07878712045378712
-"('PspA', 'ggCaller', 'end')",Mean,Length,-0.030177592149588064
-"('PspA', 'ggCaller', 'start')",Mean,Length,-0.11411920477280063
-"('PspA', 'ggCaller', 'within')",Mean,Length,-0.049628898517266956
+"('PspA', 'ggCaller', 'end')",Mean,Length,-0.05343574384490282
+"('PspA', 'ggCaller', 'start')",Mean,Length,-0.09534933900133649
+"('PspA', 'ggCaller', 'within')",Mean,Length,-0.04340917508010885
+"('PsrP', 'Manual + COGsoft', 'end')",Mean,Length,-0.7741117574201246
+"('PsrP', 'Manual + COGsoft', 'start')",Mean,Length,0.0018481411590763185
+"('PsrP', 'Manual + COGsoft', 'within')",Mean,Length,0.07762192868120538
 "('PsrP', 'Prokka + Panaroo', 'end')",Mean,Length,-0.014735812133072406
 "('PsrP', 'Prokka + Panaroo', 'start')",Mean,Length,-0.051198811335797643
 "('PsrP', 'Prokka + Panaroo', 'within')",Mean,Length,0.5643219540479815
-"('PsrP', 'Reference', 'end')",Mean,Length,-0.7741117574201246
-"('PsrP', 'Reference', 'start')",Mean,Length,0.0018481411590763185
-"('PsrP', 'Reference', 'within')",Mean,Length,0.07762192868120538
-"('PsrP', 'ggCaller', 'end')",Mean,Length,-0.005499943252752242
-"('PsrP', 'ggCaller', 'start')",Mean,Length,-0.09270003404834866
-"('PsrP', 'ggCaller', 'within')",Mean,Length,0.7360617410055612
-"('pbp1a', 'Prokka + Panaroo', 'end')",Mean,Length,-3.754748652707836e-05
-"('pbp1a', 'Prokka + Panaroo', 'start')",Mean,Length,-0.0008658008658008658
-"('pbp1a', 'Prokka + Panaroo', 'within')",Mean,Length,-1.1043378390317166e-05
-"('pbp1a', 'Reference', 'end')",Mean,Length,-0.0007972927481795149
-"('pbp1a', 'Reference', 'start')",Mean,Length,0.0
-"('pbp1a', 'Reference', 'within')",Mean,Length,-1.5502914547935007e-05
-"('pbp1a', 'ggCaller', 'end')",Mean,Length,2.1872409486501443e-05
-"('pbp1a', 'ggCaller', 'start')",Mean,Length,-0.0010695608238899205
-"('pbp1a', 'ggCaller', 'within')",Mean,Length,0.0012029825217575794
-"('pbp2b', 'Prokka + Panaroo', 'end')",Mean,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'start')",Mean,Length,-0.0011323111543375861
-"('pbp2b', 'Prokka + Panaroo', 'within')",Mean,Length,-4.767625913000362e-06
-"('pbp2b', 'Reference', 'end')",Mean,Length,-0.0004147834544310315
-"('pbp2b', 'Reference', 'start')",Mean,Length,0.0
-"('pbp2b', 'Reference', 'within')",Mean,Length,-2.383812956500181e-06
-"('pbp2b', 'ggCaller', 'end')",Mean,Length,-0.00014517691353881817
-"('pbp2b', 'ggCaller', 'start')",Mean,Length,-0.0012375736891833678
-"('pbp2b', 'ggCaller', 'within')",Mean,Length,0.0011756950047241996
-"('PspA', 'Prokka + Panaroo')",IQR,AAI,0.3232915814679585
-"('PspA', 'Reference')",IQR,AAI,0.30047089628667656
-"('PspA', 'ggCaller')",IQR,AAI,0.3096735566404145
-"('PsrP', 'Prokka + Panaroo')",IQR,AAI,0.1007086072126224
-"('PsrP', 'Reference')",IQR,AAI,0.06010731912614298
-"('PsrP', 'ggCaller')",IQR,AAI,0.0887210800935947
-"('pbp1a', 'Prokka + Panaroo')",IQR,AAI,0.08623087621696801
-"('pbp1a', 'Reference')",IQR,AAI,0.08623087621696801
-"('pbp1a', 'ggCaller')",IQR,AAI,0.08901251738525717
-"('pbp2b', 'Prokka + Panaroo')",IQR,AAI,0.01764705882352935
-"('pbp2b', 'Reference')",IQR,AAI,0.01764705882352935
-"('pbp2b', 'ggCaller')",IQR,AAI,0.01764705882352935
+"('PsrP', 'ggCaller', 'end')",Mean,Length,-0.050966608084358524
+"('PsrP', 'ggCaller', 'start')",Mean,Length,-0.30756084120222815
+"('PsrP', 'ggCaller', 'within')",Mean,Length,0.490359983318936
+"('Pbp1a', 'Manual + COGsoft')",IQR,AAI,0.14791123200918077
+"('Pbp1a', 'Prokka + Panaroo')",IQR,AAI,0.14810000710277715
+"('Pbp1a', 'ggCaller')",IQR,AAI,0.14791123200918077
+"('Pbp2b', 'Manual + COGsoft')",IQR,AAI,0.03097438441977307
+"('Pbp2b', 'Prokka + Panaroo')",IQR,AAI,0.0324694173750778
+"('Pbp2b', 'ggCaller')",IQR,AAI,0.03097438441977307
+"('PspA', 'Manual + COGsoft')",IQR,AAI,0.28331937727023626
+"('PspA', 'Prokka + Panaroo')",IQR,AAI,0.3446331104200493
+"('PspA', 'ggCaller')",IQR,AAI,0.31345556510682004
+"('PsrP', 'Manual + COGsoft')",IQR,AAI,0.051464737793851634
+"('PsrP', 'Prokka + Panaroo')",IQR,AAI,0.0927434103818716
+"('PsrP', 'ggCaller')",IQR,AAI,0.17457667365537857
+"('Pbp1a', 'Manual + COGsoft', 'end')",IQR,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'start')",IQR,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'within')",IQR,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'start')",IQR,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'within')",IQR,Length,0.0
+"('Pbp1a', 'ggCaller', 'end')",IQR,Length,0.0
+"('Pbp1a', 'ggCaller', 'start')",IQR,Length,0.0
+"('Pbp1a', 'ggCaller', 'within')",IQR,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'end')",IQR,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'start')",IQR,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'within')",IQR,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'start')",IQR,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'within')",IQR,Length,0.0
+"('Pbp2b', 'ggCaller', 'end')",IQR,Length,0.0
+"('Pbp2b', 'ggCaller', 'start')",IQR,Length,0.0
+"('Pbp2b', 'ggCaller', 'within')",IQR,Length,0.0
+"('PspA', 'Manual + COGsoft', 'end')",IQR,Length,0.11385459533607682
+"('PspA', 'Manual + COGsoft', 'start')",IQR,Length,0.04046639231824417
+"('PspA', 'Manual + COGsoft', 'within')",IQR,Length,0.3299039780521262
 "('PspA', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'start')",IQR,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'within')",IQR,Length,0.0418426103646833
-"('PspA', 'Reference', 'end')",IQR,Length,0.11385459533607682
-"('PspA', 'Reference', 'start')",IQR,Length,0.04046639231824417
-"('PspA', 'Reference', 'within')",IQR,Length,0.3299039780521262
 "('PspA', 'ggCaller', 'end')",IQR,Length,0.0
 "('PspA', 'ggCaller', 'start')",IQR,Length,0.0
-"('PspA', 'ggCaller', 'within')",IQR,Length,0.039630627164293955
+"('PspA', 'ggCaller', 'within')",IQR,Length,0.049897750511247445
+"('PsrP', 'Manual + COGsoft', 'end')",IQR,Length,0.010967258720308126
+"('PsrP', 'Manual + COGsoft', 'start')",IQR,Length,0.0
+"('PsrP', 'Manual + COGsoft', 'within')",IQR,Length,0.0010699764605178672
 "('PsrP', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
 "('PsrP', 'Prokka + Panaroo', 'start')",IQR,Length,0.08900304414003045
 "('PsrP', 'Prokka + Panaroo', 'within')",IQR,Length,0.07646118721461193
-"('PsrP', 'Reference', 'end')",IQR,Length,0.010967258720308126
-"('PsrP', 'Reference', 'start')",IQR,Length,0.0
-"('PsrP', 'Reference', 'within')",IQR,Length,0.0010699764605178672
-"('PsrP', 'ggCaller', 'end')",IQR,Length,0.010623084780388151
-"('PsrP', 'ggCaller', 'start')",IQR,Length,0.013534218590398368
-"('PsrP', 'ggCaller', 'within')",IQR,Length,0.1785495403472931
-"('pbp1a', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'start')",IQR,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'within')",IQR,Length,0.0
-"('pbp1a', 'Reference', 'end')",IQR,Length,0.0
-"('pbp1a', 'Reference', 'start')",IQR,Length,0.0
-"('pbp1a', 'Reference', 'within')",IQR,Length,0.0
-"('pbp1a', 'ggCaller', 'end')",IQR,Length,0.0
-"('pbp1a', 'ggCaller', 'start')",IQR,Length,0.0
-"('pbp1a', 'ggCaller', 'within')",IQR,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'end')",IQR,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'start')",IQR,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'within')",IQR,Length,0.0
-"('pbp2b', 'Reference', 'end')",IQR,Length,0.0
-"('pbp2b', 'Reference', 'start')",IQR,Length,0.0
-"('pbp2b', 'Reference', 'within')",IQR,Length,0.0
-"('pbp2b', 'ggCaller', 'end')",IQR,Length,0.0
-"('pbp2b', 'ggCaller', 'start')",IQR,Length,0.0
-"('pbp2b', 'ggCaller', 'within')",IQR,Length,0.0
-"('PspA', 'Prokka + Panaroo')",Mode,AAI,0.0
-"('PspA', 'Reference')",Mode,AAI,0.0
-"('PspA', 'ggCaller')",Mode,AAI,0.0
-"('PsrP', 'Prokka + Panaroo')",Mode,AAI,0.0
-"('PsrP', 'Reference')",Mode,AAI,1.0
+"('PsrP', 'ggCaller', 'end')",IQR,Length,0.0
+"('PsrP', 'ggCaller', 'start')",IQR,Length,0.0
+"('PsrP', 'ggCaller', 'within')",IQR,Length,0.014455184534270638
+"('Pbp1a', 'Manual + COGsoft')",Mode,AAI,0.9972260748959778
+"('Pbp1a', 'Prokka + Panaroo')",Mode,AAI,0.9972222222222222
+"('Pbp1a', 'ggCaller')",Mode,AAI,0.9972260748959778
+"('Pbp2b', 'Manual + COGsoft')",Mode,AAI,0.9941434846266471
+"('Pbp2b', 'Prokka + Panaroo')",Mode,AAI,0.9941348973607038
+"('Pbp2b', 'ggCaller')",Mode,AAI,0.9941434846266471
+"('PspA', 'Manual + COGsoft')",Mode,AAI,1.0
+"('PspA', 'Prokka + Panaroo')",Mode,AAI,1.0
+"('PspA', 'ggCaller')",Mode,AAI,1.0
+"('PsrP', 'Manual + COGsoft')",Mode,AAI,1.0
+"('PsrP', 'Prokka + Panaroo')",Mode,AAI,1.0
 "('PsrP', 'ggCaller')",Mode,AAI,1.0
-"('pbp1a', 'Prokka + Panaroo')",Mode,AAI,0.9986091794158554
-"('pbp1a', 'Reference')",Mode,AAI,0.9986091794158554
-"('pbp1a', 'ggCaller')",Mode,AAI,0.9986091794158554
-"('pbp2b', 'Prokka + Panaroo')",Mode,AAI,0.9970588235294118
-"('pbp2b', 'Reference')",Mode,AAI,0.9970588235294118
-"('pbp2b', 'ggCaller')",Mode,AAI,0.9970588235294118
+"('Pbp1a', 'Manual + COGsoft', 'end')",Mode,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'start')",Mode,Length,0.0
+"('Pbp1a', 'Manual + COGsoft', 'within')",Mode,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'end')",Mode,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'start')",Mode,Length,0.0
+"('Pbp1a', 'Prokka + Panaroo', 'within')",Mode,Length,0.0
+"('Pbp1a', 'ggCaller', 'end')",Mode,Length,0.0
+"('Pbp1a', 'ggCaller', 'start')",Mode,Length,0.0
+"('Pbp1a', 'ggCaller', 'within')",Mode,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'end')",Mode,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'start')",Mode,Length,0.0
+"('Pbp2b', 'Manual + COGsoft', 'within')",Mode,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'end')",Mode,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'start')",Mode,Length,0.0
+"('Pbp2b', 'Prokka + Panaroo', 'within')",Mode,Length,0.0
+"('Pbp2b', 'ggCaller', 'end')",Mode,Length,0.0
+"('Pbp2b', 'ggCaller', 'start')",Mode,Length,0.0
+"('Pbp2b', 'ggCaller', 'within')",Mode,Length,0.0
+"('PspA', 'Manual + COGsoft', 'end')",Mode,Length,0.0
+"('PspA', 'Manual + COGsoft', 'start')",Mode,Length,0.0
+"('PspA', 'Manual + COGsoft', 'within')",Mode,Length,0.30795610425240055
 "('PspA', 'Prokka + Panaroo', 'end')",Mode,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'start')",Mode,Length,0.0
 "('PspA', 'Prokka + Panaroo', 'within')",Mode,Length,[-0.2084453   0.01074856]
-"('PspA', 'Reference', 'end')",Mode,Length,0.0
-"('PspA', 'Reference', 'start')",Mode,Length,0.0
-"('PspA', 'Reference', 'within')",Mode,Length,0.30795610425240055
 "('PspA', 'ggCaller', 'end')",Mode,Length,0.0
 "('PspA', 'ggCaller', 'start')",Mode,Length,0.0
-"('PspA', 'ggCaller', 'within')",Mode,Length,-0.6733358984224702
+"('PspA', 'ggCaller', 'within')",Mode,Length,-0.232719836400818
+"('PsrP', 'Manual + COGsoft', 'end')",Mode,Length,-0.8187459875882731
+"('PsrP', 'Manual + COGsoft', 'start')",Mode,Length,0.0021399529210357373
+"('PsrP', 'Manual + COGsoft', 'within')",Mode,Length,0.04429702546543976
 "('PsrP', 'Prokka + Panaroo', 'end')",Mode,Length,0.00030441400304414006
 "('PsrP', 'Prokka + Panaroo', 'start')",Mode,Length,-0.00426179604261796
 "('PsrP', 'Prokka + Panaroo', 'within')",Mode,Length,[0.59649924 0.6260274  0.64063927]
-"('PsrP', 'Reference', 'end')",Mode,Length,-0.8187459875882731
-"('PsrP', 'Reference', 'start')",Mode,Length,0.0021399529210357373
-"('PsrP', 'Reference', 'within')",Mode,Length,0.04429702546543976
-"('PsrP', 'ggCaller', 'end')",Mode,Length,-0.010623084780388151
-"('PsrP', 'ggCaller', 'start')",Mode,Length,-0.008171603677221655
-"('PsrP', 'ggCaller', 'within')",Mode,Length,0.8737487231869254
-"('pbp1a', 'Prokka + Panaroo', 'end')",Mode,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'start')",Mode,Length,0.0
-"('pbp1a', 'Prokka + Panaroo', 'within')",Mode,Length,0.0
-"('pbp1a', 'Reference', 'end')",Mode,Length,0.0
-"('pbp1a', 'Reference', 'start')",Mode,Length,0.0
-"('pbp1a', 'Reference', 'within')",Mode,Length,0.0
-"('pbp1a', 'ggCaller', 'end')",Mode,Length,0.0
-"('pbp1a', 'ggCaller', 'start')",Mode,Length,0.0
-"('pbp1a', 'ggCaller', 'within')",Mode,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'end')",Mode,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'start')",Mode,Length,0.0
-"('pbp2b', 'Prokka + Panaroo', 'within')",Mode,Length,0.0
-"('pbp2b', 'Reference', 'end')",Mode,Length,0.0
-"('pbp2b', 'Reference', 'start')",Mode,Length,0.0
-"('pbp2b', 'Reference', 'within')",Mode,Length,0.0
-"('pbp2b', 'ggCaller', 'end')",Mode,Length,0.0
-"('pbp2b', 'ggCaller', 'start')",Mode,Length,0.0
-"('pbp2b', 'ggCaller', 'within')",Mode,Length,0.0
+"('PsrP', 'ggCaller', 'end')",Mode,Length,0.0
+"('PsrP', 'ggCaller', 'start')",Mode,Length,0.0
+"('PsrP', 'ggCaller', 'within')",Mode,Length,0.437609841827768
