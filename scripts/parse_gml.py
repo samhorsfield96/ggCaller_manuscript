@@ -58,7 +58,10 @@ def get_node_stats(G, ignore_singletons, verbose, ignore_refound):
 			# reverse to ensure indexing still supported
 			to_remove.reverse()
 			for index in to_remove:
-				del ORF_sizes[index]
+				try:
+					del ORF_sizes[index]
+				except IndexError:
+					pass
 
 		ORF_sizes = np.array(ORF_sizes).astype(int)
 		cluster_size = ORF_sizes.size
