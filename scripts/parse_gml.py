@@ -65,7 +65,7 @@ def get_node_stats(G, ignore_singletons, verbose, ignore_refound):
 
 		ORF_sizes = np.array(ORF_sizes).astype(int)
 		cluster_size = ORF_sizes.size
-		if cluster_size == 1 and ignore_singletons:
+		if cluster_size == 0 or (cluster_size == 1 and ignore_singletons):
 			continue
 
 		stat_size_cluster.append(cluster_size)
