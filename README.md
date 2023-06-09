@@ -264,3 +264,5 @@ All singificant unitigs and annotated unitigs by pyseer are available in respect
 Data is available in ```data/computational_benchmarking```.
 
 Tools were run as detailed in [Gene identification and pangenome analysis](#gene-identification-and-pangenome-analysis).
+
+Gene call consistency files were generated using ```parse_gml.py``` and ```parse_gff.py``` as described above.
