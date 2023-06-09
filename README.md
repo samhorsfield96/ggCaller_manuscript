@@ -106,6 +106,7 @@ Respective gene annotations were provided from:
 - [M. tuberculosis](https://www.ncbi.nlm.nih.gov/nuccore/NC_000962.3)
 - [S. pneumoniae](https://datadryad.org/stash/downloads/file_stream/67467)
 - [E. coli](https://microbiology.figshare.com/ndownloader/files/26133194)
+- [N. gonorrhoeae](https://pubmed.ncbi.nlm.nih.gov/27432602/)
 
 Gene presence/absence matrices for all tools are available in `data/real_pangenome/gene_pa`
 
