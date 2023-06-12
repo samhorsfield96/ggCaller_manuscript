@@ -263,6 +263,14 @@ All singificant unitigs and annotated unitigs by pyseer are available in respect
 
 Data is available in ```data/computational_benchmarking```.
 
+To generate random samples, use the ```sample_genome_list.py``` script:
+
+```
+python sample_genome_list.py --infile input.txt --outpref out_prefix --genome_outdir save/genome/files/here --sample_sizes 10,50,100,500
+```
+
+Assemblies containing Ns are automatically removed, as they lead to fragmented DBGs and lead to poor clustering with ggCaller.
+
 Tools were run as detailed in [Gene identification and pangenome analysis](#gene-identification-and-pangenome-analysis).
 
 Gene call consistency files were generated using ```parse_gml.py``` and ```parse_gff.py``` as described above.
