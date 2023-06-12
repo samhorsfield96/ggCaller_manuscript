@@ -3,6 +3,7 @@ import numpy as np
 import scipy
 from scipy import stats
 from Bio import SeqIO
+import json
 
 def get_options():
 	parser = argparse.ArgumentParser(description='Print cluster size information from PEPPAN gff file and roary clusters file.', prog='python parse_gff.py')
@@ -14,6 +15,9 @@ def get_options():
 	parser.add_argument('--roary',
 						default=None,
 						help='Roary clusters matrix file to analysis')
+	parser.add_argument('--len_dict',
+						default=None,
+						help='Length dictionary .json. Required if --roary specified')
 	parser.add_argument('--ignore_singletons',
 						default=False,
 						action="store_true",
@@ -98,8 +102,8 @@ def compare_roary(infile, len_dict):
 
 				#iso_set.add(iso)
 
-				if gene not in len_dict:
-					continue
+				# if gene not in len_dict:
+				# 	continue
 				length = len_dict[gene]
 
 				if cluster_id not in cluster_dict:
@@ -132,9 +136,9 @@ def parse_peppan(peppan_genes, peppan_encode):
 if __name__ == "__main__":
 	options = get_options()
 	peppan_infile = options.peppan
-	dual_peppan = False
 
 	roary_infile = options.roary
+	len_dict_file = options.len_dict
 	outpref = options.outpref
 	ignore_singletons = options.ignore_singletons
 	ignore_pseudogenes = options.ignore_pseudogenes
@@ -239,6 +243,9 @@ if __name__ == "__main__":
 		print("Stdev cluster size: {}".format(np.std(stat_size_cluster)))
 
 	if roary_infile != None:
+		with open(len_dict_file, "r") as f:
+			len_dict = json.load(f)
+
 		roary_dict_list = compare_roary(roary_infile, len_dict)
 
 		# iterate over peppan inputs and calculate statistics
