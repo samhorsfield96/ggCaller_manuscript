@@ -118,10 +118,22 @@ When analysing ggCaller or Panaroo, run the command below with the respective .g
 python parse_gml.py --infile data/COG_consistency/Spneumoniae_panaroo_str.gml --ignore_refound --outpref output
 ```
 
-PEPPAN and Roary must be analysed together, as Roary does not provide gene lengths in output files. Run:
+To analyse PEPPAN, run:
 
 ```
-python parse_gff.py --peppan data/COG_consistency/Pneumo.PEPPAN.gff --roary data/COG_consistency/Spneumoniae_roary.txt --outpref output --ignore_pseudogenes
+python parse_gff.py --peppan data/COG_consistency/Pneumo.PEPPAN.gff --outpref output --ignore_pseudogenes
+```
+
+Roary does not provide provide gene lengths in output files, so generate gene lengths from gff files first:
+
+```
+python get_gene_lengths.py --indir <path to gff directory> --outpref length_dict --threads 8
+```
+
+Then you can run:
+
+```
+python parse_gff.py --roary data/COG_consistency/Spneumoniae_roary.txt --len_dict length_dict.json --outpref output --ignore_pseudogenes
 ```
 
 These commands output a number of statistics:
