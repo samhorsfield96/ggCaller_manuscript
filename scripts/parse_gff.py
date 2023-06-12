@@ -2,6 +2,7 @@ import argparse
 import numpy as np
 import scipy
 from scipy import stats
+from Bio import SeqIO
 
 def get_options():
 	parser = argparse.ArgumentParser(description='Print cluster size information from PEPPAN gff file and roary clusters file.', prog='python parse_gff.py')
@@ -9,7 +10,7 @@ def get_options():
 	# input options
 	parser.add_argument('--peppan',
 						required=True,
-						help='PEPPAN .gff file to analysis')
+						help='PEPPAN .gff file to analysis, or pair of PEPPAN .genes and .encode.csv in format "x.genes,x.encode.csv"')
 	parser.add_argument('--roary',
 						default=None,
 						help='Roary clusters matrix file to analysis')
@@ -107,16 +108,46 @@ def compare_roary(infile, len_dict):
 
 	return cluster_dict
 
+def parse_peppan(peppan_genes, peppan_encode):
+	# get encodings for peppan
+	id_dict = {}
+	with open(peppan_encode) as f:
+		for line in f:
+			#print(line)
+			if ":" not in line:
+				continue
+			line.rstrip()
+			split_line = line.split(",")
+			id_dict[int(split_line[1])] = split_line[0].split(":")[1]
+
+	fasta_sequences = SeqIO.parse(open(peppan_genes),'fasta')
+	
+	len_dict = {}
+	for fasta in fasta_sequences:
+		name, sequence = int(fasta.id), fasta.seq
+		len_dict[id_dict[name]] = len(sequence)
+
+	return {}, len_dict
+
 if __name__ == "__main__":
 	options = get_options()
 	peppan_infile = options.peppan
+	dual_peppan = False
+
 	roary_infile = options.roary
 	outpref = options.outpref
 	ignore_singletons = options.ignore_singletons
 	ignore_pseudogenes = options.ignore_pseudogenes
 	verbose = options.verbose
 
-	peppan_dict_list, len_dict = compare_peppan(peppan_infile, ignore_pseudogenes)
+	if "," in peppan_infile:
+		split_peppan = peppan_infile.split(",")
+		peppan_genes = split_peppan[0]
+		peppan_encode = split_peppan[1]
+		peppan_dict_list, len_dict = parse_peppan(peppan_genes, peppan_encode)
+	else:
+		peppan_dict_list, len_dict = compare_peppan(peppan_infile, ignore_pseudogenes)
+	
 	# iterate over peppan inputs and calculate statistics
 	stat_list_IQR = []
 	stat_list_prop_IQR = []
