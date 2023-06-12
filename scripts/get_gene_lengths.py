@@ -26,7 +26,7 @@ def map_analysis(infile):
 
     with open(infile, "r") as gff:
         for line in gff:
-            if line[0] != "#":
+            if line[0] != "#" and line[0] != ">":
                 split_line = line.rstrip().split("\t")
                 if split_line[2] == "gene":
                     length = int(split_line[4]) - int(split_line[3])
