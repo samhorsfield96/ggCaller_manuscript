@@ -9,7 +9,7 @@ Data is available in ```data/simulation_pangenome```.
 To generate a simulated population for pangenome analysis, run:
 
 ```
-python scripts/simulate_full_pangenome.py --gff data/simulated_pangenome/SP_ATCC700669.gff3 --nisolates 100 --n_sim_genes 1000 --pop_size 10e-6 --out sim_pangenome --mutation_rate 1e-14 --gain_rate 1e-12 --loss_rate 1e-12
+python scripts/simulate_full_pangenome.py --gff data/simulated_pangenome/SP_ATCC700669.gff3 --nisolates 100 --n_sim_genes 1000 --pop_size 10e6 --out sim_pangenome --mutation_rate 1e-14 --gain_rate 1e-12 --loss_rate 1e-12
 ```
 
 This will generate a list of fasta files in the directory ```sim_pangenome```.
