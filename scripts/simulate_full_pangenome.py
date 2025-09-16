@@ -297,7 +297,7 @@ def add_diversity(gfffile, nisolates, effective_pop_size, gain_rate, loss_rate,
                 SeqRecord(gene_sequence, id=entry.id, description=""))
 
         for entryid in d_index:
-            temp_seq_dict[entryid] = np.delete(temp_seq_dict[entry.seqid],
+            temp_seq_dict[entryid] = np.delete(temp_seq_dict[entryid],
                                                d_index[entryid].astype(int))
 
         print("mutations in genome: ", n_mutations)
